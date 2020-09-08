@@ -1,0 +1,548 @@
+$content_title_p_size: 18px
+$content_p_size: 16px
+$content_p_black: #000
+$content_hr_color: rgba(#999,0.5)
+$sildes_padding: 30px
+*
+	position: relative
+	p
+		font-family: 'Nunito', sans-serif
+		color: #555
+body,html
+	margin: 0px
+	padding: 0px
+	background-color: #fdfdfd
+	.productsAll
+		padding: 0px 150px
+		display: flex
+		flex-wrap: wrap
+		h2
+			width: 100%
+			font-family: 'Merienda', cursive
+			font-size: 30px
+			line-height: 65px
+			text-align: center
+			margin: 20px 0px 35px
+		.left_all
+			width: 80%
+			display: flex
+			.name_color
+				width: 25%
+				border-right: 1px solid rgba(#999,0.5)
+				padding-right: $sildes_padding
+				hr
+					background-color: $content_hr_color
+					width: 100%
+					float: left
+					border: 0px
+					height: 1px
+				.name
+					margin-bottom: 90px
+					p
+						font-size: 24px
+						font-weight: 600
+						color: #333
+						margin: 0px
+				.color
+					margin-bottom: 90px
+					p
+						font-weight: 600
+						font-size: $content_title_p_size
+						margin: 0px
+					.color_list
+						width: 25px
+						height: 25px
+						background-color: black
+						display: inline-block
+						margin-right: 10px
+						border: 1px solid rgba(#999,0.5)
+					.one_color
+						background-color: rgba(#6a8c9f,0.7)
+					.hover_color
+						margin: 10px 0px 20px
+						color: $content_p_black
+						font-size: $content_p_size
+				.Availability
+					margin-bottom: 90px
+					hr
+						background-color: $content_hr_color
+						width: 100%
+						float: left
+						border: 0px
+						height: 1px
+					p
+						font-size: $content_title_p_size
+						margin: 0px
+						font-weight: 100
+					.content_p
+						margin: 10px 0px 20px
+						color: $content_p_black
+						font-size: $content_p_size
+
+			.product_photo
+				width: 75%
+				.photo
+					width: 100%
+					display: flex
+					flex-wrap: wrap
+					justify-content: center
+					a
+						width: 80%
+						margin-top: 200px
+						&:first-child
+							margin: 0px
+						img
+							width: 100%
+					.PPLive
+						display: none
+		.right_all
+			width: calc(20% - 45px)
+			border-left: 1px solid rgba(#999,0.5)
+			padding-left: $sildes_padding
+			.icon_spec
+				width: 100%
+				.icon
+					height: 300px
+					width: 100%
+					.img
+						width: 250px
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						img
+							width: 100%
+				.spec
+					p
+						font-size: $content_p_size
+						margin: 0px
+					.spec_title
+						font-size: $content_title_p_size
+					.spec_list
+						margin: 20px 0px
+						.spec_list_B
+							color: $content_p_black
+					hr
+						background-color: $content_hr_color
+						width: 100%
+						float: left
+						border: 0px
+						height: 1px
+				.line_product
+					.img
+						width: 100%
+						img
+							width: 150%
+		.life_img
+			display: flex
+			margin: 40px 0px
+			width: 100%
+			padding: 0px 10px
+			img
+				margin-left: 10px
+				width: 50%
+				&:first-child
+					margin: 0px
+
+@media screen and(max-width: 1520px)
+	body,html
+		.productsAll
+			padding: 0px 30px
+			.right_all
+				.icon_spec
+					.line_product
+						.img
+							width: 100%
+							img
+								width: 100%
+@media screen and(max-width: 1350px)
+	$sildes_padding: 10px
+	body,html
+		.productsAll
+			padding: 0px 20px
+			h2
+			.left_all
+				.name_color
+					padding-right: $sildes_padding
+					hr
+					.name
+						p
+					.color
+						p
+						.color_list
+						.one_color
+						.two_color
+						.hover_color
+					.Availability
+						hr
+						p
+						.content_p
+
+				.product_photo
+					.photo
+						a
+							&:first-child
+							img
+			.right_all
+				padding-left: $sildes_padding
+				width: calc(20% - 11px)
+				.icon_spec
+					.icon
+						.img
+							img
+					.spec
+						p
+						.spec_title
+						.spec_list
+							.spec_list_B
+						hr
+					.line_product
+						.img
+							img
+@media screen and(max-width: 1150px)
+	body,html
+		.productsAll
+			padding: 0px 20px
+			height: 100%
+			h2
+			.left_all
+				width: 100%
+				.name_color
+					hr
+					.name
+						p
+					.color
+						p
+						.color_list
+						.one_color
+						.two_color
+						.hover_color
+					.Availability
+						hr
+						p
+						.content_p
+
+				.product_photo
+					height: 100%
+					.photo
+						a
+							&:first-child
+							img
+			.right_all
+				width: calc(25% - 20px)
+				position: absolute
+				top: 500px
+				padding: 0px 30px 0px 0px
+				border: 0px
+				.icon_spec
+					.icon
+						.img
+							img
+					.spec
+						p
+						.spec_title
+						.spec_list
+							.spec_list_B
+						hr
+					.line_product
+						.img
+							img
+@media screen and(max-width: 1000px)
+	body,html
+		.productsAll
+			h2
+			.left_all
+				.name_color
+					hr
+					.name
+						p
+					.color
+						p
+						.color_list
+						.one_color
+						.two_color
+						.hover_color
+					.Availability
+						hr
+						p
+						.content_p
+
+				.product_photo
+					.photo
+						a
+							width: 100%
+							&:first-child
+							img
+			.right_all
+				.icon_spec
+					.icon
+						.img
+							img
+					.spec
+						p
+						.spec_title
+						.spec_list
+							.spec_list_B
+						hr
+					.line_product
+						.img
+							img
+
+@media screen and(max-width: 880px)
+	body,html
+		.productsAll
+			h2
+			.left_all
+				.name_color
+					width: 30%
+					hr
+					.name
+						p
+					.color
+						p
+						.color_list
+						.one_color
+						.two_color
+						.hover_color
+					.Availability
+						hr
+						p
+						.content_p
+
+				.product_photo
+					width: 70%
+					.photo
+						a
+							width: 100%
+							&:first-child
+							img
+						img
+						.PPLive
+							display: block
+							margin: 20px auto
+							width: 90%
+			.right_all
+				width: calc(30% - 20px)
+				.icon_spec
+					.icon
+						.img
+							img
+					.spec
+						p
+						.spec_title
+						.spec_list
+							.spec_list_B
+						hr
+					.line_product
+						.img
+							img
+			.life_img
+				display: none
+
+@media screen and(max-width: 730px)
+	body,html
+		.productsAll
+			h2
+				font-size: 26px
+				line-height: 40px
+				text-align: center
+				margin: 20px 0px
+			.left_all
+				height: auto
+				flex-direction: column-reverse
+				justify-content: flex-end
+				.name_color
+					width: 80%
+					border: 0px
+					margin: 20px auto 0px
+					hr
+					.name
+						margin-bottom: 30px
+						p
+							font-size: 32px
+					.color
+						margin-bottom: 30px
+						p
+							font-size: 24px
+						.color_list
+						.one_color
+						.two_color
+						.hover_color
+							font-size: 20px
+					.Availability
+						margin-bottom: 30px
+						hr
+						p
+							font-size: 24px
+						.content_p
+							font-size: 20px
+
+				.product_photo
+					width: 100%
+					height: auto
+					.photo
+						a
+							margin: 0px
+							&:first-child
+								img
+									display: block
+							img
+								display: none
+						.PPLive
+							display: none
+			.right_all
+				position: relative
+				width: 80%
+				top: 0px
+				margin: 0px auto 30px
+				.icon_spec
+					.icon
+						.img
+							width: 350px
+							img
+					.spec
+						p
+						.spec_title
+							font-size: 20px
+						.spec_list
+							.spec_list_B
+								font-size: 24px
+						hr
+					.line_product
+						.img
+							img
+			.life_img
+				width: 100%
+				display: block
+				flex-wrap: wrap
+				img
+					margin: 20px 0px
+					width: 100%
+@media screen and(max-width: 550px)
+	body,html
+		.productsAll
+			padding: 0px 10px
+			h2
+				font-size: 26px
+				line-height: 40px
+				text-align: center
+				margin: 20px 0px
+			.left_all
+				.name_color
+					width: 90%
+					hr
+					.name
+						p
+							font-size: 28px
+					.color
+						margin-bottom: 20px
+						p
+							font-size: 22px
+						.color_list
+						.one_color
+						.two_color
+						.hover_color
+							font-size: 18px
+					.Availability
+						margin-bottom: 20px
+						hr
+						p
+							font-size: 22px
+						.content_p
+							font-size: 18px
+
+				.product_photo
+					width: 100%
+					height: auto
+					.photo
+						a
+							margin: 0px
+							&:first-child
+								img
+									display: block
+							img
+								display: none
+			.right_all
+				position: relative
+				width: 90%
+				top: 0px
+				margin: 0px auto 30px
+				.icon_spec
+					.icon
+						.img
+							width: 250px
+							img
+					.spec
+						p
+						.spec_title
+							font-size: 18px
+						.spec_list
+							.spec_list_B
+								font-size: 20px
+						hr
+					.line_product
+						.img
+							width: 80%
+							margin: auto
+							img
+
+
+@media screen and(max-width: 420px)
+	body,html
+		.productsAll
+			h2
+				line-height: 20px
+			.left_all
+				.name_color
+					hr
+					.name
+						margin-bottom: 20px
+						p
+							font-size: 24px
+					.color
+						margin-bottom: 20px
+						p
+							font-size: 20px
+						.color_list
+						.one_color
+						.two_color
+						.hover_color
+							font-size: 16px
+					.Availability
+						margin-bottom: 20px
+						hr
+						p
+							font-size: 20px
+						.content_p
+							font-size: 16px
+
+				.product_photo
+					width: 100%
+					height: auto
+					.photo
+						a
+							&:first-child
+								img
+			.right_all
+				position: relative
+				width: 80%
+				top: 0px
+				margin: 0px auto 30px
+				.icon_spec
+					.icon
+						.img
+							width: 200px
+							img
+					.spec
+						p
+							font-size: 14px
+						.spec_title
+							font-size: 20px
+						.spec_list
+							.spec_list_B
+								font-size: 18px
+						hr
+					.line_product
+						.img
+							width: 80%
+							margin: auto
+							img

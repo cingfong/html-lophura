@@ -1,0 +1,230 @@
+body, html {
+  margin: 0px auto;
+  padding: 0px;
+  background-color: #fff;
+  position: relative; }
+
+.navHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative; }
+  .navHeader button {
+    border: 0px;
+    margin: 30px; }
+  .navHeader .navbar-brand {
+    margin: 0px;
+    padding: 0px; }
+    .navHeader .navbar-brand .titleImg {
+      top: 20px;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 90px;
+      height: 60px;
+      margin: 0px;
+      padding: 0px; }
+  .navHeader .navbar-collapse {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 90px; }
+    .navHeader .navbar-collapse .active {
+      margin: 0px 10px;
+      text-align: center;
+      width: 120px; }
+      .navHeader .navbar-collapse .active a {
+        cursor: pointer;
+        text-align: center;
+        width: 100%;
+        display: inline-block; }
+      .navHeader .navbar-collapse .active .dropdownLayer #pushAll {
+        margin-left: 0px;
+        list-style: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        margin-left: -120px;
+        position: absolute;
+        z-index: 99;
+        -webkit-padding-start: 0px;
+        padding-inline-start: 0px; }
+        .navHeader .navbar-collapse .active .dropdownLayer #pushAll li {
+          text-align: center;
+          width: 180px;
+          background-color: #fff;
+          color: rgba(0, 0, 0, 0.9); }
+          .navHeader .navbar-collapse .active .dropdownLayer #pushAll li .layerTitle {
+            font-size: 17px; }
+          .navHeader .navbar-collapse .active .dropdownLayer #pushAll li .layerContent a {
+            font-size: 16px;
+            margin-bottom: 8px;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.5); }
+    .navHeader .navbar-collapse .nav-link:hover {
+      color: #aaa; }
+
+hr {
+  width: 85%;
+  background-color: #eee; }
+
+.about .title {
+  padding: 20px 0px;
+  text-align: center;
+  color: #444; }
+  .about .title strong {
+    font-weight: 500;
+    font-size: 32px; }
+
+.about .aboutAll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 20px; }
+  .about .aboutAll .content {
+    font-size: 18px;
+    width: 100%;
+    line-height: 40px; }
+    .about .aboutAll .content p {
+      text-align: center;
+      padding: 20px;
+      padding-top: 0px;
+      position: relative;
+      color: #888; }
+  .about .aboutAll .aboutImg {
+    position: relative;
+    width: 100%; }
+    .about .aboutAll .aboutImg img {
+      position: relative;
+      width: 80%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
+
+.coda {
+  position: absolute;
+  left: 0px;
+  margin-top: 10px;
+  width: 100%;
+  height: 180px;
+  background-color: #eee;
+  padding: 15px;
+  line-height: 0px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .coda h5 {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #444; }
+  .coda p {
+    line-height: 5px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 13px;
+    height: auto; }
+  .coda .img {
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative; }
+    .coda .img img {
+      display: block;
+      position: relative;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 40px;
+      height: 30px; }
+
+@media screen and (min-width: 992px) {
+  .navHeader .navbar-collapse .active .dropdown-menu {
+    border: 0px; }
+  .navHeader .navbar-collapse .active .dropdownLayer #pushAll li .layerContent {
+    display: block; } }
+
+@media screen and (max-width: 991px) {
+  .navHeader .navbar-collapse {
+    margin-top: 0px; }
+  .navHeader .navbar-collapse .active {
+    width: 50%;
+    margin: 0px auto;
+    text-align: center; }
+    .navHeader .navbar-collapse .active .dropdown-menu {
+      border: solid 0px; }
+    .navHeader .navbar-collapse .active .dropdownLayer #pushAll {
+      display: inline-block;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      position: relative;
+      margin-left: 0px; }
+      .navHeader .navbar-collapse .active .dropdownLayer #pushAll li {
+        margin-top: 10px;
+        margin-bottom: 10px; }
+        .navHeader .navbar-collapse .active .dropdownLayer #pushAll li .layerContent {
+          display: none; }
+  .about .aboutAll {
+    padding: 20px 0px; }
+    .about .aboutAll .aboutImg img {
+      width: 90%; } }
+
+@media screen and (max-width: 768px) {
+  #pushAll .layerTitle {
+    font-size: 16px; }
+    #pushAll .layerTitle a {
+      font-size: 12px; }
+  .navHeader .navbar-brand .titleImg {
+    width: 45px;
+    height: 30px; }
+  .navHeader .navbar-toggler {
+    margin: 7px; }
+  .about .title {
+    padding: 0px;
+    padding-bottom: 10px; }
+  .about .aboutAll {
+    padding-top: 0px; }
+    .about .aboutAll .content {
+      line-height: 30px; }
+      .about .aboutAll .content p {
+        font-size: 14px; } }
+
+@media screen and (max-width: 540px) {
+  .navHeader .navbar-brand .titleImg {
+    top: 10px; }
+  .navHeader .navbar-toggler {
+    margin: 0px; }
+  .about .aboutAll .content p {
+    font-size: 12px; }
+  .about .aboutAll .aboutImg img {
+    width: 95%; } }
+
+@media screen and (max-width: 438px) {
+  .coda {
+    height: 190px; }
+    .coda p {
+      font-size: 12px; }
+      .coda p span {
+        display: inline-block; } }
+
+@media screen and (max-width: 412px) {
+  .coda p span {
+    margin-top: 10px; } }

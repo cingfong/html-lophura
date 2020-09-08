@@ -1,0 +1,176 @@
+* {
+  position: relative; }
+
+body, html {
+  margin: 0px; }
+  body .productsAll, html .productsAll {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    body .productsAll .title, html .productsAll .title {
+      margin: 20px 0px;
+      width: 100%;
+      display: block; }
+      body .productsAll .title .logo, html .productsAll .title .logo {
+        margin: 0px auto;
+        display: block;
+        width: 100px; }
+        body .productsAll .title .logo img, html .productsAll .title .logo img {
+          width: 100%; }
+  body .content, html .content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
+    body .content .left, html .content .left {
+      width: 50%;
+      padding-left: 40px; }
+      body .content .left .bigImg, html .content .left .bigImg {
+        width: 100%;
+        border: solid 0.5px #eee; }
+        body .content .left .bigImg .bigImgOnly, html .content .left .bigImg .bigImgOnly {
+          width: 100%; }
+      body .content .left .smallImg, html .content .left .smallImg {
+        cursor: pointer;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; }
+        body .content .left .smallImg img, html .content .left .smallImg img {
+          border: solid 0.5px #eee;
+          margin: 20px 0px;
+          width: 23%;
+          -ms-flex-negative: 0;
+          flex-shrink: 0; }
+    body .content .right, html .content .right {
+      width: 50%; }
+      body .content .right .text, html .content .right .text {
+        margin: auto 0px;
+        display: block;
+        top: 40px;
+        padding: 0px 40px;
+        text-align: center; }
+        body .content .right .text h3, html .content .right .text h3 {
+          font-size: 48px;
+          line-height: 120px;
+          font-weight: 300;
+          font-family: 'Oswald', sans-serif; }
+        body .content .right .text p, html .content .right .text p {
+          padding: 0px 120px;
+          font-size: 15px;
+          color: #777;
+          font-family: 'Noto Sans TC', sans-serif; }
+        body .content .right .text hr, html .content .right .text hr {
+          margin: 30px auto;
+          width: 65%;
+          background-color: #ddd; }
+        body .content .right .text h4, html .content .right .text h4 {
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+          color: #333; }
+          body .content .right .text h4 br, html .content .right .text h4 br {
+            display: none; }
+        body .content .right .text h5, html .content .right .text h5 {
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+          color: #555;
+          top: -10px; }
+        body .content .right .text .money, html .content .right .text .money {
+          font-size: 26px;
+          line-height: 26px; }
+        body .content .right .text .color, html .content .right .text .color {
+          margin: 30px 0px; }
+          body .content .right .text .color span, html .content .right .text .color span {
+            left: -40px; }
+          body .content .right .text .color .colorList, html .content .right .text .color .colorList {
+            width: 20px;
+            height: 20px;
+            margin: 0px 10px;
+            display: inline-block; }
+          body .content .right .text .color .colorOne, html .content .right .text .color .colorOne {
+            background-color: #556b2f; }
+          body .content .right .text .color .colorTwo, html .content .right .text .color .colorTwo {
+            background-color: #696969; }
+          body .content .right .text .color .colorThree, html .content .right .text .color .colorThree {
+            background-color: #87cefa; }
+
+@media screen and (max-width: 1400px) {
+  body .productsAll .title .logo, html .productsAll .title .logo {
+    width: 80px; }
+  body .content .right .text p, html .content .right .text p {
+    padding: 0px 60px; } }
+
+@media screen and (max-width: 1100px) {
+  body .content .left, html .content .left {
+    width: 40%; }
+  body .content .right, html .content .right {
+    width: 60%; } }
+
+@media screen and (max-width: 992px) {
+  body .content, html .content {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    body .content .left, html .content .left {
+      width: 95%; }
+    body .content .right, html .content .right {
+      width: 60%;
+      margin: 20px auto; }
+      body .content .right .text, html .content .right .text {
+        border-top: solid 0.5px #333; }
+        body .content .right .text p, html .content .right .text p {
+          padding: 0px 0px; }
+        body .content .right .text hr, html .content .right .text hr {
+          width: 90%; }
+        body .content .right .text h4 br, html .content .right .text h4 br {
+          display: block; } }
+
+@media screen and (max-width: 800px) {
+  body .productsAll .title .logo, html .productsAll .title .logo {
+    width: 60px; }
+  body .content .right, html .content .right {
+    width: 80%; } }
+
+@media screen and (max-width: 700px) {
+  body .content .right .text h3, html .content .right .text h3 {
+    font-size: 40px;
+    line-height: 100px;
+    margin: 0px; }
+  body .content .right .text p, html .content .right .text p {
+    font-size: 14px;
+    margin: 0px; }
+  body .content .right .text hr, html .content .right .text hr {
+    margin: 20px auto; } }
+
+@media screen and (max-width: 550px) {
+  body .productsAll .title, html .productsAll .title {
+    margin: 10px 0px; }
+  body .content .right, html .content .right {
+    width: 95%; }
+    body .content .right .text, html .content .right .text {
+      padding: 0px 10px; }
+      body .content .right .text p, html .content .right .text p {
+        font-size: 14px;
+        margin: 0px; }
+      body .content .right .text hr, html .content .right .text hr {
+        width: 90%;
+        margin: 20px auto; } }
+
+@media screen and (max-width: 400px) {
+  body .productsAll .title .logo, html .productsAll .title .logo {
+    width: 40px; }
+  body .content .right .text p, html .content .right .text p {
+    font-size: 14px;
+    margin: 0px; }
+  body .content .right .text h4, html .content .right .text h4 {
+    font-size: 14px; }
+  body .content .right .text h5, html .content .right .text h5 {
+    font-size: 16px; }
+  body .content .right .text .money, html .content .right .text .money {
+    font-size: 20px; } }

@@ -1,0 +1,210 @@
+*
+	position: relative
+	font-family: 'Cabin', sans-serif
+body,html
+	padding: 0px
+	margin: 0px
+	height: 100%
+	.one
+		width: 100%
+		position: absolute
+		background-color: #f4f4f4
+		height: 100%
+		.oneAll
+			position: relative
+			top: 50%
+			left: 50%
+			bottom: 0px
+			transform: translateX(-50%) translateY(-50%)
+			width: 90%
+			height: 90%
+			background-color: #fff
+			.textTitle
+				display: inline-block
+				height: 20%
+				width: 33%
+				.textContent
+					width: 100%
+					display: inline-block
+					margin: auto 0px
+					a
+						text-decoration: none
+						h2
+							cursor: pointer
+							padding-left: 120px
+							color: #555
+							text-align: left
+							font-size: 46px
+							font-weight: 500
+							letter-spacing: 3px
+							margin-bottom: -10px
+					h4
+						top: -15px
+						padding-left: 120px
+						color: #555
+						text-align: left
+						font-size: 30px
+						font-weight: 500
+						letter-spacing: 2px
+			.titleButton
+				height: 22%
+				padding-right: 120px
+				margin: auto 0px
+				right: 0%
+				float: right
+				position: relative
+				display: inline-block
+				display: flex
+				flex-wrap: nowrap
+				justify-content: center
+				align-content: center
+				background-color: white
+				&:hover
+					.button
+						color: #aaa
+					.arrow
+						display: none
+				.button
+					padding: 0px
+					margin: 0px
+					top: 50%
+					transform: translateY(-50%)
+					letter-spacing: 2px
+					position: relative
+					display: inline-block
+					text-align: left
+					font-weight: 600
+					color: #555
+					font-size: 42px
+					z-index: 100
+					margin-right: 30px
+				.arrow
+					top: 50%
+					transform: translateY(-50%)
+					right: 0px
+					margin-right: -20px
+					position: absolute
+					width: 40px
+					height: 40px
+					overflow: hidden
+					&::before
+						z-index: 9999
+						left: -100%
+						content: ""
+						width: 50%
+						height: 100%
+						position: absolute
+						transform: rotate(30deg)
+						background: -webkit-radial-gradient(center, rgba(#fff,0.8) 80%, rgba(#fff,0)100%)
+					.arrowBlack
+						width: 100%
+						height: 100%
+			.leftPhoto
+				height: 80%
+				width: 100%
+				background-image: url("../image/B-77-4life.jpg")
+				background-repeat:no-repeat
+				background-position: bottom
+				background-size: cover
+.arrow
+	&::before
+		animation: arrowBlack 1.8s infinite
+@keyframes arrowBlack
+	0%
+		left: -100%
+	80%
+	100%
+		left: 120%
+
+@media screen and (max-width: 1150px)
+	body
+		.one
+			.oneAll
+				.textTitle
+					.textContent
+						text-align: left
+						a
+							h2
+								padding-left: 40px
+
+						h4
+							padding-left: 40px
+				.titleButton
+					.button
+					.arrow
+						.arrowBlack
+				.leftPhoto
+					background-position: right
+
+@media screen and (max-width: 700px)
+	body
+		.one
+			.oneAll
+				.textTitle
+					.textContent
+						text-align: left
+						a
+							h2
+								font-size: 30px
+								padding-left: 40px
+								margin-bottom: 20px
+						h4
+							font-size: 20px
+							padding-left: 40px
+				.titleButton
+					padding-right: 60px
+					.button
+						font-size: 30px
+						margin-right: 15px
+					.arrow
+						width: 30px
+						height: 30px
+						.arrowBlack
+				.leftPhoto
+					height: 60%
+					background-position: right
+
+@media screen and (max-width: 600px)
+	body
+		.one
+			.oneAll
+				.textTitle
+					.textContent
+						a
+							h2
+								margin-bottom: 20px
+						h4
+							font-size: 15px
+				.titleButton
+					height: 100px
+					padding-right: 30px
+					.button
+						font-size: 20px
+						margin-right: 0px
+					.arrow
+						width: 20px
+						height: 20px
+						.arrowBlack
+				.leftPhoto
+					background-image: url("../image/B-77-3life.jpg")
+					background-position: 50%
+
+@media screen and (max-width: 440px)
+	body
+		.one
+			.oneAll
+				.textTitle
+					.textContent
+						a
+							h2
+								font-size: 25px
+								padding-left: 15px
+						h4
+							font-size: 12px
+							padding-left: 15px
+				.titleButton
+					.button
+					.arrow
+						.arrowBlack
+				.leftPhoto
+					background-position: 50

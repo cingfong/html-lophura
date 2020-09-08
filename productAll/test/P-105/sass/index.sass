@@ -1,0 +1,581 @@
+*
+	position: relative
+body
+	padding: 40px
+body,html
+	margin: 0px
+	width: 100%
+	background-image: url("../image/aaa1.jpg")
+	display: block
+	.productsAll
+		z-index: 2
+		border: solid 2px black
+		margin: 0px
+		.header
+			border-bottom: solid 2px black
+			display: flex
+			.logo	
+				border-right: solid 2px black
+				padding: 30px
+				width: 200px    
+				img
+					width: 100% 
+			.title 
+				width: 100%
+				h1
+					font-family: 'Bowlby One SC', cursive
+					// font-family: 'Lilita One', cursive;
+					line-height: 150px
+					text-align: center
+					font-size: 60px
+					letter-spacing: 2px
+			.titleRight
+				padding: 20px
+				width: 200px
+				border-left: solid 2px black
+				h2
+					line-height: 50px
+					font-size: 22px
+					text-align: center
+					font-weight: 900
+		.content
+			.leftContent
+				width: 75%
+				border-right: solid 2px black
+				overflow: hidden
+				h2
+					margin: 40px
+					font-family: 'Bree Serif', serif
+					font-size: 70px
+					font-weight: 600
+				img
+					z-index: 999
+					width: 100%
+					-webkit-filter: grayscale(1)
+					transition: -webkit-filter 0.5s
+				.hover
+					&:hover
+						// -webkit-filter: grayscale(0)
+				.scrollPhoto
+					-webkit-filter: grayscale(0)
+				h3
+					margin: 40px
+					letter-spacing: 3px
+					font-size: 50px
+					font-weight: 600
+				h4
+					margin: 40px
+					font-size: 26px
+					line-height: 40px
+				.leftContentPhoto
+					margin-top: 50px
+					border-top: solid 2px black
+					border-bottom: solid 2px black
+					width: 100%
+					.photo
+						display: inline-block
+						width: 100%
+						display: flex
+						flex-wrap: nowrap
+						.Rwd
+							display: none
+						img
+							-webkit-filter: grayscale(1)
+							float: left
+							width: 33%
+							height: 50%
+							transition: -webkit-filter 1s
+						.scrollPhoto
+							-webkit-filter: grayscale(0)
+						.hover
+							&:hover
+								// -webkit-filter: grayscale(0)
+
+			.productContent
+				width: 75%
+				border-right: solid 2px black
+				display: flex
+				.contentText
+					width: 50%
+					padding: 20px
+					left: 45%
+					transform: translateX(-50%)
+					h3
+						width: 100%
+						display: inline-block
+						letter-spacing: 3px
+						font-size: 50px
+						font-weight: 600
+						margin-left: 20px
+					h5
+						padding-left: 20px
+						font-size: 26px
+						margin: 20px 0px 20px
+					ul
+						left: -10%
+						width: 100%
+						list-style-type: none
+						padding: 0px
+						padding-left: 20px
+						margin: 0px
+						li	
+							font-weight: 500
+							font-size: 20px
+							line-height: 40px
+							span
+								width: 100px
+								display: inline-block
+				.contentPhoto
+					width: 50%
+					img
+						width: 100%
+			.rightcontact
+				width: 25%
+				float: right
+				.phone
+				.contact
+					padding: 40px
+					margin: 40px 0px
+					border-bottom: solid 1px black
+					img
+						opacity: 0.8
+						padding: 30px 10px
+						width: 100%
+						-webkit-filter: grayscale(1)
+						transition: -webkit-filter 1s
+						&:hover
+							opacity: 1
+					h3
+						word-wrap: wrap
+						margin-left: -40px
+						margin-right: -40px
+						font-size: 30px
+						text-align: center
+						font-family: 'Anton', sans-serif
+						span
+							display: block
+					h2
+						font-family: 'Anton', sans-serif
+						text-align: center
+						font-size: 60px
+						letter-spacing: 3px
+						line-height: 90px
+						font-weight: 900
+canvas
+	top: 0px
+	left: 0px
+	position: absolute
+	z-index: 3
+@media screen and (max-width: 1410px)
+	body,html
+		.productsAll
+			.content
+				.rightcontact
+					.contact
+						padding: 0px
+						margin: 0px
+						img
+							&:hover
+						h2
+							font-size: 40px
+							letter-spacing: 1px
+						h3
+							font-size: 26px
+				.productContent
+					.contentText
+						left: 40%
+						h3
+							font-size: 40px
+						h5
+							font-size: 26px
+							margin: 0px
+							margin-bottom: 15px
+						ul
+							width: 100%
+							list-style-type: none
+							padding: 0px
+							padding-left: 20px
+							margin: 0px
+							br
+								display: none
+							li	
+								font-weight: 500
+								font-size: 20px
+								line-height: 40px
+								span
+									width: 100px
+									display: inline-block
+@media screen and (max-width: 1150px)
+	body,html
+		.productsAll
+			.header
+				.logo	
+					padding: 15px   
+				.title 
+					width: 100%
+					h1
+						margin: 0px
+						line-height: 120px
+						font-size: 50px
+				.titleRight
+					h2
+						line-height: 35px
+			.content
+				.rightcontact
+					.contact
+						img
+							padding: 0px
+						h2
+							line-height: 40px
+							font-size: 30px
+							letter-spacing: 1px
+						h3
+							font-size: 20px
+				.leftContent
+					h2
+						font-size: 55px
+					h3
+						font-size: 38px
+					h4
+						font-size: 20px
+				.productContent
+					position: relative
+					.contentText
+						ul
+							li	
+								line-height: 32px
+								font-size: 18px
+								span
+					.contentPhoto
+						position: relative
+						img
+							top: 50%
+							transform: translateY(-50%)
+@media screen and (max-width: 960px)
+	body,html
+		.productsAll
+			.header
+				.logo	
+					width: 150px
+					img
+				.title 
+					h1
+						line-height: 100px
+				.titleRight
+					padding: 10px
+					h2
+						margin: 0px
+			.content
+				.rightcontact
+					width: 100%
+					display: flex
+					.phone
+						border-right: solid 2px black
+					.contact
+						img
+							width: 30%
+						h2
+							text-align: left
+							top: 0px
+							left: 35%
+							line-height: 70px
+							position: absolute
+							margin: 0px
+							width: 100%
+						h3
+							font-size: 18px
+							text-align: left
+							left: 35%
+							top: 70px
+							position: absolute
+							width: 100%
+							margin: 0px
+							span
+								margin-right: 10px
+								display: inline-block
+				.leftContent
+					width: 100%
+					border-right: 0px
+					h2
+						margin: 20px 30px
+						font-size: 42px
+					img
+					h3
+						font-size: 32px
+						margin: 20px 30px
+					h4
+						margin: 20px 30px
+				.productContent
+					width: 100%
+					border-right: 0px
+					.contentText
+						h3
+						h5
+						ul
+							li	
+								span
+					.contentPhoto
+						img
+@media screen and (max-width: 800px)
+	body,html
+		.productsAll
+			.header
+				.logo	
+					width: 150px
+					img
+				.title 
+					h1
+						line-height: 90px
+						font-size: 38px
+				.titleRight
+					h2
+						font-size: 20px
+			.content
+				.rightcontact
+					.contact
+						width: 100%
+						img
+							display: none
+							&:hover
+						h2
+							text-align: center
+							left: 0px
+							line-height: 40px
+							position: relative
+						h3
+							text-align: center
+							top: 0px
+							left: 0px
+							position: relative
+@media screen and (max-width: 740px)
+	body,html
+		.productsAll
+			.header
+				.logo	
+					width: 150px
+					img
+				.title 
+					h1
+						font-size: 32px
+			.content
+				.productContent
+					.contentText
+						width: 70%
+						left: 5%
+						transform: translateX(0%)
+@media screen and (max-width: 665px)
+	body,html
+		.productsAll
+			.header
+				.logo	
+					width: 100px
+					img
+				.title 
+					h1
+						line-height: 60px
+				.titleRight
+					h2
+						font-size: 16px
+						line-height: 24px
+			.content
+				.rightcontact
+					.contact
+						img
+							&:hover
+						h2
+						h3
+							span
+				.leftContent
+					h2
+						font-size: 32px
+						margin: 10px 20px
+					img
+					h3
+						font-size: 24px
+						margin: 10px 20px
+					h4
+						font-size: 16px
+						margin: 10px 20px
+					.leftContentPhoto
+						.photo
+							flex-wrap: wrap
+							.Rwd
+								display: block
+							img
+								width: 50%
+								&:hover
+				.productContent
+					.contentText
+						display: inline-block
+						width: auto
+						left: 50%
+						transform: translateX(-50%)
+						h3
+							font-size: 30px
+							margin: 0px
+							text-align: center
+						h5
+							font-size: 20px
+							padding: 0px
+							text-align: center
+							margin-bottom: 10px
+						ul
+							padding: 0px
+							font-size: 16px
+							left: 0px
+							li	
+								span
+					.contentPhoto
+						display: none
+						img
+@media screen and (max-width: 575px)
+	body,html
+		.productsAll
+			.header
+				.logo	
+					padding: 8px
+					width: 90px
+					img
+				.title 
+					h1
+						font-size: 26px
+						line-height: 50px
+				.titleRight
+					padding: 0px
+					h2
+			.content
+				.rightcontact
+					.contact
+						h2
+							line-height: 30px
+							font-size: 25px
+						h3
+							font-size: 16px
+							span
+								display: block
+				.leftContent
+					h2
+						font-size: 28px
+					img
+					h3
+						font-size: 20px
+					h4
+						font-size: 14px
+						letter-spacing: 1px
+						line-height: 28px
+				.productContent
+					.contentText
+						h3
+							font-size: 26px
+							margin: 0px
+							text-align: center
+						h5
+							font-size: 18px
+							padding: 0px
+							text-align: center
+							margin-bottom: 10px
+						ul
+							padding: 0px
+							left: 0px
+							li	
+								font-size: 14px
+								span
+@media screen and(max-width: 503px)
+	body
+		padding: 20px
+	body,html
+		.productsAll
+			.header
+				.logo	
+					padding: 3px 5px
+					width: 60px
+					img
+						width: 50px
+				.title 
+					h1
+						font-size: 24px
+						line-height: 43px
+				.titleRight
+					h2
+						font-size: 12px
+						line-height: 21.5px
+			.content
+				.rightcontact
+					.contact
+						img
+							&:hover
+						h2
+							font-size: 18px
+							line-height: 25px
+						h3
+							font-size: 12px
+
+@media screen and(max-width: 446px)
+	body
+		padding: 10px
+	body,html
+		.productsAll
+			.header
+				.logo	
+					padding: 3px 5px
+					width: 50px
+					img
+						width: 40px
+				.title 
+					h1
+						font-size: 20px
+						line-height: 40px
+				.titleRight
+					h2
+						font-size: 12px
+						line-height: 20px
+			.content
+				.rightcontact
+					.phone
+					.contact
+						img
+							&:hover
+						h2
+							font-size: 18px
+							line-height: 25px
+						h3
+							font-size: 12px
+
+@media screen and(max-width: 380px)
+	body
+		padding: 10px
+	body,html
+		.productsAll
+			.header
+				.logo	
+					width: 160px
+					img
+						left: 50%
+						transform: translateX(-50%)
+				.title 
+					h1
+						line-height: 20px
+						span
+							display: block
+				.titleRight
+					h2
+						font-size: 12px
+						line-height: 20px
+			.content
+				.rightcontact
+					.contact
+						img
+							&:hover
+						h2
+							font-size: 18px
+							line-height: 25px
+						h3
+							font-size: 12px
+				.productContent
+					.contentText
+						h3
+						h5
+							margin: 0px
+						ul
+							li	
+								span

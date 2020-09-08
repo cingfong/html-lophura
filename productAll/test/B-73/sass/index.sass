@@ -1,0 +1,390 @@
+*
+	position: relative
+body,html
+	margin: 0px
+	z-index: 0
+	background-color: #F5FFFA
+	.headerAll
+		height: 150px
+		background-color: #555
+		.text
+			// width: 100%
+			display: inline-block
+			left: 50%
+			top: 50%
+			transform: translate(-50%,-50%)
+			h5
+				color: #ddd
+				font-size: 60px
+				span
+					width: 300px
+					display: inline-block
+		.Img
+			position: absolute
+			right: 10%
+			top: 50%
+			transform: translateY(-50%)
+			width: 120px
+			height: 90px
+			img
+				width: 100%
+	.content
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		background-image: url("../image/B-47-2life.jpg")
+		background-color: #F5FFFA
+		background-position: top
+		background-size: 100%
+		background-repeat: no-repeat
+		height: 100%
+		&::before
+			content: ""
+			width: 100%
+			height: 100%
+			display: block
+			background-color: rgba(white,0.3)
+			z-index: 0
+			position: absolute
+		.col-3
+			flex-shrink: 0
+			background-color: rgba(white,0.8)
+			// border: 0.5px solid green
+			border-radius: 100%
+			margin: 20px 30px 
+			overflow: hidden
+			&:hover
+				img
+					animation-name: moveTop
+					animation-duration: 0.5s
+					animation-fill-mode: forwards
+					// top: -30%
+			img
+				margin-top: 10px
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%)
+				height: 90%
+			.contentText
+				left: 50% 
+				top: 45%
+				transform: translate(-50%,-50%)
+				display: inline-block
+				h5
+					text-align: center
+					font-size: 30px
+					margin-bottom: 20px
+					// display: inline-block
+				p
+					font-size: 18px
+					span
+						width: 100px
+						display: inline-block
+				div
+					span
+						width: 100px
+						display: inline-block
+					.Color
+						margin: 0px 10px
+						width: 20px
+						height: 20px
+						display: inline-block
+						border-radius: 50%
+						background-color: black
+					.COne
+						margin-left: 0px
+						background-color: #67B0EB
+					.CTwo
+						background-color: #56573E
+					.CThree
+						background-color: #535664
+		.text
+			border-radius: 20%
+@media screen and(max-width: 1480px)
+	body,html
+		.headerAll
+			height: 130px
+			.text
+				h5
+					span
+			.Img
+				img
+		.content
+			&::before
+			.col-3
+				margin: 20px 10px
+				max-width: 30%
+				flex: auto
+				&:hover
+					img
+				img
+				.contentText
+					h5
+					p
+						span
+					div
+						span
+						.Color
+						.COne
+						.CTwo
+						.CThree
+			.text
+@media screen and(max-width: 1230px)
+	body,html
+		.headerAll
+			height: 100px
+			.text
+				h5
+					font-size: 45px
+					span
+			.Img
+				width: 90px
+				height: 60px
+				img
+		.content
+			&::before
+			.col-3
+				max-width: 30%
+				flex: auto
+				&:hover
+					img
+				img
+				.contentText
+					h5
+					p
+						font-size: 16px
+						span
+							width: 80px
+					div
+						span
+							width: 80px
+						.Color
+						.COne
+						.CTwo
+						.CThree
+			.text
+@media screen and(max-width: 1080px)
+	body,html
+		.headerAll
+			.text
+				h5
+					span
+			.Img
+				img
+		.content
+			&::before
+			.col-3
+				max-width: 40%
+				&:hover
+					img
+				img
+				.contentText
+					h5
+					p
+						span
+					div
+						span
+						.Color
+						.COne
+						.CTwo
+						.CThree
+			.text
+				background-color: rgba(white,0)
+@media screen and(max-width: 810px)
+	body,html
+		.headerAll
+			height: 80px
+			.text
+				h5
+					font-size: 36px
+					span
+			.Img
+				width: 60px
+				height: 40px
+				right: 20px
+				img
+		.content
+			&::before
+			.col-3
+				&:hover
+					img
+				img
+				.contentText
+					h5
+						font-size: 20px
+					p
+						span
+					div
+						span
+						.Color
+						.COne
+						.CTwo
+						.CThree
+			.text
+				overflow: visible
+				max-width: 50%
+@media screen and(max-width: 650px)
+	body,html
+		.headerAll
+			height: 80px
+			.text
+				h5
+					font-size: 36px
+					span
+						width: 200px
+			.Img
+				img
+		.content
+			&::before
+			.col-3
+				&:hover
+					img
+				img
+				.contentText
+					h5
+						font-size: 18px
+					p
+						font-size: 14px
+						span
+							width: 60px
+					div
+						span
+							width: 60px
+						.Color
+						.COne
+						.CTwo
+						.CThree
+			.text
+				margin-top: 50px
+@media screen and(max-width: 565px)
+	body,html
+		.headerAll
+			height: 60px
+			.text
+				h5
+					font-size: 28px
+					span
+						width: 150px
+			.Img
+				width: 50px
+				img
+		.content
+			&::before
+			.col-3
+				max-width: 40%
+				margin: 15px 10px
+				&:hover
+					img
+				img
+				.contentText
+					h5
+					p
+						span
+					div
+						span
+						.Color
+						.COne
+						.CTwo
+						.CThree
+			.text
+				max-width: 60%
+				margin-top: 30px
+@media screen and(max-width: 460px)
+	body,html
+		.headerAll
+			height: 60px
+			.text
+				h5
+					font-size: 24px
+					span
+						width: 130px
+			.Img
+				width: 40px
+				height: 30px
+				img
+		.content
+			&::before
+			.col-3
+				max-width: 40%
+				margin: 10px 10px
+				&:hover
+					img
+				img
+				.contentText
+					h5
+					p
+						span
+					div
+						span
+						.Color
+						.COne
+						.CTwo
+						.CThree
+			.last
+				background-color: rgba(white,0)
+				margin-top: 30px
+			.text
+				max-width: 80%
+				margin-top: 50px
+@media screen and(max-width: 380px)
+	body,html
+		.headerAll
+			.text
+				h5
+					span
+			.Img
+				img
+		.content
+			&::before
+			.col-3
+				max-width: 40%
+				margin: 5px 5px
+				&:hover
+					img
+				img
+				.contentText
+					h5
+					p
+						span
+					div
+						span
+						.Color
+						.COne
+						.CTwo
+						.CThree
+			.last
+				background-color: rgba(white,0)
+				margin-top: 50px
+			.text
+				max-width: 80%
+				margin-top: 70px
+@media screen and(max-width: 340px)
+	body,html
+		.headerAll
+			.text
+				h5
+					span
+			.Img
+				img
+		.content
+			&::before
+			.col-3
+				margin: 10px 5px
+				&:hover
+					img
+				img
+				.contentText
+					h5
+					p
+						span
+					div
+						span
+						.Color
+						.COne
+						.CTwo
+						.CThree
+			.last
+				margin-top: 30px
+			.text
+				max-width: 100%
+				margin-top: 70px

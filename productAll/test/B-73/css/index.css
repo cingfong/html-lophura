@@ -1,0 +1,239 @@
+* {
+  position: relative; }
+
+body, html {
+  margin: 0px;
+  z-index: 0;
+  background-color: #F5FFFA; }
+  body .headerAll, html .headerAll {
+    height: 150px;
+    background-color: #555; }
+    body .headerAll .text, html .headerAll .text {
+      display: inline-block;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+      body .headerAll .text h5, html .headerAll .text h5 {
+        color: #ddd;
+        font-size: 60px; }
+        body .headerAll .text h5 span, html .headerAll .text h5 span {
+          width: 300px;
+          display: inline-block; }
+    body .headerAll .Img, html .headerAll .Img {
+      position: absolute;
+      right: 10%;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      width: 120px;
+      height: 90px; }
+      body .headerAll .Img img, html .headerAll .Img img {
+        width: 100%; }
+  body .content, html .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-image: url("../image/B-47-2life.jpg");
+    background-color: #F5FFFA;
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%; }
+    body .content::before, html .content::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-color: rgba(255, 255, 255, 0.3);
+      z-index: 0;
+      position: absolute; }
+    body .content .col-3, html .content .col-3 {
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 100%;
+      margin: 20px 30px;
+      overflow: hidden; }
+      body .content .col-3:hover img, html .content .col-3:hover img {
+        -webkit-animation-name: moveTop;
+        animation-name: moveTop;
+        -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards; }
+      body .content .col-3 img, html .content .col-3 img {
+        margin-top: 10px;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        height: 90%; }
+      body .content .col-3 .contentText, html .content .col-3 .contentText {
+        left: 50%;
+        top: 45%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        display: inline-block; }
+        body .content .col-3 .contentText h5, html .content .col-3 .contentText h5 {
+          text-align: center;
+          font-size: 30px;
+          margin-bottom: 20px; }
+        body .content .col-3 .contentText p, html .content .col-3 .contentText p {
+          font-size: 18px; }
+          body .content .col-3 .contentText p span, html .content .col-3 .contentText p span {
+            width: 100px;
+            display: inline-block; }
+        body .content .col-3 .contentText div span, html .content .col-3 .contentText div span {
+          width: 100px;
+          display: inline-block; }
+        body .content .col-3 .contentText div .Color, html .content .col-3 .contentText div .Color {
+          margin: 0px 10px;
+          width: 20px;
+          height: 20px;
+          display: inline-block;
+          border-radius: 50%;
+          background-color: black; }
+        body .content .col-3 .contentText div .COne, html .content .col-3 .contentText div .COne {
+          margin-left: 0px;
+          background-color: #67B0EB; }
+        body .content .col-3 .contentText div .CTwo, html .content .col-3 .contentText div .CTwo {
+          background-color: #56573E; }
+        body .content .col-3 .contentText div .CThree, html .content .col-3 .contentText div .CThree {
+          background-color: #535664; }
+    body .content .text, html .content .text {
+      border-radius: 20%; }
+
+@media screen and (max-width: 1480px) {
+  body .headerAll, html .headerAll {
+    height: 130px; }
+  body .content .col-3, html .content .col-3 {
+    margin: 20px 10px;
+    max-width: 30%;
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto; } }
+
+@media screen and (max-width: 1230px) {
+  body .headerAll, html .headerAll {
+    height: 100px; }
+    body .headerAll .text h5, html .headerAll .text h5 {
+      font-size: 45px; }
+    body .headerAll .Img, html .headerAll .Img {
+      width: 90px;
+      height: 60px; }
+  body .content .col-3, html .content .col-3 {
+    max-width: 30%;
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto; }
+    body .content .col-3 .contentText p, html .content .col-3 .contentText p {
+      font-size: 16px; }
+      body .content .col-3 .contentText p span, html .content .col-3 .contentText p span {
+        width: 80px; }
+    body .content .col-3 .contentText div span, html .content .col-3 .contentText div span {
+      width: 80px; } }
+
+@media screen and (max-width: 1080px) {
+  body .content .col-3, html .content .col-3 {
+    max-width: 40%; }
+  body .content .text, html .content .text {
+    background-color: rgba(255, 255, 255, 0); } }
+
+@media screen and (max-width: 810px) {
+  body .headerAll, html .headerAll {
+    height: 80px; }
+    body .headerAll .text h5, html .headerAll .text h5 {
+      font-size: 36px; }
+    body .headerAll .Img, html .headerAll .Img {
+      width: 60px;
+      height: 40px;
+      right: 20px; }
+  body .content .col-3 .contentText h5, html .content .col-3 .contentText h5 {
+    font-size: 20px; }
+  body .content .text, html .content .text {
+    overflow: visible;
+    max-width: 50%; } }
+
+@media screen and (max-width: 650px) {
+  body .headerAll, html .headerAll {
+    height: 80px; }
+    body .headerAll .text h5, html .headerAll .text h5 {
+      font-size: 36px; }
+      body .headerAll .text h5 span, html .headerAll .text h5 span {
+        width: 200px; }
+  body .content .col-3 .contentText h5, html .content .col-3 .contentText h5 {
+    font-size: 18px; }
+  body .content .col-3 .contentText p, html .content .col-3 .contentText p {
+    font-size: 14px; }
+    body .content .col-3 .contentText p span, html .content .col-3 .contentText p span {
+      width: 60px; }
+  body .content .col-3 .contentText div span, html .content .col-3 .contentText div span {
+    width: 60px; }
+  body .content .text, html .content .text {
+    margin-top: 50px; } }
+
+@media screen and (max-width: 565px) {
+  body .headerAll, html .headerAll {
+    height: 60px; }
+    body .headerAll .text h5, html .headerAll .text h5 {
+      font-size: 28px; }
+      body .headerAll .text h5 span, html .headerAll .text h5 span {
+        width: 150px; }
+    body .headerAll .Img, html .headerAll .Img {
+      width: 50px; }
+  body .content .col-3, html .content .col-3 {
+    max-width: 40%;
+    margin: 15px 10px; }
+  body .content .text, html .content .text {
+    max-width: 60%;
+    margin-top: 30px; } }
+
+@media screen and (max-width: 460px) {
+  body .headerAll, html .headerAll {
+    height: 60px; }
+    body .headerAll .text h5, html .headerAll .text h5 {
+      font-size: 24px; }
+      body .headerAll .text h5 span, html .headerAll .text h5 span {
+        width: 130px; }
+    body .headerAll .Img, html .headerAll .Img {
+      width: 40px;
+      height: 30px; }
+  body .content .col-3, html .content .col-3 {
+    max-width: 40%;
+    margin: 10px 10px; }
+  body .content .last, html .content .last {
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 30px; }
+  body .content .text, html .content .text {
+    max-width: 80%;
+    margin-top: 50px; } }
+
+@media screen and (max-width: 380px) {
+  body .content .col-3, html .content .col-3 {
+    max-width: 40%;
+    margin: 5px 5px; }
+  body .content .last, html .content .last {
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 50px; }
+  body .content .text, html .content .text {
+    max-width: 80%;
+    margin-top: 70px; } }
+
+@media screen and (max-width: 340px) {
+  body .content .col-3, html .content .col-3 {
+    margin: 10px 5px; }
+  body .content .last, html .content .last {
+    margin-top: 30px; }
+  body .content .text, html .content .text {
+    max-width: 100%;
+    margin-top: 70px; } }

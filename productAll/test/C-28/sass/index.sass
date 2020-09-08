@@ -1,0 +1,310 @@
+*
+	position: relative
+body,html
+	margin: 0px
+	.productsAll
+		width: 100%
+		height: 100%
+		position: relative
+		.title
+			margin: 20px 0px
+			width: 100%
+			display: block
+			.logo
+				margin: 0px auto
+				display: block
+				width: 100px
+				img
+					width: 100%
+	.content
+		width: 100%
+		display: flex
+		flex-wrap: nowrap
+		.left
+			width: 50%
+			padding-left: 40px
+			.bigImg
+				width: 100%
+				border: solid 0.5px #eee
+				.bigImgOnly
+					width: 100%
+			.smallImg
+				cursor: pointer
+				display: flex
+				flex-wrap: wrap
+				justify-content: space-around
+				img
+					border: solid 0.5px #eee
+					margin: 20px 0px
+					width: 23%
+					flex-shrink: 0
+
+
+		.right
+			width: 50%
+			.text
+				margin: auto 0px
+				display: block
+				top: 40px
+				padding: 0px 40px
+				text-align: center
+				h3
+					font-size: 48px
+					line-height: 120px
+					font-weight: 300
+					font-family: 'Oswald', sans-serif
+				p
+					padding: 0px 120px
+					font-size: 15px
+					color: #777
+					font-family: 'Noto Sans TC', sans-serif
+				hr
+					margin: 30px auto
+					width: 65%
+					background-color: #ddd
+				h4
+					font-family: 'Open Sans', sans-serif
+					font-weight: 500
+					font-size: 18px
+					color: #333
+					br
+						display: none
+				h5
+					font-family: 'Open Sans', sans-serif
+					font-weight: 500
+					font-size: 18px
+					color: #555
+					top: -10px
+				.money
+					font-size: 26px
+					line-height: 26px
+				.color
+					// border-bottom: solid 1px #888
+					margin: 30px 0px
+					span
+						left: -40px
+					.colorList
+						width: 20px
+						height: 20px
+						margin: 0px 10px
+						display: inline-block
+					.colorOne
+						background-color: #556b2f
+					.colorTwo
+						background-color: #696969
+					.colorThree
+						background-color: #87cefa
+@media screen and (max-width: 1400px)
+	body,html
+		.productsAll
+			.title
+				.logo
+					width: 80px
+					img
+		.content
+			.left
+				.bigImg
+					.bigImgOnly
+				.smallImg
+					img
+
+
+			.right
+				.text
+					h3
+					p
+						padding: 0px 60px
+					hr
+					h4
+					h5
+					.money
+					.color
+						span
+						.colorList
+@media screen and (max-width: 1100px)
+	body,html
+		.productsAll
+			.title
+				.logo
+					img
+		.content
+			.left
+				width: 40%
+				.bigImg
+					.bigImgOnly
+				.smallImg
+					img
+
+
+			.right
+				width: 60%
+				.text
+					h3
+					p
+					hr
+					h4
+					h5
+					.money
+					.color
+						span
+						.colorList
+
+@media screen and (max-width: 992px)
+	body,html
+		.productsAll
+			.title
+				.logo
+					img
+		.content
+			flex-wrap: wrap
+			.left
+				width: 95%
+				.bigImg
+					.bigImgOnly
+				.smallImg
+					img
+
+
+			.right
+				width: 60%
+				margin: 20px auto
+				.text
+					border-top: solid 0.5px #333
+					h3
+					p
+						padding: 0px 0px
+					hr
+						width: 90%
+					h4
+						br
+							display: block
+					h5
+					.money
+					.color
+						span
+						.colorList
+@media screen and (max-width: 800px)
+	body,html
+		.productsAll
+			.title
+				.logo
+					width: 60px
+					img
+		.content
+			.left
+				.bigImg
+					.bigImgOnly
+				.smallImg
+					img
+
+
+			.right
+				width: 80%
+				.text
+					h3
+					p
+					hr
+					h4
+						br
+					h5
+					.money
+					.color
+						span
+						.colorList
+@media screen and (max-width: 700px)
+	body,html
+		.productsAll
+			.title
+				.logo
+					img
+		.content
+			.left
+				.bigImg
+					.bigImgOnly
+				.smallImg
+					img
+
+
+			.right
+				.text
+					h3
+						font-size: 40px
+						line-height: 100px
+						margin: 0px
+					p
+						font-size: 14px
+						margin: 0px
+					hr
+						margin: 20px auto
+					h4
+						br
+					h5
+					.money
+					.color
+						span
+						.colorList
+@media screen and (max-width: 550px)
+	body,html
+		.productsAll
+			.title
+				margin: 10px 0px
+				.logo
+					img
+		.content
+			.left
+				.bigImg
+					.bigImgOnly
+				.smallImg
+					img
+
+
+			.right
+				width: 95%
+				.text
+					padding: 0px 10px
+					h3
+					p
+						font-size: 14px
+						margin: 0px
+					hr
+						width: 90%
+						margin: 20px auto
+					h4
+						br
+					h5
+					.money
+					.color
+						span
+						.colorList
+@media screen and (max-width: 400px)
+	body,html
+		.productsAll
+			.title
+				.logo
+					width: 40px
+					img
+		.content
+			.left
+				.bigImg
+					.bigImgOnly
+				.smallImg
+					img
+
+
+			.right
+				.text
+					h3
+					p
+						font-size: 14px
+						margin: 0px
+					hr
+					h4
+						font-size: 14px
+						br
+					h5
+						font-size: 16px
+					.money
+						font-size: 20px
+					.color
+						span
+						.colorList

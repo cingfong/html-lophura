@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>B-77</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="one">
+	<div class="oneAll">
+		<div class="textTitle">
+			<div class="textContent">
+				<a id="aClick" href="about.html">
+					<h2>B-77</h2>
+				</a>
+				<h4>Saddle Bag</h4>
+			</div>
+		</div>
+		<div class="titleButton">
+			<a id="aaClick" href="about.html"><div class="button">ABOUT</div><div class="arrow"><img class="arrowBlack" src="image/goinBlack.png" alt=""></div></a>
+		</div>
+		<div class="leftPhoto"></div>
+	</div>
+</div>
+</body>
+<script src="lib/jquery.js"></script>
+<script>
+	$(document).ready(function(){
+	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+	  {
+	    $("#aClick").attr("href","aboutPhone.html");
+	    $("#aaClick").attr("href","aboutPhone.html");
+	  }else{
+	    $("#aClick").attr("href","about.html");
+	    $("#aaClick").attr("href","about.html");
+	  }
+	});
+</script>
+</html>

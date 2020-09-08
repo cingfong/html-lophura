@@ -1,0 +1,499 @@
+*
+	position: relative
+body,html
+	padding: 0px
+	margin: 0px 
+	background-color: #fefefe
+	width: 100%
+	.logo
+		position: fixed
+		width: 100px
+		left: 20px
+		top: 20px
+		img
+			width: 100%
+	.title
+		width: 40%
+		margin: 30px auto
+		display: block
+		.titleBorder
+			height: 8px
+			display: block
+			width: 100%
+			border-top: solid 1px #555
+			border-bottom: solid 1px #555
+			span
+				width: 1px
+				height: 8px
+				top: -1px
+				position: absolute
+				background-color: #555
+		h2
+			font-size: 48px
+			color: #333
+			line-height: 80px
+			text-align: center
+		p
+			top: 0px
+			font-size: 32px
+			text-align: center
+			font-weight: 500
+		.topBorder
+			span
+				left: 20px
+				&:nth-child(1)
+					left: 25px
+				&:nth-child(2)
+					left: 30px
+		.bottomBorder
+			span
+				right: 20px
+				&:nth-child(1)
+					right: 25px
+				&:nth-child(2)
+					right: 30px
+		h4
+			font-size: 36px
+			margin: 20px 0px
+			text-align: center
+	.productImg
+		width: 40%
+		margin: 40px auto
+		overflow-y: visible
+		.fade
+			display: none
+		.show
+			display: block
+		.bigPhoto
+			padding: 10px 0px
+			border: solid 0.8px #777
+			overflow-y: visible
+			img
+				width: 100%
+		.slide
+			overflow-y: visible
+			padding: 10px 0px
+			border: solid 0.8px #777
+			.carousel-indicators
+				top: 110%
+				.btnLi
+					border: solid 1px #555
+					width: 15px
+					height: 15px
+					display: inline-block
+					margin: 30px 20px
+					// box-sizing: border-box
+					background-color: white
+					flex-grow: 0
+					flex-shrink: 0
+					&:after
+						position: absolute
+						left: 0px
+						content: ''
+						display: block
+						width: 1px
+						height: 100%
+						left: 50%
+						background-color: #555
+						transform: rotate(-45deg) scaleY(1.5)
+				.active
+					background-color: #555
+			.carousel-inner
+	h5
+		font-family: 'Lato', sans-serif
+		color: #222
+		margin-top: 180px
+		line-height: 60px
+		font-size: 32px
+		text-align: center
+	.format
+		margin-top: 30px
+		margin-bottom: 40px
+		font-family: 'Lato', sans-serif
+		font-weight: 400
+		color: #222
+		.leftBorder
+			margin: 0px auto
+			display: block
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			width: 50%
+			height: 100%
+			&:after
+				content: ''
+				position: absolute
+				left: 0px
+				top: 0px
+				height: 100%
+				width: 40px
+				border: solid 1px #555
+				display: block
+		.Narrate
+			margin: 0px auto
+			width: 50%
+			font-size: 24px
+			border: solid 1px #555
+			border-bottom: 0px
+			font-weight: 400
+			line-height: 60px
+			text-align: center
+			&:after
+				content: ''
+				position: absolute
+				display: block
+				width: 0.5px
+				height: 100%
+				top: 0px
+				left: 20px
+				transform: rotate(-33deg) scaleY(1.2)
+				background-color: #555
+		.liText
+			margin: 0px auto
+			width: 50%
+			border: solid 1px #555
+			padding: 10px 60px
+			.li
+				font-size: 20px
+				margin: 20px 0px
+				list-style: none
+				span
+					width: 140PX
+					display: inline-block
+			.colorAll
+				display: flex
+				span
+				.list-group
+					display: inline-block
+					width: 100%
+					a
+						width: 20px
+						height: 20px
+						display: inline-block
+						margin: 0px 20px
+						padding: 0px
+						border-radius: 0px
+					.active
+						border: 0px
+					.cOne
+						background-color: #556b2f
+					.cTwo
+						background-color: #87cefa
+					.cThree
+						background-color: #696969
+
+@media screen and (max-width: 1200px)
+	body,html
+		.logo
+			img
+		.title
+			width: 60%
+			.titleBorder
+				span
+			h2
+			p
+			.topBorder
+				span
+					&:nth-child(1)
+					&:nth-child(2)
+			.bottomBorder
+				span
+					&:nth-child(1)
+					&:nth-child(2)
+			h4
+		.productImg
+			width: 60%
+			.fade
+			.show
+			.bigPhoto
+				img
+			.slide
+				.carousel-indicators
+					.btnLi
+						&:after
+					.active
+				.carousel-inner
+		h5
+		.format
+			.leftBorder
+				width: 70%
+				&:after
+			.Narrate
+				width: 70%
+				&:after
+			.liText
+				width: 70%
+				.li
+					span
+				.colorAll
+					span
+					.list-group
+						a
+@media screen and (max-width: 900px)
+	body,html
+		.logo
+			width: 70px
+			img
+		.title
+			width: 70%
+			.titleBorder
+				span
+			h2
+			p
+			.topBorder
+				span
+					&:nth-child(1)
+					&:nth-child(2)
+			.bottomBorder
+				span
+					&:nth-child(1)
+					&:nth-child(2)
+			h4
+		.productImg
+			width: 70%
+			.fade
+			.show
+			.bigPhoto
+				img
+			.slide
+				.carousel-indicators
+					.btnLi
+						&:after
+					.active
+				.carousel-inner
+		h5
+		.format
+			.leftBorder
+				width: 80%
+				&:after
+			.Narrate
+				width: 80%
+				&:after
+			.liText
+				width: 80%
+				.li
+					span
+				.colorAll
+					span
+					.list-group
+						a
+@media screen and (max-width: 700px)
+	body,html
+		.logo
+			width: 70px
+			img
+		.title
+			width: 60%
+			.titleBorder
+				span
+			h2
+				font-size: 36px
+				line-height: 50px
+			p
+				font-size: 26px
+			.topBorder
+				span
+					&:nth-child(1)
+					&:nth-child(2)
+			.bottomBorder
+				span
+					&:nth-child(1)
+					&:nth-child(2)
+			h4
+				font-size: 30px
+				margin-bottom: 0px
+		.productImg
+			width: 60%
+			.fade
+			.show
+			.bigPhoto
+				img
+			.slide
+				.carousel-indicators
+					.btnLi
+						&:after
+					.active
+				.carousel-inner
+		h5
+			margin-top: 100px
+			font-size: 26px
+		.format
+			.leftBorder
+				&:after
+			.Narrate
+				&:after
+			.liText
+				padding-right: 0px
+				.li
+					font-size: 18px
+					margin: 10px 0px
+					span
+						width: 100px
+				.colorAll
+					span
+					.list-group
+						a
+							width: 15px
+							height: 15px
+							margin: 0px 10px
+@media screen and (max-width: 600px)
+	body,html
+		.logo
+			position: absolute
+			width: 50px
+			top: 50px
+			img
+		.title
+			width: 100%
+			.titleBorder
+				span
+			h2
+				font-size: 36px
+				line-height: 50px
+			p
+				font-size: 26px
+			.topBorder
+				span
+					&:nth-child(1)
+					&:nth-child(2)
+			.bottomBorder
+				span
+					&:nth-child(1)
+					&:nth-child(2)
+			h4
+		.productImg
+			width: 80%
+			.fade
+			.show
+			.bigPhoto
+				img
+			.slide
+				.carousel-indicators
+					.btnLi
+						&:after
+					.active
+				.carousel-inner
+		h5
+		.format
+			font-size: 18px
+			.leftBorder
+				&:after
+			.Narrate
+				&:after
+			.liText
+				.li
+					span
+						width: 80px
+				.colorAll
+					span
+					.list-group
+						a
+@media screen and (max-width: 500px)
+	body,html
+		.logo
+			top: 30px
+			img
+		.title
+			.titleBorder
+				span
+			h2
+				font-size: 32px
+				line-height: 40px
+			p
+				font-size: 26px
+			.topBorder
+				span
+					&:nth-child(1)
+					&:nth-child(2)
+			.bottomBorder
+				span
+					&:nth-child(1)
+					&:nth-child(2)
+			h4
+				font-size: 24px
+		.productImg
+			width: 80%
+			.fade
+			.show
+			.bigPhoto
+				img
+			.slide
+				.carousel-indicators
+					top: 100%
+					.btnLi
+						&:after
+					.active
+				.carousel-inner
+		h5
+			margin-top: 60px
+		.format
+			font-size: 18px
+			.leftBorder
+				width: 95%
+				&:after
+					width: 20px
+			.Narrate
+				width: 95%
+				&:after
+					left: 10px
+					transform: rotate(-18deg) scaleY(1.1)
+			.liText
+				width: 95%
+				padding-left: 25px
+				.li
+					font-size: 18px
+					span
+						width: 80px
+				.colorAll
+					span
+					.list-group
+						a
+@media screen and (max-width: 400px)
+	body,html
+		.logo
+			width: 45px
+			img
+		.title
+			.titleBorder
+				span
+			h2
+				font-size: 26px
+				line-height: 35px
+			p
+				font-size: 20px
+			.topBorder
+				span
+					&:nth-child(1)
+					&:nth-child(2)
+			.bottomBorder
+				span
+					&:nth-child(1)
+					&:nth-child(2)
+			h4
+				font-size: 22px
+		.productImg
+			.fade
+			.show
+			.bigPhoto
+				img
+			.slide
+				.carousel-indicators
+					.btnLi
+						&:after
+					.active
+				.carousel-inner
+		h5
+		.format
+			.leftBorder
+				&:after
+			.Narrate
+				&:after
+			.liText
+				.li
+					font-size: 15px
+					span
+						width: 65px
+				.colorAll
+					span
+					.list-group
+						a

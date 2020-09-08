@@ -1,0 +1,347 @@
+*
+	position: relative
+	font-family: '微軟正黑體'
+body,html
+	padding: 0px
+	margin: 0px
+	width: 100%
+	.All
+		width: 100%
+		overflow: hidden
+		position: relative
+		.header
+			margin: 30px 0px
+			text-align: center
+			.logo
+				margin-bottom: 30px
+				img
+					width: 90px
+					height: 70px
+			h2
+				margin: 50px 0px
+				font-weight: 400
+				font-size: 30px
+		.productsAll
+			display: flex
+			flex-wrap: nowrap
+			width: 100%
+			height: 80%
+			.buttonAll
+				position: absolute
+				width: 100%
+				z-index: 999999
+				display: block
+				top: 50%
+				transform: translateY(-50%)
+				.button
+					width: 100%
+					height: 100%
+					width: 30px
+					height: 30px
+					position: absolute
+					img
+						width: 100%
+						height: 100%
+				.moveLeft
+					left: 25%
+				.moveRight
+					right: 25%
+			.col-6
+				padding: 0px
+				margin: 0px
+				height: 100%
+				img
+					width: 100%
+					height: 100%
+		.ContentAll
+			margin: 300px 0px
+			.Content
+				margin: auto
+				display: flex
+				align-content: center
+				justify-content: center
+				.leftPhoto
+					img
+						width: 100%
+				.rightText
+					margin: auto
+					padding-top: 50px
+					padding-left: 20px
+					h1
+						font-weight: 600
+						text-align: center
+						font-size: white
+						display: block
+						margin-bottom: 40px
+						font-size: 26px
+						max-width: 70%
+					h3
+						line-height: 45px
+						font-size: 22px
+						span
+							display: inline-block
+							width: 120px
+		.footer
+			width: 100%
+			position: relative
+			.contentFoter
+				margin: 120px auto
+				margin-bottom: 0px
+				display: flex
+				padding-bottom: 120px
+				&:nth-child(even)
+					.photo
+						left: 0px
+				.photo
+					img
+						width: 100%
+					&:nth-child(odd)
+						// float: right
+						// display: none
+				.textRight
+				.text
+					.content
+						margin-left: -120px
+						top: 100%
+						transform: translateY(-100%)
+						line-height: 45px
+						font-weight: 700
+						display: inline-block
+						padding: 50px 120px
+						background-color: rgba(#efefef,0.3)
+						h3
+							font-weight: 600
+							font-size: 30px
+							margin-bottom: 15px
+						h4
+							text-align: center
+							font-size: 26px
+
+@media screen and (max-width: 1300px)
+	body 
+		.All
+			overflow: hidden
+			.ContentAll
+				margin: 200px 0px
+				.Content
+					.rightText
+						h3
+							font-size: 18px
+							span
+								width: 100px
+			.footer
+				.contentFoter
+					.text
+						.content
+							padding: 50px 80px
+@media screen and (max-width: 1120px)
+	body 
+		.All
+			.ContentAll
+				margin: 150px 0px
+				.Content
+					.rightText
+						padding: 0px
+						margin: 0px
+						margin-left: -50px
+						h1
+							font-size: 26px
+						h3
+							width: 100%
+							line-height: 45px
+							font-size: 18px
+							span
+								display: inline-block
+								width: 100px
+			.footer
+				.contentFoter
+					.textRight
+						.content
+							margin-left: 0px
+					.text
+						width: 100%
+						.content
+							padding: 20px 60px
+							h3
+								white-space: nowrap
+								font-size: 24px
+							h4
+								font-size: 18px
+@media screen and (max-width: 980px)
+	body
+		.All
+			.header
+				margin: 15px 0px
+				.logo
+					img
+						width: 70px
+						height: 50px
+				h2
+					margin: 20px 0px
+					font-weight: 400
+					font-size: 26px
+			.ContentAll
+				margin: 80px 0px
+				.Content
+					margin: auto
+					display: flex
+					align-content: center
+					justify-content: center
+					.leftPhoto
+						display: none
+					.rightText
+						width: 100%
+						margin: auto
+						h1
+							text-align: center
+							font-size: white
+							display: block
+							margin-bottom: 40px
+							font-size: 26px
+							max-width: 100%
+						h3
+							white-space: nowrap
+							width: 100%
+							line-height: 45px
+							font-size: 22px
+							span
+								display: inline-block
+								width: 120px
+			.footer
+				.contentFoter
+					.text
+						.content
+							margin-left: -120px
+							top: 50%
+							transform: translateY(-50%)
+							display: inline-block
+							padding: 50px 120px
+							background-color: rgba(#efefef,0)
+							h3
+								text-align: center
+								white-space: nowrap
+								font-size: 24px
+								margin-bottom: 15px
+							h4
+								white-space: nowrap
+								text-align: center
+								font-size: 18px
+@media screen and (max-width: 640px)
+	body
+		.All
+			.header
+				.logo
+					img
+						width: 40px
+						height: 30px
+				h2
+					font-size: 20px
+			.productsAll
+				.buttonAll
+					.button
+						width: 20px
+						height: 20px
+			.ContentAll
+				margin: 60px 0px
+				.Content
+					.rightText
+						h1
+							white-space: nowrap
+							text-align: center
+							font-size: white
+							display: block
+							margin-bottom: 20px
+							font-size: 22px
+						h3
+							margin-left: -30%
+							white-space: nowrap
+							line-height: 45px
+							font-size: 18px
+							span
+								display: inline-block
+								width: 100px
+			.footer
+				.contentFoter
+					.text
+						.content
+							h3
+							h4
+					.textRight
+						.content
+							margin-left: -100px
+
+@media screen and (max-width: 495px)
+	body
+		.All
+			.header
+				.logo
+					margin-bottom: 15px
+					img
+				h2
+					font-size: 18px
+					margin: 10px 0px
+			.productsAll
+				.buttonAll
+					.button
+						width: 15px
+						height: 15px
+			.ContentAll
+				margin: 60px 0px
+				.Content
+					.rightText
+						h1
+							font-size: 18px
+						h3
+							margin-left: -30%
+							white-space: nowrap
+							line-height: 25px
+							font-size: 12px
+							span
+								display: inline-block
+								width: 80px
+			.footer
+				.contentFoter
+					margin: 10% auto
+					.text
+						.content
+							padding: 20px 60px
+							margin-left: -120px
+							h3
+								font-size: 18px
+							h4
+								font-size: 12px
+					.textRight
+						.content
+							margin-left: -80px
+
+@media screen and (max-width: 375px)
+	body
+		.All
+			.ContentAll
+				margin: 40px 0px
+				.Content
+					.rightText
+						h1
+							font-size: 16px
+						h3
+							margin-left: -40%
+							white-space: nowrap
+							line-height: 25px
+							font-size: 12px
+							line-height: 20px
+							span
+								display: inline-block
+								width: 60px
+			.footer
+				.contentFoter
+					margin: 10% auto
+					.text
+						.content
+							margin-left: -100px
+							h3
+								font-size: 18px
+							h4
+								font-size: 12px
+					.textRight
+						.content
+							margin-left: -80px

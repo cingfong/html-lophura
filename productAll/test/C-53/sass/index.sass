@@ -1,0 +1,404 @@
+*
+	position: relative
+body,html
+	padding: 0px
+	margin: 0px 
+	background-color: #fefefe
+	.leftText
+		width: 500px
+		height: 100vh
+		display: block
+		position: absolute
+		z-index: 10
+		background-color: rgba(black,0.5)
+		.format
+			color: #eee
+			h2
+				font-size: 60px
+				letter-spacing: 1px
+				margin: 20px 
+				text-align: center
+			h4
+				font-size: 36px
+				text-align: center
+				margin: 60px 0px 100px
+			li
+				list-style: none
+				display: inline-block
+				font-size: 24px
+				letter-spacing: 1px
+				text-align: center
+				margin: 10px auto
+				span
+					text-align: left
+					padding-left: 10px
+					width: 120px 
+					display: inline-block
+		.logo
+			width: 180px
+			margin: 80px auto
+			img
+				width: 100%
+	.color
+		position: absolute
+		width: 100%
+		height: 200px
+		padding-left: 500px
+		z-index: 9
+		justify-content: center
+		align-content: center
+		border-bottom: solid 1px #aaa
+		display: flex
+		flex-direction: row
+		.colorList
+			margin: auto 80px
+			width: 150px
+			height: 20px
+		.Cone
+			background-color: #67B0EB
+		.Ctwo
+			background-color: #56573E
+		.Cthree
+			background-color: #535664
+	.rightProduct
+		min-height: 100vh
+		padding-left: 500px
+		.topColor
+			width: 100%
+			height: 180px
+			border-bottom: 3px solid #777
+			.list-group
+				display: flex
+				flex-wrap: nowrap
+				flex-direction: row
+				top: 50%
+				transform: translateY(-50%)
+				.list-group-item
+					display: block
+					width: 15%
+					margin: 0px 120px
+				.list-group-item.active
+					border: 0px
+				.home
+					background-color: #67B0EB
+				.profile
+					background-color: #56573E
+				.messages
+					background-color: #535664
+		.bottomPhoto
+			width: 100%
+			.tab-content
+				.tab-pane
+					background-color: white
+					.carousel
+						width: 80%
+						margin: auto
+						.carousel-inner
+							.carousel-item
+								img
+						.icon
+							width: 20px
+							height: 20px
+						.carousel-control-prev
+							.carousel-control-prev-icon
+								background-image: url("../image/left.png")
+						.carousel-control-next
+							.carousel-control-next-icon
+								background-image: url("../image/right.png")
+	.lightbox
+		.lb-outerContainer
+			.lb-container
+				.lb-nav
+					.lb-prev
+						background-image: url("../image/left.png")
+						width: 40%
+						height: 100%
+						background-size: 20px 20px
+						background-position: center left 50px
+					.lb-next
+						background-image: url("../image/right.png")
+						width: 40%
+						height: 100%
+						background-size: 20px 20px
+						background-position: center right 50px
+
+@media screen and (max-width: 1700px)
+	body,html
+		.leftText
+			.format
+				h2
+				h4
+				li
+					span
+			.logo
+				img
+		.color
+			.colorList
+			.Cone
+			.Ctwo
+			.Cthree
+		.rightProduct
+			.topColor
+				.list-group
+					.list-group-item
+					.list-group-item.active
+					.home
+					.profile
+					.messages
+			.bottomPhoto
+				.tab-content
+					.tab-pane
+						.carousel
+							.carousel-inner
+								.carousel-item
+									img
+							.icon
+							.carousel-control-prev
+								.carousel-control-prev-icon
+							.carousel-control-next
+								.carousel-control-next-icon
+		.lightbox
+			.lb-outerContainer
+				.lb-container
+					.lb-nav
+						.lb-prev
+						.lb-next
+@media screen and (max-width: 1700px)
+	body,html
+		.rightProduct
+			.topColor
+				.list-group
+					.list-group-item
+						width: 180px
+						margin: auto
+@media screen and (max-width: 1500px)
+	body,html
+		.leftText
+			width: 400px
+			.format
+				h2
+					font-size: 50px
+				h4
+					font-size: 32px
+					margin: 40px 0px 80px
+				li
+					font-size: 20px
+					span
+			.logo
+				width: 120px
+				img
+		.rightProduct
+			.topColor
+				.list-group
+					.list-group-item
+						width: 180px
+						margin: auto
+
+@media screen and (max-width: 1300px)
+	body,html
+		.leftText
+		.rightProduct
+			padding-left: 400px
+			.bottomPhoto
+				.tab-content
+					.tab-pane
+						.carousel
+							width: 100%
+@media screen and (max-width: 1100px)
+	body,html
+		.leftText
+			width: 100%
+			height: 400px
+			top: 0px
+			.format
+				h2
+					text-align: center
+					margin: 20px 0px
+					padding: 0px
+				h4
+					text-align: center
+					margin: 20px 0px 80px
+				li
+					width: 29%
+					font-size: 20px
+					text-align: left
+					padding-left: 15px
+					span
+						width: 100px
+				.liB
+					width: 40%
+				.space
+					position: absolute
+					transform: translateY(100%)
+					left: 0px
+				.space2
+					left: 30%
+			.logo
+				position: absolute
+				width: 120px
+				float: left
+				left: 20px
+				margin: 0px
+				top: 40px
+				img
+		.rightProduct
+			width: 100%
+			padding-left: 0px
+			padding-top: 400px
+
+@media screen and (max-width: 980px)
+	body,html
+		overflow-x: hidden
+		.leftText
+			.format
+				h2
+				h4
+					margin-bottom: 40px
+				.liText
+					left: 50%
+					transform: translateX(-25%)
+				.space
+					position: relative
+					transform: translateY(0%)
+					left: 0px
+					margin: 0px
+					padding: 0px
+				li
+					width: 100%
+					margin: 0px
+					margin-top: 10px
+					padding: 0px
+					span
+						width: 180px
+				.liB
+					width: 100%
+
+@media screen and (max-width: 750px)
+	body,html
+		overflow-x: hidden
+		.leftText
+			.format
+				.liText
+					transform: translateX(-30%)
+				.space
+					left: 0px
+					margin: 0px
+					padding: 0px
+				li
+					width: 100%
+					margin: 0px
+					margin-top: 10px
+					padding: 0px
+					span
+						width: 180px
+				.liB
+					width: 100%
+			.logo
+				img
+		.rightProduct
+			.topColor
+				.list-group
+					.list-group-item
+						width: 150px
+					.list-group-item.active
+					.home
+					.profile
+					.messages
+@media screen and (max-width: 650px)
+	body,html
+		.leftText
+			.format
+				.liText
+					margin-left: 40px
+					left: 0px
+					transform: translateX(0%)
+				h2
+					font-size: 38px
+				h4
+					font-size: 30px
+
+@media screen and (max-width: 500px)
+	body,html
+		.leftText
+			height: 350px
+			.format
+				.liText
+				h2
+					font-size: 32px
+				h4
+					font-size: 26px
+					margin: 0px 0px 30px
+				li
+					font-size: 18px
+					span
+						width: 100px
+			.logo
+				width: 80px
+				img
+		.color
+			.colorList
+			.Cone
+			.Ctwo
+			.Cthree
+		.rightProduct
+			padding-top: 350px
+			.topColor
+				.list-group
+					flex-wrap: wrap
+					.list-group-item
+						margin: auto
+						margin-top: 30px
+						width: 51%
+						&:last-child
+							margin-bottom: 30px
+@media screen and (max-width: 400px)
+	body,html
+		.leftText
+			height: 260px
+			.format
+				h2
+					font-size: 30px
+					margin: 10px 0px
+				h4
+					font-size: 22px
+					margin-bottom: 10px
+				li
+					font-size: 14px
+					span
+						width: 80px
+			.logo
+				width: 50px
+				top: 20px
+				img
+		.color
+			.colorList
+			.Cone
+			.Ctwo
+			.Cthree
+		.rightProduct
+			padding-top: 260px
+			.topColor
+				.list-group
+					.list-group-item
+					.list-group-item.active
+					.home
+					.profile
+					.messages
+			.bottomPhoto
+				.tab-content
+					.tab-pane
+						.carousel
+							.carousel-inner
+								.carousel-item
+									img
+							.icon
+							.carousel-control-prev
+								.carousel-control-prev-icon
+							.carousel-control-next
+								.carousel-control-next-icon
+		.lightbox
+			.lb-outerContainer
+				.lb-container
+					.lb-nav
+						.lb-prev
+						.lb-next

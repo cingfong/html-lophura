@@ -1,0 +1,218 @@
+body, html {
+  margin: 0px auto;
+  padding: 0px;
+  background-color: #fff;
+  position: relative; }
+
+hr {
+  width: 85%;
+  background-color: #eee; }
+
+.navHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative; }
+  .navHeader button {
+    border: 0px;
+    margin: 30px; }
+  .navHeader .navbar-brand {
+    margin: 0px;
+    padding: 0px; }
+    .navHeader .navbar-brand .titleImg {
+      top: 20px;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 90px;
+      height: 60px;
+      margin: 0px;
+      padding: 0px; }
+  .navHeader .navbar-collapse {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 90px; }
+    .navHeader .navbar-collapse .active {
+      margin: 0px 10px;
+      width: 120px;
+      text-align: center; }
+      .navHeader .navbar-collapse .active a {
+        text-align: center;
+        width: 100%;
+        display: inline-block; }
+      .navHeader .navbar-collapse .active .dropdownLayer #pushAll {
+        margin-left: 0px;
+        list-style: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        margin-left: -230px;
+        position: absolute;
+        z-index: 99;
+        -webkit-padding-start: 0px;
+        padding-inline-start: 0px; }
+        .navHeader .navbar-collapse .active .dropdownLayer #pushAll li {
+          text-align: center;
+          width: 180px;
+          background-color: #fff;
+          color: rgba(0, 0, 0, 0.9); }
+          .navHeader .navbar-collapse .active .dropdownLayer #pushAll li .layerTitle {
+            font-size: 17px; }
+          .navHeader .navbar-collapse .active .dropdownLayer #pushAll li .layerContent a {
+            font-size: 16px;
+            margin-bottom: 8px;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.5); }
+    .navHeader .navbar-collapse .nav-link:hover {
+      color: #aaa; }
+
+.catenaAll h2 {
+  font-weight: 300;
+  text-align: center;
+  line-height: 60px;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 0.8); }
+
+.catenaAll .previewAll {
+  padding: 120px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .catenaAll .previewAll .card {
+    border: 0px; }
+    .catenaAll .previewAll .card:hover {
+      -webkit-animation: hand 0.7s both;
+      animation: hand 0.7s both; }
+    .catenaAll .previewAll .card a {
+      text-decoration: none;
+      color: #333; }
+    .catenaAll .previewAll .card .card-text {
+      font-weight: 400;
+      font-size: 24px; }
+
+@-webkit-keyframes hand {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0.7; } }
+
+@keyframes hand {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0.7; } }
+
+.coda {
+  position: absolute;
+  left: 0px;
+  margin-top: 10px;
+  width: 100%;
+  height: 180px;
+  background-color: #eee;
+  padding: 15px;
+  line-height: 0px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .coda h5 {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #444; }
+  .coda p {
+    line-height: 5px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 13px;
+    height: auto; }
+  .coda .img {
+    width: 100%;
+    margin-bottom: 10px; }
+    .coda .img img {
+      position: relative;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 40px;
+      height: 30px; }
+
+@media screen and (min-width: 992px) {
+  .navHeader .navbar-collapse .active .dropdown-menu {
+    border: 0px; }
+  .navHeader .navbar-collapse .active .dropdownLayer #pushAll li .layerContent {
+    display: block; } }
+
+@media screen and (max-width: 991px) {
+  .navHeader .navbar-collapse {
+    margin-top: 0px; }
+  .navHeader .navbar-collapse .active .dropdown-menu {
+    border: solid 0px; }
+  .navHeader .navbar-collapse .active .dropdownLayer #pushAll {
+    display: inline-block;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: 0px; }
+    .navHeader .navbar-collapse .active .dropdownLayer #pushAll li {
+      margin-top: 10px;
+      margin-bottom: 10px; }
+      .navHeader .navbar-collapse .active .dropdownLayer #pushAll li .layerContent {
+        display: none; }
+  .box {
+    margin-top: 30px; }
+  .catenaAll .previewAll {
+    padding: 30px 30px; } }
+
+@media screen and (max-width: 768px) {
+  .navHeader .navbar-brand .titleImg {
+    width: 45px;
+    height: 30px; }
+  .navHeader .navbar-toggler {
+    margin: 7px; } }
+
+.catenaAll h2 {
+  font-size: 26px; }
+
+.catenaAll .previewAll {
+  padding-top: 30px; }
+  .catenaAll .previewAll .card .card-text {
+    font-weight: 200;
+    font-size: 18px; }
+
+@media screen and (max-width: 540px) {
+  .navHeader .navbar-brand .titleImg {
+    top: 10px; }
+  .navHeader .navbar-toggler {
+    margin: 0px; } }
+
+@media screen and (max-width: 438px) {
+  .coda {
+    height: 190px; }
+    .coda p {
+      font-size: 12px; }
+      .coda p span {
+        display: inline-block; } }
+
+@media screen and (max-width: 412px) {
+  .coda p span {
+    margin-top: 10px; } }

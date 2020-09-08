@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,  initial-scale=1, user-scalable=no" >
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="lib/bookTurn/jquery.min.1.7.js"></script>
+  <script src="lib/bookTurn/turn.min.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Public+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap&subset=latin-ext" rel="stylesheet">
+  <title>WEB BOOK</title>
+</head>
+<body>
+
+<div id="magazine">
+  <!-- 封面 -->
+  <div class="pageOne cover">
+    <img src="image/header.jpg" alt="">
+  </div>
+  <!-- menu -->
+  <div class="menucatalog logOne">
+    <div class="menuTitle">
+      <h2>ME</h2>
+    </div>
+    <ul class="menuList">
+      <li class="productList menuLeft menu menuOne">
+          <h2>Bags</h2>
+        <ul>
+          <li><a onclick="changePage(8)">Frame Bag</a></li>
+          <li><a onclick="changePage(12)">Saddle Bag</a></li>
+          <li><a onclick="changePage(16)">Shoulder Bag</a></li>
+          <li><a onclick="changePage(23)">Messenger Bag</a>
+          </li>
+          <img class="Bag menuIcon" src="image/menuBag.png" alt="">
+        </ul>
+      </li>
+      <li class="productList menuRight menu menuTwo">
+          <h2>Bike Grips</h2>
+        <ul>
+          <li><a>國旗系列</a></li>
+          <li><a  onclick="changePage(10)">18K金尾蓋</a></li>
+          <img class="BG menuIcon" src="image/menuBG.png" alt="">
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="menucatalog logTwo">
+    <div class="menuTitle">
+      <h2>NU</h2>
+    </div>
+    <ul class="menuList">
+      <li class="productList menuLeft menu menuThree">
+          <h2>HandleBar Tape</h2>
+        <ul>
+          <li><a onclick="changePage(4)">MERO SERIES</a></li>
+          <li><a onclick="changePage(6)">LOPHURA SERIES</a></li>
+          <li><a>東京系列</a></li>
+          <li><a>反光系列</a></li>
+          <li><a>珠光系列</a></li>
+          <li><a>橡膠系列</a></li>
+          <li><a>國旗系列</a></li>
+          <li><a>動物系列</a></li>
+          <li><a>PET系列</a></li>
+          <li><a>織帶系列</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- 內頁1 -->
+  <div class="productLeft pageOne">
+    <div class="liveImg">
+      <img class="imgOne" src="image/M-1-life.jpg" alt="">
+      <img class="imgTwo" src="image/M-2-life.jpg" alt="">
+    </div>
+    <div class="haderText">
+      <h2>MERO SERIES</h2>
+    </div>
+  </div>
+  <!-- 內頁2 -->
+  <div class="productRight pageTwo">
+    <div class="product productOne">
+      <div class="text">
+        <div class="content">
+          <h5>M-19 <span>(2.5 mm)</span></h5>
+          <div class="ability">
+            <div class="abilityList one">
+              <p>Softness</p>
+              <div class="color colorOne"></div>
+              <div class="color colorTwo"></div>
+              <div class="color colorThree"></div>
+            </div>
+            <div class="abilityList two">
+              <p>Tackiness</p>
+              <div class="color colorOne"></div>
+              <div class="color colorTwo"></div>
+            </div>
+            <div class="abilityList three">
+              <p>Absorption</p>
+              <div class="color colorOne"></div>
+              <div class="color colorTwo"></div>
+              <div class="color colorThree"></div>
+            </div>
+          </div>
+          <p>Material: PU Leather</p>
+        </div>
+      </div>
+      <div class="img"><img src="image/M-19.png" alt=""></div>
+    </div>
+    <div class="product productTwo">
+      <div class="text">
+        <div class="content">
+          <h5>M-25 <span>(2.5 mm)</span></h5>
+          <div class="ability">
+            <div class="abilityList one">
+              <p>Softness</p>
+              <div class="color colorOne"></div>
+              <div class="color colorTwo"></div>
+            </div>
+            <div class="abilityList two">
+              <p>Tackiness</p>
+              <div class="color colorOne"></div>
+              <div class="color colorTwo"></div>
+              <div class="color colorThree"></div>
+            </div>
+            <div class="abilityList three">
+              <p>Absorption</p>
+              <div class="color colorOne"></div>
+              <div class="color colorTwo"></div>
+            </div>
+          </div>
+          <p>Material: PU Leather</p>
+        </div>
+      </div>
+      <div class="img"><img src="image/M-25.png" alt=""></div>
+    </div>
+    <div class="product productThree">
+      <div class="text">
+        <div class="content">
+          <h5>M-37 <span>(2.5 mm)</span></h5>
+          <div class="ability">
+            <div class="abilityList one">
+              <p>Softness</p>
+              <div class="color colorOne"></div>
+              <div class="color colorTwo"></div>
+            </div>
+            <div class="abilityList two">
+              <p>Tackiness</p>
+              <div class="color colorOne"></div>
+              <div class="color colorTwo"></div>
+              <div class="color colorThree"></div>
+            </div>
+            <div class="abilityList three">
+              <p>Absorption</p>
+              <div class="color colorOne"></div>
+            </div>
+          </div>
+          <p>Material: PU Leather</p>
+        </div>
+      </div>
+      <div class="img"><img src="image/M-37.png" alt=""></div>
+    </div>
+  </div>
+  <!-- 內頁3 -->
+  <div class="productLeft pagethree">
+    <div class="liveImg">
+      <img src="image/A-1-life.jpg" alt="">
+      <img src="image/A-2-life.jpg" alt="">
+    </div>
+    <div class="haderText">
+      <h2>LOPHURA SERIES</h2>
+    </div>
+  </div>
+<!-- 內頁4 -->
+  <div class="productRight pagefour">
+    <div class="product productOne">
+      <div class="text">
+        <div class="content">
+          <h5>A-05 <span>(2.5 mm)</span></h5>
+          <div class="ability">
+            <div class="abilityList one">
+              <p>Softness</p>
+              <div class="color colorOne"></div>
+              <div class="color colorTwo"></div>
+              <div class="color colorThree"></div>
+            </div>
+            <div class="abilityList two">
+              <p>Tackiness</p>
+              <div class="color colorOne"></div>
+              <div class="color colorTwo"></div>
+              <div class="color colorThree"></div>
+            </div>
+            <div class="abilityList three">
+              <p>Absorption</p>
+              <div class="color colorOne"></div>
+              <div class="color colorTwo"></div>
+              <div class="color colorThree"></div>
+            </div>
+          </div>
+          <p>Material: Genuine Leather</p>
+        </div>
+      </div>
+      <div class="img"><img src="image/A-05.png" alt=""></div>
+    </div>
+    <div class="product productTwo">
+      <div class="text">
+        <div class="content">
+          <h5>A-16 <span>(2.5 mm)</span></h5>
+          <div class="ability">
+            <div class="abilityList one">
+              <p>Softness</p>
+              <div class="color colorOne"></div>
+              <div class="color colorTwo"></div>
+              <div class="color colorThree"></div>
+            </div>
+            <div class="abilityList two">
+              <p>Tackiness</p>
+              <div class="color colorOne"></div>
+            </div>
+            <div class="abilityList three">
+              <p>Absorption</p>
+              <div class="color colorOne"></div>
+              <div class="color colorTwo"></div>
+              <div class="color colorThree"></div>
+            </div>
+          </div>
+          <p>Material: PU Leather</p>
+        </div>
+      </div>
+      <div class="img"><img src="image/A-16.png" alt=""></div>
+    </div>
+    <div class="product productThree">
+      <div class="text">
+        <div class="content">
+          <h5>A-33 <span>(2.5 mm)</span></h5>
+          <div class="ability">
+            <div class="abilityList one">
+              <p>Softness</p>
+              <div class="color colorOne"></div>
+              <div class="color colorTwo"></div>
+            </div>
+            <div class="abilityList two">
+              <p>Tackiness</p>
+              <div class="color colorOne"></div>
+              <div class="color colorTwo"></div>
+            </div>
+            <div class="abilityList three">
+              <p>Absorption</p>
+              <div class="color colorOne"></div>
+              <div class="color colorTwo"></div>
+            </div>
+          </div>
+          <p>Material: PU Leather</p>
+        </div>
+      </div>
+      <div class="img"><img src="image/A-33.png" alt=""></div>
+    </div>
+  </div>
+  <!-- 內頁5 -->
+  <div class="productLeft pageFives">
+    <div class="liveImg">
+      <img src="image/B-105-1-life.jpg" alt="">
+      <img src="image/R-47-1life.jpg" alt="">
+    </div>
+    <div class="haderText">
+      <h2>FRAME BAG</h2>
+    </div>
+  </div>
+  <!-- 內頁6 -->
+  <div class="productRight pageSix">
+    <div class="product productOne">
+      <div class="text">
+        <div class="content">
+          <h5>S-102</h5>
+          <p><span>Spec:</span>13 <sup>3</sup>/<sub>4</sub> "L X 12 <sup>1</sup>/<sub>4</sub> "W X 2 <sup>1</sup>/<sub>2</sub> "H</p>
+          <p><span> </span> 35 X 31 X 6.5 cm</p>
+          <p><span>Material:</span>Canvas,</p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/S-102-1.png" alt=""></div>
+    </div>
+    <div class="product productTwo">
+      <div class="text">
+        <div class="content">
+          <h5>P-105</h5>
+          <p><span>Spec:</span>9 <sup>1</sup>/<sub>4</sub> "L X 6 "W X 3 "H</p>
+          <p><span> </span>24 X 15.5 X 9 cm</p>
+          <p><span>Material:</span>Genuine Leather</p>
+        </div>
+      </div>
+      <div class="img"><img src="image/P-105-1.png" alt=""></div>
+    </div>
+    <div class="product productThree">
+      <div class="text">
+        <div class="content">
+          <h5>C-97</h5>
+          <p><span>Spec:</span>9 <sup>3</sup>/<sub>4</sub> "L X 11 "W X 2 <sup>1</sup>/<sub>4</sub> "H</p>
+          <p><span> </span>13 X 11 X 4 cm</p>
+          <p><span>Material:</span>Recycled Plastic Bottles ,</p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/C-97-1.png" alt=""></div>
+    </div>
+  </div>
+  <!-- 內頁6-2 -->
+  <div class="productRight pageSix">
+    <div class="product productOne">
+      <div class="text">
+        <div class="content">
+          <h5>B-15</h5>
+          <p><span>Spec:</span>9 <sup>1</sup>/<sub>4</sub> "L X 6 "W X 3 "H</p>
+          <p><span> </span>24 X 15.5 X 9 cm</p>
+          <p><span>Material:</span>Recycled Plastic Bottles ,</p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/B-15-1.png" alt=""></div>
+    </div>
+    <div class="product productTwo">
+      <div class="text">
+        <div class="content">
+          <h5>B-63</h5>
+          <p><span>Spec:</span>7"L X 6<sup>1</sup>/<sub>4</sub> "W X 4<sup>1</sup>/<sub>4</sub> "H</p>
+          <p><span> </span> 18 X 16 X 10.5 cm</p>
+          <p><span>Material:</span>Recycled Plastic Bottles,</p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/B-63-1brown.png" alt=""></div>
+    </div>
+    <div class="product productThree">
+      <div class="text">
+        <div class="content">
+          <h5>B-95</h5>
+          <p><span>Spec:</span>8 <sup>3</sup>/<sub>4</sub> "L X 10 "W X 1 <sup>1</sup>/<sub>2</sub> "H</p>
+          <p><span> </span>25 X 28 X 6 cm</p>
+          <p><span>Material:</span>Recycled Plastic Bottles ,</p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/B-95-1.png" alt=""></div>
+    </div>
+  </div>
+  <!-- 內頁6-3 -->
+  <div class="productRight pageSix">
+    <div class="product product">
+      <div class="text">
+        <div class="content">
+          <h5>B-316</h5>
+          <p><span>Spec:</span>11 "L X 7 <sup>3</sup>/<sub>4</sub> "W X 4 "H</p>
+          <p><span> </span>28 X 20 X 10 cm</p>
+          <p><span>Material:</span>Recycled Plastic Bottles ,</p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/B-316-1.png" alt=""></div>
+    </div>
+    <div class="product productTwo">
+      <div class="text">
+        <div class="content">
+          <h5>R-105</h5>
+          <p><span>Spec:</span>9 <sup>1</sup>/<sub>4</sub> "L X 6 "W X 3 "H</p>
+          <p><span> </span> 24 X 15.5 X 9 cm</p>
+          <p><span>Material:</span>PU Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/R-105-1.png" alt=""></div>
+    </div>
+  </div>
+  <!-- 內頁5-2 -->
+  <div class="productLeft pageFives">
+    <div class="liveImg">
+      <img src="image/Saddle-1life.jpg" alt="">
+      <img src="image/Saddle-2life.jpg" alt="">
+    </div>
+    <div class="haderText">
+      <h2>SADDLE BAG</h2>
+    </div>
+  </div>
+  <!-- 內頁6-4 -->
+  <div class="productRight pageSix">
+    <div class="product productOne">
+      <div class="text">
+        <div class="content">
+          <h5>P-47</h5>
+          <p><span>Spec:</span>7 <sup>1</sup>/<sub>4</sub> "L X 4 <sup>1</sup>/<sub>2</sub> "W X 2 <sup>3</sup>/<sub>4</sub> "H</p>
+          <p><span> </span> 18 X 11.5 X 7 cm</p>
+          <p><span>Material:</span>Genuine Leather</p>
+        </div>
+      </div>
+      <div class="img"><img src="image/P-47-1.png" alt=""></div>
+    </div>
+    <div class="product productTwo">
+      <div class="text">
+        <div class="content">
+          <h5>C-53</h5>
+          <p><span>Spec:</span>7 "L X 4 "W X 2 "H</p>
+          <p><span> </span>18 X 11.5 X 7 cm</p>
+          <p><span>Material:</span>Cotton Canvas with Printing ,</p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/C-53-1.png" alt=""></div>
+    </div>
+  </div>
+  <!-- 內頁6-5 -->
+  <div class="productRight pageSix">
+    <div class="product productOne">
+      <div class="text">
+        <div class="content">
+          <h5>B-73</h5>
+          <p><span>Spec:</span>7 "L X 4 <sup>1</sup>/<sub>2</sub> "W X 2 <sup>3</sup>/<sub>4</sub> "H</p>
+          <p><span> </span>18 X 11.5 X 7 cm</p>
+          <p><span>Material:</span>Recycled Plastic Bottles ,</p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/B-73-1.png" alt=""></div>
+    </div>
+    <div class="product productTwo">
+      <div class="text">
+        <div class="content">
+          <h5>B-77</h5>
+          <p><span>Spec:</span>7 "L X 2 <sup>3</sup>/<sub>4</sub> "W X 1 <sup>3</sup>/<sub>4</sub> "H</p>
+          <p><span> </span> 18 X 7 X 4.5 cm</p>
+          <p><span>Material:</span>Recycled Plastic Bottles ,</p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/B-77-1.png" alt=""></div>
+    </div>
+  </div>
+  <!-- 內頁6-6 -->
+  <div class="productRight pageSix">
+    
+    <div class="product productOne">
+      <div class="text">
+        <div class="content">
+          <h5>R-47</h5>
+          <p><span>Spec:</span>7 "L X 4 <sup>1</sup>/<sub>2</sub> "W X 2 <sup>3</sup>/<sub>4</sub> "H</p>
+          <p><span> </span>18 X 11.5 X 7 cm</p>
+          <p><span>Material:</span>PU Leather</p>
+        </div>
+      </div>
+      <div class="img"><img src="image/R-47-1.png" alt=""></div>
+    </div>
+    <div class="product productTwo">
+      <div class="text">
+        <div class="content">
+          <h5>R-77</h5>
+          <p><span>Spec:</span>7 "L X 2 <sup>3</sup>/<sub>4</sub> "W X 1 <sup>3</sup>/<sub>4</sub> "H</p>
+          <p><span> </span>18 X 7 X 4.5 cm</p>
+          <p><span>Material:</span>PU Leather</p>
+        </div>
+      </div>
+      <div class="img"><img src="image/R-77-1.png" alt=""></div>
+    </div>
+  </div>
+  <!-- 內頁5-3 -->
+  <div class="productLeft pageFives">
+    <div class="liveImg">
+      <img src="image/C-28-1-life.jpg" alt="">
+      <img src="image/S-37-2-life.jpg" alt="">
+    </div>
+    <div class="haderText">
+      <h2>SHOULDER BAG</h2>
+    </div>
+  </div>
+  <!-- 內頁6-7 -->
+  <div class="productRight pageSix">
+    <div class="product productOne">
+      <div class="text">
+        <div class="content">
+          <h5>S-37</h5>
+          <p><span>Spec:</span>12 <sup>1</sup>/<sub>4</sub> "L X 12 <sup>1</sup>/<sub>4</sub> "W X 3 <sup>3</sup>/<sub>4</sub> "H</p>
+          <p><span> </span> 31 X 31 X 9.5 cm</p>
+          <p><span>Material:</span>Canvas ,</p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/S-37-1.png" alt=""></div>
+    </div>
+    <div class="product productTwo">
+      <div class="text">
+        <div class="content">
+          <h5>S-66</h5>
+          <p><span>Spec:</span>13 "L X 11 <sup>3</sup>/<sub>4</sub> "W X 1 "H</p>
+          <p><span> </span>18 X 11.5 X 7 cm</p>
+          <p><span>Material:</span>Canvas ,</p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/S-66-1.png" alt=""></div>
+    </div>
+    <div class="product productThree">
+      <div class="text">
+        <div class="content">
+          <h5>S-102-K</h5>
+          <p><span>Spec:</span>13 <sup>3</sup>/<sub>4</sub> "L X 12 <sup>1</sup>/<sub>4</sub> "W X 2 <sup>1</sup>/<sub>2</sub> "H</p>
+          <p><span> </span> 35 X 31 X 6.5 cm</p>
+          <p><span>Material:</span>Canvas ,</p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/S-102-K-1.png" alt=""></div>
+    </div>
+  </div>
+  <!-- 內頁6-8 -->
+  <div class="productRight pageSix">
+    <div class="product productOne">
+      <div class="text">
+        <div class="content">
+          <h5>P-67</h5>
+          <p><span>Spec:</span>9 <sup>1</sup>/<sub>2</sub> "L X 9 <sup>1</sup>/<sub>2</sub> "W X <sup>3</sup>/<sub>4</sub> "H</p>
+          <p><span> </span> 24 X 24 X 2 cm</p>
+          <p><span>Material:</span>Genuine Leather</p>
+        </div>
+      </div>
+      <div class="img"><img src="image/P-67-1.png" alt=""></div>
+    </div>
+    <div class="product productTwo">
+      <div class="text">
+        <div class="content">
+          <h5>P-105-K</h5>
+          <p><span>Spec:</span>9 <sup>1</sup>/<sub>4</sub> "L X 6 "W X 3 "H</p>
+          <p><span> </span>24 X 15.5 X 9 cm</p>
+          <p><span>Material:</span>Genuine Leather</p>
+        </div>
+      </div>
+      <div class="img"><img src="image/P-105-K-4.png" alt=""></div>
+    </div>
+  </div>
+  <!-- 內頁6-9 -->
+  <div class="productRight pageSix">
+    <div class="product productOne">
+      <div class="text">
+        <div class="content">
+          <h5>C-9</h5>
+          <p><span>Spec:</span>12 <sup>1</sup>/<sub>4</sub> "L X 12 <sup>1</sup>/<sub>4</sub> "W X 3 <sup>3</sup>/<sub>4</sub> "H</p>
+          <p><span> </span> 31 X 31 X 9.5 cm</p>
+          <p><span>Material:</span>Cotton Canvas with Printing ,</p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/C-9-1-2.png" alt=""></div>
+    </div>
+    <div class="product productTwo">
+      <div class="text">
+        <div class="content">
+          <h5>C-26</h5>
+          <p><span>Spec:</span>9 <sup>1</sup>/<sub>2</sub> "L X 9 <sup>1</sup>/<sub>2</sub> "W X <sup>3</sup>/<sub>4</sub> "H</p>
+          <p><span> </span> 24 X 24 X 2 cm</p>
+          <p><span>Material:</span>Cotton Canvas with Printing ,</p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/C-26-3.png" alt=""></div>
+    </div>
+  </div>
+  <!-- 內頁6-10 -->
+  <div class="productRight pageSix">
+    <div class="product productOne">
+      <div class="text">
+        <div class="content">
+          <h5>C-28</h5>
+          <p><span>Spec:</span>12 <sup>1</sup>/<sub>4</sub> "L X 11 <sup>1</sup>/<sub>2</sub> "W X 1 <sup>1</sup>/<sub>2</sub> "H</p>
+          <p><span> </span> 31 X 29 X 4 cm</p>
+          <p><span>Material:</span>Cotton Canvas with Printing ,</p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/C-28-2.png" alt=""></div>
+    </div>
+    <div class="product productTwo">
+      <div class="text">
+        <div class="content">
+          <h5>B-15-K</h5>
+          <p><span>Spec:</span>9 <sup>1</sup>/<sub>4</sub> "L X 6 "W X 3 "H</p>
+          <p><span> </span> 24 X 15.5 X 9 cm</p>
+          <p><span>Material:</span>Recycled Plastic Bottles ,</p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/B-15-K-5.png" alt=""></div>
+    </div>
+  </div>
+  <!-- 內頁6-11 -->
+  <div class="productRight pageSix">
+    <div class="product productOne">
+      <div class="text">
+        <div class="content">
+          <h5>B-52</h5>
+          <p><span>Spec:</span>11 "L X 10 <sup>3</sup>/<sub>4</sub> "W X <sup>3</sup>/<sub>4</sub> "H</p>
+          <p><span> </span> 28 X 27 X 2 cm</p>
+          <p><span>Material:</span>Recycled Plastic Bottles ,</p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/B-52.png" alt=""></div>
+    </div>
+    <div class="product productTwo">
+      <div class="text">
+        <div class="content">
+          <h5>B-95-K</h5>
+          <p><span>Spec:</span>8 <sup>3</sup>/<sub>4</sub> "L X 10 "W X 1 <sup>1</sup>/<sub>2</sub> "H</p>
+          <p><span> </span>25 X 28 X 6 cm</p>
+          <p><span>Material:</span>Recycled Plastic Bottles ,</p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/B-95-1.png" alt=""></div>
+    </div>
+  </div>
+  <!-- 內頁5-4 -->
+  <div class="productLeft pageFives">
+    <div class="liveImg">
+      <img src="image/P-36-1-life.jpg" alt="">
+      <img src="image/P-3-1-life.jpg" alt="">
+    </div>
+    <div class="haderText">
+      <h2>MESSENGER BAG</h2>
+    </div>
+  </div>
+  <!-- 內頁6-12 -->
+  <div class="productRight pageSix">
+    <div class="product productOne">
+      <div class="text">
+        <div class="content">
+          <h5>S-3</h5>
+          <p><span>Spec:</span>16 <sup>1</sup>/<sub>4</sub> "L X 11 <sup>3</sup>/<sub>4</sub> "W X 5 "H</p>
+          <p><span> </span> 41 X 30 X 13 cm</p>
+          <p><span>Material:</span>Canvas ,</p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/S-3-1.png" alt=""></div>
+    </div>
+    <div class="product productTwo">
+      <div class="text">
+        <div class="content">
+          <h5>S-88</h5>
+          <p><span>Spec:</span>13 "L X 11 "W X 4 "H</p>
+          <p><span> </span>33 X 28 X 10 cm</p>
+          <p><span>Material:</span>Canvas ,</p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/S-88-1.png" alt=""></div>
+    </div>
+    <div class="product productThree">
+      <div class="text">
+        <div class="content">
+          <h5>P-3</h5>
+          <p><span>Spec:</span>17 <sup>3</sup>/<sub>4</sub> "L X 9 <sup>3</sup>/<sub>4</sub> "W X 6 <sup>1</sup>/<sub>4</sub> "H</p>
+          <p><span> </span> 45 X 25 X 16 cm</p>
+          <p><span>Material:</span>Genuine Leather</p>
+        </div>
+      </div>
+      <div class="img"><img src="image/P-3-1.png" alt=""></div>
+    </div>
+  </div>
+  <!-- 內頁6-13 -->
+  <div class="productRight pageSix">
+    <div class="product productOne">
+      <div class="text">
+        <div class="content">
+          <h5>P-36</h5>
+          <p><span>Spec:</span>15 <sup>3</sup>/<sub>4</sub> "L X 8 <sup>1</sup>/<sub>4</sub> "W X 6 <sup>1</sup>/<sub>4</sub> "H</p>
+          <p><span> </span> 40 X 21 X 16 cm</p>
+          <p><span>Material:</span>Genuine Leather</p>
+        </div>
+      </div>
+      <div class="img"><img src="image/P-36-1.png" alt=""></div>
+    </div>
+    <div class="product productTwo">
+      <div class="text">
+        <div class="content">
+          <h5>C-5</h5>
+          <p><span>Spec:</span>16 <sup>1</sup>/<sub>4</sub> "L X 11 <sup>3</sup>/<sub>4</sub> "W X 5 "H</p>
+          <p><span> </span>41 X 30 X 13 cm</p>
+          <p><span>Material:</span>Cotton Canvas with Printing ,</p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/C-5-1.png" alt=""></div>
+    </div>
+    <div class="product productThree">
+      <div class="text">
+        <div class="content">
+          <h5>B-96</h5>
+          <p><span>Spec:</span>13 "L X 11 "W X 4 "H</p>
+          <p><span> </span> 33 X 28 X 10 cm</p>
+          <p><span>Material:</span>Genuine Leather</p>
+        </div>
+      </div>
+      <div class="img"><img src="image/B-96-1.png" alt=""></div>
+    </div>
+  </div>
+  <!-- 內頁7-1 -->
+  <div class="productLeft pageFives pageSeven">
+    <div class="liveImg">
+      <img src="image/S-860-L-1-life.jpg" alt="">
+      <img src="image/S-860-G-1-life.jpg" alt="">
+    </div>
+    <div class="haderText">
+      <h2>BIKE GRIPS</h2>
+    </div>
+  </div>
+  <!-- 內頁8 -->
+  <div class="productRight pageSix">
+    <div class="product productOne">
+      <div class="text">
+        <div class="content">
+          <h5>S-860G</h5>
+          <p><span>Spec:</span>140 / 140 (mm)</p>
+          <p><span>Material:</span>18K Gold Plating ,</p>
+          <p><span> </span>Chrome Plating and </p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/S-860-G-1.png" alt=""></div>
+    </div>
+    <div class="product productTwo" style="margin-top: 80px">
+      <div class="text">
+        <div class="content">
+          <h5>S-860L</h5>
+          <p><span>Spec:</span>140 / 140 (mm)</p>
+          <p><span>Material:</span>18K Gold Plating ,</p>
+          <p><span> </span>Chrome Plating and </p>
+          <p><span> </span>Genuine Leather </p>
+        </div>
+      </div>
+      <div class="img"><img src="image/S-860-L-1.png" alt=""></div>
+    </div>
+  </div>
+</div>
+</head>
+<body>
+
+<style>  
+</style> 
+<script type="text/javascript">
+  var menuOn = false;
+  function changePage(number) {
+    menuOn = true;
+    $('#magazine').turn('page', number);
+    setTimeout(function () {
+      menuOn = false
+    } , 300)
+  }
+  $(document).ready(function() {
+    var screenWidth = $(window).width();
+    var screenPage;
+    if(screenWidth < 900){
+      screenPage = 'single'
+    }else{
+      screenPage = 'double'
+    };
+    $('#magazine').turn({ 
+              // 判斷單頁或雙頁
+              display: screenPage,
+              acceleration: true,
+              gradients: !$.isTouch,
+              elevation:50,
+              //判斷第幾頁
+              page: 1,
+              when: {
+                turned: function(e, page) {
+                  /*console.log('Current view: ', $(this).turn('view'));*/
+                }
+              }
+            });
+  });
+  
+  
+  $(window).bind('keydown', function(e){
+    
+    if (e.keyCode==37)
+      $('#magazine').turn('previous');
+    else if (e.keyCode==39)
+      $('#magazine').turn('next');
+      
+  });
+
+</script>
+<script src="lib/index.js"></script>
+</body>
+</html>
+
+
+

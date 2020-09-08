@@ -1,0 +1,394 @@
+*
+	position: relative
+	font-family: 'Cabin', sans-serif
+	color: #555
+body,html
+	padding: 0px
+	margin: 0px
+	height: 100%
+	width: 100%
+	position: absolute
+	background-attachment: fixed
+	display: flex
+	.about
+		width: 100%
+		height: 100%
+		.aboutAll
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+			.productumContent
+				left: 50%
+				transform : translateX(-50%)
+				padding: 0px
+				margin: 0px
+				width: 100%
+				height: 80vh
+				.titlePhoto
+					background-image: url("../image/B-77-2life.jpg")
+					width: 100%
+					height: 100%
+					background-repeat:no-repeat
+					background-position: right
+					background-size: cover
+					img
+						width: 100%
+						height: 100%
+						background-position: right
+				h2
+					position: absolute
+					top: 50px
+					text-align: center
+					width: 100%
+					display: block
+					font-size: 36px
+				.liveText
+					position: absolute
+					right: 0px 
+					top: 0px
+					transform: translateX(0%) translateY(0%)
+					padding: 0px
+					width: 40%
+					height: 100%
+					.content
+						position: absolute
+						display: inline-block
+						top: 45%
+						transform: translateY(-50%)
+						h4
+							margin: auto
+							font-size: 36px
+							font-weight: 300
+							text-align: center
+							line-height: 120px
+						ul
+							li
+								font-size: 24px
+								span
+									line-height: 40px
+									display: inline-block
+									width: 120px
+							.space
+								list-style-type: none
+								line-height: 50px
+			.livePhotoOne
+				margin: 80px auto
+				max-width: 100%
+				width: 80%
+				padding: 0px
+				background-color: white
+				.tab-pane
+					border: 0px
+					position: relative
+					width: 100%
+					display: none
+					.sp-wrap
+						border: 0px
+						background-color: rgba(black,0)
+						position: relative
+						top: 80px
+						left: 0px
+						width: 100%
+						height: 100%
+						padding: 0px
+						display: flex
+						max-width: 100%
+						.sp-large
+							padding: 0px
+							margin: 0px
+							position: relative
+							top: 0px
+							left: 0px
+							width: 100%
+							img
+								left: 50%
+								transform: translateX(-50%)
+							.sp-current-big
+								position: relative
+								top: 0px
+								left: 0px
+						.sp-thumbs
+							height: 20%
+							display: flex
+							align-content: center
+							justify-content: center
+							position: relative
+							a
+								width: 10%
+								height: 80px
+								position: relative
+								margin: 50px 30px
+								display: block
+
+				.active
+					display: block
+				.color
+					top: 40px
+					display: inline-block
+					left: 50%
+					transform: translateX(-50%)
+					.colorAll
+						width: 100%
+						display: flex
+						flex-wrap: wrap
+						span
+							margin-left: 80px
+							font-size: 32px
+						.list-group
+							margin-left: 30px
+							display: flex
+							top: 0px
+							display: inline-block
+							.produceColor
+			                    vertical-align: middle
+			                    display: inline-block
+			                    top: 50%
+			                    transform: translateY(-50%)
+			                    width: 80px
+			                    height: 20px
+							.one
+			                    background-color: #eee6dd
+			                    margin-left: 50px
+							.two
+			                    background-color: #4E5B81
+			                    margin-left: 50px
+							.three
+			                    background-color: #433D45
+			                    margin-left: 50px
+			.livePhotoTwo
+				display: inline-block
+				padding: 0px
+				margin: 80px auto
+				display: flex
+				flex-wrap: wrap
+				.col-4
+					padding: 0px 
+					margin: 0px
+				.topTwo
+					margin: auto
+				.topThree
+					margin: auto
+				.rightOne
+				.rightTwo
+				.rightThree
+				.bottonfour 
+					margin: auto
+				div
+					img
+						width: 100%
+						height: 100%
+						border: solid 10px white
+			.livePhotoThree
+				left: 50%
+				transform: translateX(-50%)
+				img
+					width: 100%
+			.livePhotoFour
+				margin: 80px auto
+				img
+					width: 100%
+@media screen and (max-width: 1270px)
+	body
+		.about
+			.aboutAll
+				.productumContent
+					.liveText
+						width: 55%
+@media screen and (max-width: 940px)
+	body
+		.about
+			.aboutAll
+				.productumContent
+					height: 70vh
+					.titlePhoto
+						background-position: right
+						height: 70vh
+					h2
+						font-size: 32px
+					.liveText
+						width: 65%
+						.content
+							h4
+								font-size: 28px
+								line-height: 80px
+							ul
+								li
+									font-size: 20px
+									span
+										width: 100px
+				.livePhotoOne
+					margin: 0px auto
+				.livePhotoTwo
+					margin-bottom: 40px
+					.col-5
+						padding: 0px
+						img
+							border: 0px
+				.livePhotoFour
+					margin: 40px auto
+@media screen and (max-width: 800px)
+	body
+		.about
+			.aboutAll
+				.productumContent
+					height: 60vh
+					.titlePhoto
+						background-position: 80%
+						height: 60vh
+					h2
+						font-size: 32px
+					.liveText
+						width: 55%
+						.content
+							h4
+								font-size: 24px
+							ul
+								li
+									font-size: 18px
+									span
+										width: 80px
+				.livePhotoOne
+					.tab-pane
+						.sp-wrap
+							.sp-thumbs
+								a
+									width: 80px
+									height: 60px
+									position: relative
+									margin: 30px 30px
+									display: block
+					.color
+						top: 40px
+						display: inline-block
+						left: 50%
+						transform: translateX(-50%)
+						.colorAll
+							.list-group
+								margin-left: 20px
+								// position: absolute
+								top: 0px
+								display: inline-block
+								.produceColor
+				                    width: 50px
+				                    height: 20px
+				                    margin: 0px 15px
+				.livePhotoTwo
+					max-width: 83.3333333%
+					width: 100%
+					flex: 0 0 83.333333%
+					div
+						flex: 0 0 100%
+						display: inline-block
+						max-width: 100%
+						width: 100%
+						padding: 0px 0px
+						img
+							border: 0px
+							max-width: 100%
+							width: 100%
+					.topTwo
+						display: none
+@media screen and (max-width: 700px)
+	body
+		.about
+			.aboutAll
+				.productumContent
+					.titlePhoto
+						background-position: 80%
+						height: 60vh
+					h2
+						font-size: 28px
+					.liveText
+						width: 60%
+						.content
+							h4
+								font-size: 18px
+								line-height: 40px
+							ul
+								li
+									font-size: 14px
+									line-height: 20px
+									span
+										line-height: 20px
+										width: 60px
+				.livePhotoOne
+					margin: 0px auto
+				.livePhotoTwo
+					margin-bottom: 40px
+					.col-4
+					.col-5
+						padding: 0px
+						img
+							border: 0px
+				.livePhotoFour
+					margin: 40px auto
+
+@media screen and (max-width: 550px)
+	body
+		.about
+			.aboutAll
+				.productumContent
+					.titlePhoto
+						background-position: 100%
+						height: 439px
+					h2
+						font-size: 26px
+						top: 20px
+					.liveText
+						width: 100%
+						.content
+							top: 70px
+							width: 70%
+							left: 50%
+							transform: translateX(-50%)
+@media screen and (max-width: 440px)
+	body
+		.about
+			.aboutAll
+				.productumContent
+					.titlePhoto
+						height: 439px
+						height: 400px
+					h2
+					.liveText
+						.content
+							width: 100%
+							h4
+								font-size: 16px
+							ul
+								li
+									font-size: 12px
+									line-height: 18px
+									span
+										line-height: 18px
+										width: 60px
+				.livePhotoOne
+					margin: 0px auto
+					.tab-pane
+						.sp-wrap
+							.sp-thumbs
+								a
+									margin: 30px 10px
+					.color
+						top: 40px
+						display: inline-block
+						left: 50%
+						transform: translateX(-50%)
+						.colorAll
+							.list-group
+								margin-left: 20px
+								// position: absolute
+								top: 0px
+								display: inline-block
+								.produceColor
+				                    width: 50px
+				                    height: 20px
+				                    margin: 0px 10px
+				.livePhotoTwo
+					margin-bottom: 40px
+					.col-5
+						padding: 0px
+						img
+							border: 0px
+				.livePhotoFour
+					margin: 40px auto

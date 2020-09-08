@@ -1,0 +1,269 @@
+* {
+  position: relative; }
+
+html {
+  top: -18px; }
+
+body, html {
+  overflow: hidden;
+  background-color: #FAF0E6;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  display: inline-block; }
+  body .body, html .body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #FAF0E6;
+    width: 100%;
+    height: 100vh; }
+    body .body .logo, html .body .logo {
+      z-index: 9;
+      position: fixed;
+      display: inline-block;
+      bottom: 40px;
+      right: 60px; }
+      body .body .logo img, html .body .logo img {
+        margin: 30px auto;
+        width: 80px;
+        height: 60px; }
+    body .body .photoAll, html .body .photoAll {
+      float: right;
+      z-index: 0;
+      height: 100%;
+      overflow-y: auto;
+      padding: 0px;
+      margin: 0px;
+      -webkit-overflow-scrolling: touch; }
+      body .body .photoAll .photo, html .body .photoAll .photo {
+        z-index: 10;
+        padding: 0px;
+        margin: 0px;
+        display: block; }
+        body .body .photoAll .photo a img, html .body .photoAll .photo a img {
+          z-index: 0;
+          height: 100%;
+          top: 50%;
+          margin: auto;
+          padding: 0px;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
+    body .body .content, html .body .content {
+      z-index: 1;
+      top: 120px;
+      left: 80px;
+      position: fixed;
+      color: #666; }
+      body .body .content h2, html .body .content h2 {
+        line-height: 60px;
+        font-size: 38px;
+        font-weight: 500;
+        color: #222;
+        text-align: center; }
+      body .body .content h4, html .body .content h4 {
+        line-height: 60px;
+        font-size: 28px;
+        font-weight: 400;
+        text-align: center; }
+      body .body .content h5, html .body .content h5 {
+        line-height: 30px;
+        text-align: center;
+        font-weight: 400; }
+        body .body .content h5 span, html .body .content h5 span {
+          font-weight: 500;
+          color: #222;
+          text-align: left;
+          float: left;
+          width: 100px;
+          display: block;
+          display: inline-block; }
+    body .body .scroll, html .body .scroll {
+      position: fixed;
+      z-index: 9;
+      bottom: 30px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
+      body .body .scroll .mose, html .body .scroll .mose {
+        width: 35px;
+        height: 35px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%); }
+        body .body .scroll .mose img, html .body .scroll .mose img {
+          height: 100%;
+          width: 100%; }
+      body .body .scroll .down, html .body .scroll .down {
+        width: 20px;
+        height: 20px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%); }
+        body .body .scroll .down img, html .body .scroll .down img {
+          height: 100%;
+          width: 100%; }
+    body .body .zoom, html .body .zoom {
+      position: absolute;
+      z-index: 99;
+      top: -50px;
+      left: -50px; }
+      body .body .zoom .zoomBig, html .body .zoom .zoomBig {
+        width: 50px;
+        height: 50px; }
+        body .body .zoom .zoomBig img, html .body .zoom .zoomBig img {
+          width: 100%;
+          height: 100%; }
+
+.lightbox {
+  position: fixed;
+  top: 50%;
+  z-index: 9999; }
+
+.down {
+  -webkit-animation: scrollDown 3s infinite;
+  animation: scrollDown 3s infinite; }
+
+@-webkit-keyframes scrollDown {
+  0% {
+    bottom: 0px; }
+  50% {
+    bottom: -10px; }
+  100% {
+    bottom: 0px; } }
+
+@keyframes scrollDown {
+  0% {
+    bottom: 0px; }
+  50% {
+    bottom: -10px; }
+  100% {
+    bottom: 0px; } }
+
+@media screen and (max-width: 1150px) {
+  body .body .photoAll {
+    width: 100%; }
+    body .body .photoAll .photo {
+      overflow: hidden; }
+      body .body .photoAll .photo a img {
+        height: 100%;
+        -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        transform: translateX(0%);
+        left: 70%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%); }
+  body .body .content {
+    left: 80px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); } }
+
+@media screen and (max-width: 900px) {
+  body .body .photoAll {
+    width: 100%; }
+    body .body .photoAll .photo a img {
+      max-width: 200%;
+      width: 130%;
+      -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      transform: translateY(0%);
+      left: 70%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
+  body .body .content {
+    left: 80px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    body .body .content h2 {
+      line-height: 40px;
+      font-size: 28px; }
+    body .body .content h4 {
+      font-size: 20px;
+      line-height: 40px; }
+    body .body .content h5 {
+      font-size: 16px; } }
+
+@media screen and (max-width: 790px) {
+  html {
+    top: 0px; }
+    html .body {
+      overflow-y: scroll; }
+      html .body .logo {
+        right: 30px;
+        bottom: 20px; }
+        html .body .logo img {
+          margin: 0px;
+          width: 60px;
+          height: 40px; }
+      html .body .photoAll {
+        height: auto;
+        word-wrap: 0px; }
+        html .body .photoAll .photo a img {
+          width: auto;
+          max-width: 200%;
+          top: 0px;
+          -webkit-transform: translateY(0%);
+          -ms-transform: translateY(0%);
+          transform: translateY(0%);
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
+      html .body .content {
+        position: fixed;
+        background-color: #FAF0E6;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        -webkit-transform: translateX(0%) translateY(0%);
+        -ms-transform: translateX(0%) translateY(0%);
+        transform: translateX(0%) translateY(0%);
+        width: 100%; }
+        html .body .content h2 {
+          line-height: 30px;
+          font-size: 24px; }
+        html .body .content h4 {
+          font-size: 16px;
+          line-height: 20px; }
+        html .body .content h5 {
+          font-size: 16px; }
+          html .body .content h5 span {
+            left: 30%; } }
+
+@media screen and (max-width: 580px) {
+  body .body .logo {
+    right: 20px;
+    bottom: 15px; }
+    body .body .logo img {
+      margin: 0px;
+      width: 40px;
+      height: 30px; }
+  body .body .photoAll .photo a img {
+    padding: 20px; }
+  body .body .content {
+    position: fixed; }
+    body .body .content h2 {
+      line-height: 20px;
+      font-size: 18px; }
+    body .body .content h4 {
+      font-size: 14px;
+      line-height: 16px; }
+    body .body .content h5 {
+      font-size: 12px;
+      line-height: 15px; }
+      body .body .content h5 span {
+        left: 30%; } }
+
+@media screen and (max-width: 380px) {
+  body .body .content h5 span {
+    left: 25%; } }

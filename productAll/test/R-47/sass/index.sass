@@ -1,0 +1,482 @@
+*
+	position: relative
+	font-family: 'Cabin', sans-serif
+body,html
+	padding: 0px
+	margin: 0px
+	width: 100%
+	// ::-webkit-scrollbar 
+	//     display: none
+	.loading	
+		top: 0px
+		left: 0px 
+		display: block
+		position: fixed 
+		width: 100%
+		height: 100%
+		background-color: white
+		z-index: 999999
+		p
+			font-size: 38px
+			left: 50%
+			top: 55%
+			transform: translateX(-50%) translateY(-50%)
+			position: absolute
+			z-index: 9999999 
+			color: #555
+			font-family: 'Playball', cursive;
+			letter-spacing: 5px
+			font-weight: 200
+			font-size: 40px
+		img
+			left: 50%
+			top: 45%
+			transform: translateX(-50%) translateY(-50%)
+			position: absolute
+			width: 250px
+			height: 180px
+	.three
+		width: 100%
+		.threeAll
+			width: 100%
+			overflow: hidden
+			.header
+				width: 100%
+				height: 100%
+				.opening
+					z-index: 995
+					position: relative  
+					height: 100vh
+					width: 100%
+					background-image: url("../OE9T940.jpg")
+					background-repeat:no-repeat
+					background-position: content
+					background-size: cover
+					overflow: hidden
+					.headerLogo
+						z-index: 997
+						// position: relative
+						top: 33%
+						left: 50%
+						transform: translateX(-50%)
+						max-width: 200px
+						max-height: 200px
+						img
+							height: 100%
+							width: 100%
+						// &:after
+						// 	content: ""
+						// 	background-color: #00ff00
+						// 	width: 100%
+						// 	height: 100%
+					.mose
+						position: absolute
+						width: 50px
+						height: 50px
+						bottom: 120px
+						left: 50%
+						transform: translateX(-50%)
+						img
+							height: 100%
+							width: 100%
+					.scroll
+						position: absolute
+						width: 20px
+						height: 20px
+						bottom: 80px
+						left: 50%
+						transform: translateX(-50%)
+						img
+							height: 100%
+							width: 100%
+			.contentTitle
+				opacity: 0
+				z-index: 997
+				top: 100%
+				background-color: #fff
+				.title
+					position: fixed
+					// margin-top: 30px
+					width: 100%
+					// height: 80px
+					top: 10px
+					img
+						top: 30px
+						z-index: 999
+						left: 50%
+						transform: translateX(-50%) translateY(-55%)
+						width: 80px
+						position: absolute
+						// background-color: #fff
+					hr
+						border-color: #ddd
+						border-style: dashed
+						border-width: 0.5px 
+						border-top: 0px
+						padding: 0px
+						margin: 0px
+				.test
+					width: 400px
+					height: 200px
+			.contentPhoto
+				.space
+					z-index: 99
+					background-color: #fff
+					width: 100%
+					height: 100%
+					// height: 3900px
+					.imageAll
+						// position: absolute
+						z-index: 99
+						display: flex 
+						flex-wrap: wrap
+						top: 0px
+						width: 100%
+						height: 100%
+						// max-height: 100vh
+						position: fixed  
+						// .spaceWhite
+						// 	position: absolute
+						// 	width: 100%
+						// 	height: 200px
+						// 	background-color: #fff
+						.image
+							position: absolute
+							margin: 0px auto
+							padding: 0px
+							bottom: 0px
+							top: 50%
+							left: 50%
+							transform: translateX(-50%) translateY(-50%)
+							// &::before
+							// 	z-index: 999999
+							// 	content: ""
+							// 	background-color: #00ff00
+							// 	width: 100%
+							// 	height: 200px
+							img
+								// position: absolute
+								// top: 50%
+								// left: 50%
+								// transform: translateX(-50%) translateY(-50%)
+								width: 100%
+						.oneSpace
+							position: absolute
+							background-color: white
+							width: 100%
+							height: 100%
+						.twoWhite
+							background-color: white
+						.white
+							background-color: white
+							position: absolute
+							width: 100%
+							height: 100%
+						.imageBig
+							top: 0px
+							left: 0px
+							transform: translateX(0%) translateY(0%)
+							width: 100%
+							display: none
+							height: 100vh
+							background-color: white
+							img
+								width: 100%
+								height: 100%
+						.imgPhone
+							img
+								height: 70%
+						.phonePhoto
+							position: absolute
+							margin: 0px auto
+							padding: 0px
+							bottom: 0px
+							left: 50%
+							top: 0%
+							transform: translateX(-50%) translateY(0%)
+							.photo
+								width: 100%
+								height: auto
+								img
+									background-color: #fff
+									width: 100%
+						.image0-3
+							// &::after
+							// 	content: "" 
+							// 	width: 100%
+							// 	height: 100%
+							// 	background-color: #00ff00
+							// 	left: 0px
+							// 	top: 0px
+							// 	position: flex
+						.image0-6
+							padding: 0px
+							margin: 0px
+							position: relative
+							img
+								padding: 0px
+								margin: 0px
+								background-position: bottom
+								vertical-align: bottom
+							.buttonTop
+								right: 10%
+								top: 10%
+								position: absolute
+								.goTop
+									font-size: 8px
+									color: #333
+									text-decoration: none
+									padding: 2px 7px
+									border-radius: 2px
+									background-color: rgba(white,0.3)
+						.image0-5
+							&::after
+								content: ""
+								position: absolute
+								width: 100%
+								height: 100%
+								background-color: white
+							img
+								width: 100%
+						#start
+							opacity: 0
+						.image
+							display: none
+						.content
+							width: 40%
+							position: absolute
+							bottom: 20px
+							margin-bottom: 30px
+							line-height: 40px
+							display: inline-block
+							// text-align: left
+							left: 50%
+							transform: translateX(-50%)
+							h3
+								width: 100%
+								line-height: 60px
+								display: block
+								font-size: 38px
+								text-align: center
+							h5
+								font-size: 30px
+								display: block
+								white-space: nowrap
+								span
+									float: left
+									display: block
+									width: 180px
+			.phoneBlock
+				display: block
+				display: none
+			.PhoneLie
+				z-index: 999999
+				top: 0px
+				left: 0px
+				display: block
+				position: fixed
+				width: 100%
+				height: 100%
+				background-color: rgba(#eee, 1)
+				overflow: hidden
+				h3
+					top: 50%
+					transform: translateY(-50%)
+					text-align: center
+					letter-spacing: 3px
+					li
+					font-size: 36px
+					color: #333
+					font-weight: 600
+				// .imageTwo
+				// 	left: 50%
+				// 	transform: translateX(-50%)
+.productsMove
+	animation: mymove 1s forwards
+@keyframes loadingP
+	0%
+		opacity : 0
+	50% 
+		opacity : 1
+	100%
+		opacity : 0
+@keyframes mymove
+	20% 
+		top: 60%
+	100% 
+		top: -10%
+.scroll
+	animation: scrollDown 3s infinite
+@keyframes scrollDown
+	0%
+		bottom: 80px
+	50% 
+		bottom: 100px
+	100% 
+		bottom: 80px
+@media screen and (max-width: 1024px)
+	.three
+		.threeAll
+			.contentPhoto
+				.space
+					.imageAll
+						.imageBig
+						.col-5
+						    max-width: 70%
+@media screen and (max-width: 940px)
+	body
+		.three
+			.threeAll
+				.header
+					.opening
+						.headerLogo
+							max-width: 150px
+							max-height: 150px
+							img
+						.mose
+							position: absolute
+							width: 40px
+							height: 40px
+							bottom: 10%
+							left: 50%
+							transform: translateX(-50%)
+						.scroll
+							position: absolute
+							width: 15px
+							height: 15px
+							bottom: 8%
+				.contentPhoto
+					.space
+						.imageAll
+							.image
+								img
+							.oneSpace
+							.twoWhite
+							.white
+							.imageBig
+								img
+							.imgPhone
+								height: 100vh
+								img
+									height: 60%
+									height: auto
+							.content
+								bottom: 40px
+								width: 100%
+								h3
+									width: 100%
+									line-height: 60px
+									display: block
+									font-size: 24px
+									text-align: center
+								h5
+									font-size: 18px
+									display: block
+									white-space: nowrap
+									span
+										text-align: left
+										float: left
+										display: block
+										width: 100px
+		@keyframes scrollDown
+			0%
+				bottom: 8%
+			50% 
+				bottom: 6%
+			100% 
+				bottom: 8%
+@media screen and (max-width: 640px)
+	body
+		.three
+			.threeAll
+				.header
+					.opening
+						.headerLogo
+							max-width: 100px
+							max-height: 100px
+							img
+						.mose
+							position: absolute
+							width: 35px
+							height: 35px
+							left: 50%
+							transform: translateX(-50%)
+						.scroll
+							position: absolute
+							width: 15px
+							height: 15px
+				.contentPhoto
+					.space
+						.imageAll
+							.col-5
+							.image
+								top: 45%
+							.imageBig
+								top: 0%
+				.header
+					.opening
+						.mose
+
+		@keyframes scrollDown
+			0%
+				bottom: 6%
+			50% 
+				bottom: 4%
+			100% 
+				bottom: 6%
+@media screen and (max-width: 550px)
+	body
+		.three
+			.threeAll
+				.header
+					.opening
+						.headerLogo
+							img
+						.mose
+						.scroll
+				.contentPhoto
+					.space
+						.imageAll
+							.col-5
+							.image
+							.imageBig
+							.content
+								bottom: 20%
+								width: 100%
+								h3
+								h5
+									margin-left: 60px
+									span
+										width: 120px
+				.header
+					.opening
+						.mose
+@media screen and (max-width: 370px)
+	body
+		.three
+			.threeAll
+				.header
+					.opening
+						.headerLogo
+							img
+						.mose
+						.scroll
+				.contentPhoto
+					.space
+						.imageAll
+							.col-5
+							.image
+							.imageBig
+							.content
+								bottom: 20%
+								width: 100%
+								h3
+									font-size: 18px
+								h5
+									font-size: 14px
+									margin-left: 60px
+									span
+										width: 80px
+				.header
+					.opening
+						.mose

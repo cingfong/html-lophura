@@ -1,0 +1,298 @@
+*
+	position: relative
+	// font-family: '微軟正黑體'
+body,html
+	margin: 0px
+	z-index: 0
+	.c5All
+		.control
+			position: absolute
+			width: 100vw
+			z-index: 20
+			height: 100vh
+			.Button
+				bottom: 50px
+				width: 60px
+				height: 60px
+				cursor: pointer
+				img
+					width: 100%
+			.leftButton
+				position: absolute
+				left: 35%
+				display: none
+			.rightButton
+				position: absolute
+				right: 35%
+		.header
+			display: flex
+			background-image: url("../image/pexels-photo-926985.jpeg")
+			background-size: 100%
+			background-position: center
+			overflow-x: scroll 
+			&::-webkit-scrollbar
+				display: none
+			.life
+				left: -25%
+				flex-shrink: 0
+				display: inline-block
+				padding: 150px
+				width: 50%
+				img
+					left: 50% 
+					transform: translateX(-50%) rotate(0deg)
+					background-color: #EFE8EA
+					padding: 20px
+					border: solid 20px white
+					width: 100%
+			.one
+				// background-color: rgba(white,0)
+				// position: absolute
+				// left: 40%
+				// top: 10%
+		.content
+			padding: 40px 0px
+			width: 100%
+			color: #5C7871
+			background-color: #D1D1D1
+			text-align: center
+			font-family: 'Righteous', cursive
+			h2
+				font-size: 60px
+				line-height: 72px
+			h3
+				font-size: 40px
+				line-height: 150px
+			ul
+				li
+					width: 50%
+					font-size: 30px
+					list-style: none
+					text-align: left
+					left: 50%
+					transform: translateX(-30%)
+					span
+						display: inline-block
+						width: 200px
+		.footer
+		    left: 0px
+		    bottom: 0px
+		    width: 100%
+		    height: 140px
+		    background-color: #5C7871
+		    padding: 15px 0PX
+		    line-height: 0px
+		    position: relative
+		    display: flex
+		    flex-wrap: wrap
+		    color: #efe8ed
+		    .text
+		        float: left
+		        display: inline-block
+		        width: 100%
+		        padding-left: 180px
+		        h5
+		            width: 100%
+		            display: inline-block
+		            margin-bottom: 0px
+		            font-size: 16px
+		            line-height: 25px
+		    img
+		        margin: 0px 20px
+		        position: absolute
+		        top: 50%
+		        transform: translateY(-50%)
+		        height: 90px
+		        width: 130px
+@media screen and(max-width: 1310px)
+	body,html
+		.c5All
+			.control
+				.Button
+					img
+				.leftButton
+				.rightButton
+			.header
+				.life
+					left: -70%
+					width: 80%
+					// left: -60%
+					img
+				.one
+			.content
+				h2
+				h3
+				ul
+					overflow: hidden
+					li
+						width: 80%
+						span
+			.footer
+			    .text
+			        h5
+			    img
+@media screen and(max-width: 950px)
+	body,html
+		.c5All
+			.control
+				.Button
+					img
+				.leftButton
+				.rightButton
+			.header
+				.life
+					left: -100%
+					width: 100%
+					// left: -60%
+					img
+				.one
+			.content
+				h2
+					font-size: 48px
+				h3
+					font-size: 30px
+					line-height: 80px
+				ul
+					li
+						width: 100%
+						left: 20%
+						transform: translateX(0%)
+						span
+			.footer
+		        img
+		            width: 100px
+		            height: 70px
+		        .text
+		            padding-left: 140px
+@media screen and(max-width: 800px)
+	body,html
+		.c5All
+			.control
+				.Button
+					width: 30px
+					height: 30px
+					bottom: 20px
+					img
+				.leftButton
+				.rightButton
+			.header
+				.life
+					padding: 75px
+					left: -100%
+					width: 100%
+					// left: -60%
+					img
+				.one
+			.content
+				h2
+				h3
+				ul
+					li
+						left: 0px
+						transform: translateX(0%)
+						font-size: 24px
+						span
+							width: 150px
+			.footer
+		        height: 140px
+		        img
+		        .text
+		            h5
+		                text-align: center
+		                font-size: 14px
+		                line-height: 18px
+@media screen and(max-width: 550px)
+	body,html
+		.c5All
+			.control
+				height: auto
+				.Button
+					width: 25px
+					height: 25px
+					img
+				.leftButton
+				.rightButton
+			.header
+				.life
+					padding: 30px
+					margin-bottom: 30px
+					img
+						padding: 10px
+						border: solid 10px white
+				.one
+			.content
+				h2
+					font-size: 28px
+					line-height: 35px
+				h3
+					font-size: 24px
+					line-height: 60px
+				ul
+					li
+						font-size: 18px
+						span
+							width: 100px
+			.footer
+		        height: 150px
+		        img
+		            width: 80px
+		            height: 50px
+		        .text
+		            padding-left: 100px
+		            h5
+		                font-size: 12px
+		                line-height: 18px
+
+@media screen and (max-width: 438px)
+    .footer
+        height: 190px
+        p
+            font-size: 12px
+            span
+                display: inline-block
+@media screen and(max-width: 400px)
+	body,html
+		.c5All
+			.control
+				.Button
+					bottom: 5px
+					img
+				.leftButton
+					left: 30%
+				.rightButton
+					right: 30%
+			.header
+				.life
+					padding: 30px
+					margin-bottom: 10px
+					img
+						padding: 10px
+						border: solid 10px white
+				.one
+			.content
+				h2
+					font-size: 24px
+					line-height: 35px
+				h3
+					font-size: 20px
+					line-height: 60px
+				ul
+					li
+						font-size: 14px
+						span
+							width: 80px
+			.footer
+				height: 180px
+				.text
+			    	h5
+				img
+@media screen and(max-width: 340px)
+	body,html
+		.c5All
+		    .footer
+		        height: 180px
+		        // padding: 0px
+		        .text
+		            h5
+		                font-size: 12px
+		                line-height: 16px

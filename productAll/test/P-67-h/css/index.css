@@ -1,0 +1,314 @@
+@charset "UTF-8";
+* {
+  position: relative;
+  font-family: '微軟正黑體'; }
+
+body, html {
+  padding: 0px;
+  margin: 0px;
+  width: 100%; }
+  body .All, html .All {
+    width: 100%;
+    overflow: hidden;
+    position: relative; }
+    body .All .header, html .All .header {
+      margin: 30px 0px;
+      text-align: center; }
+      body .All .header .logo, html .All .header .logo {
+        margin-bottom: 30px; }
+        body .All .header .logo img, html .All .header .logo img {
+          width: 90px;
+          height: 70px; }
+      body .All .header h2, html .All .header h2 {
+        margin: 50px 0px;
+        font-weight: 400;
+        font-size: 30px; }
+    body .All .productsAll, html .All .productsAll {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      width: 100%;
+      height: 80%; }
+      body .All .productsAll .buttonAll, html .All .productsAll .buttonAll {
+        position: absolute;
+        width: 100%;
+        z-index: 999999;
+        display: block;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+        body .All .productsAll .buttonAll .button, html .All .productsAll .buttonAll .button {
+          width: 100%;
+          height: 100%;
+          width: 30px;
+          height: 30px;
+          position: absolute; }
+          body .All .productsAll .buttonAll .button img, html .All .productsAll .buttonAll .button img {
+            width: 100%;
+            height: 100%; }
+        body .All .productsAll .buttonAll .moveLeft, html .All .productsAll .buttonAll .moveLeft {
+          left: 25%; }
+        body .All .productsAll .buttonAll .moveRight, html .All .productsAll .buttonAll .moveRight {
+          right: 25%; }
+      body .All .productsAll .col-6, html .All .productsAll .col-6 {
+        padding: 0px;
+        margin: 0px;
+        height: 100%; }
+        body .All .productsAll .col-6 img, html .All .productsAll .col-6 img {
+          width: 100%;
+          height: 100%; }
+    body .All .ContentAll, html .All .ContentAll {
+      margin: 300px 0px; }
+      body .All .ContentAll .Content, html .All .ContentAll .Content {
+        margin: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        body .All .ContentAll .Content .leftPhoto img, html .All .ContentAll .Content .leftPhoto img {
+          width: 100%; }
+        body .All .ContentAll .Content .rightText, html .All .ContentAll .Content .rightText {
+          margin: auto;
+          padding-top: 50px;
+          padding-left: 20px; }
+          body .All .ContentAll .Content .rightText h1, html .All .ContentAll .Content .rightText h1 {
+            font-weight: 600;
+            text-align: center;
+            font-size: white;
+            display: block;
+            margin-bottom: 40px;
+            font-size: 26px;
+            max-width: 70%; }
+          body .All .ContentAll .Content .rightText h3, html .All .ContentAll .Content .rightText h3 {
+            line-height: 45px;
+            font-size: 22px; }
+            body .All .ContentAll .Content .rightText h3 span, html .All .ContentAll .Content .rightText h3 span {
+              display: inline-block;
+              width: 120px; }
+    body .All .footer, html .All .footer {
+      width: 100%;
+      position: relative; }
+      body .All .footer .contentFoter, html .All .footer .contentFoter {
+        margin: 120px auto;
+        margin-bottom: 0px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-bottom: 120px; }
+        body .All .footer .contentFoter:nth-child(even) .photo, html .All .footer .contentFoter:nth-child(even) .photo {
+          left: 0px; }
+        body .All .footer .contentFoter .photo img, html .All .footer .contentFoter .photo img {
+          width: 100%; }
+        body .All .footer .contentFoter .text .content, html .All .footer .contentFoter .text .content {
+          margin-left: -120px;
+          top: 100%;
+          -webkit-transform: translateY(-100%);
+          -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+          line-height: 45px;
+          font-weight: 700;
+          display: inline-block;
+          padding: 50px 120px;
+          background-color: rgba(239, 239, 239, 0.3); }
+          body .All .footer .contentFoter .text .content h3, html .All .footer .contentFoter .text .content h3 {
+            font-weight: 600;
+            font-size: 30px;
+            margin-bottom: 15px; }
+          body .All .footer .contentFoter .text .content h4, html .All .footer .contentFoter .text .content h4 {
+            text-align: center;
+            font-size: 26px; }
+
+@media screen and (max-width: 1300px) {
+  body .All {
+    overflow: hidden; }
+    body .All .ContentAll {
+      margin: 200px 0px; }
+      body .All .ContentAll .Content .rightText h3 {
+        font-size: 18px; }
+        body .All .ContentAll .Content .rightText h3 span {
+          width: 100px; }
+    body .All .footer .contentFoter .text .content {
+      padding: 50px 80px; } }
+
+@media screen and (max-width: 1120px) {
+  body .All .ContentAll {
+    margin: 150px 0px; }
+    body .All .ContentAll .Content .rightText {
+      padding: 0px;
+      margin: 0px;
+      margin-left: -50px; }
+      body .All .ContentAll .Content .rightText h1 {
+        font-size: 26px; }
+      body .All .ContentAll .Content .rightText h3 {
+        width: 100%;
+        line-height: 45px;
+        font-size: 18px; }
+        body .All .ContentAll .Content .rightText h3 span {
+          display: inline-block;
+          width: 100px; }
+  body .All .footer .contentFoter .textRight .content {
+    margin-left: 0px; }
+  body .All .footer .contentFoter .text {
+    width: 100%; }
+    body .All .footer .contentFoter .text .content {
+      padding: 20px 60px; }
+      body .All .footer .contentFoter .text .content h3 {
+        white-space: nowrap;
+        font-size: 24px; }
+      body .All .footer .contentFoter .text .content h4 {
+        font-size: 18px; } }
+
+@media screen and (max-width: 980px) {
+  body .All .header {
+    margin: 15px 0px; }
+    body .All .header .logo img {
+      width: 70px;
+      height: 50px; }
+    body .All .header h2 {
+      margin: 20px 0px;
+      font-weight: 400;
+      font-size: 26px; }
+  body .All .ContentAll {
+    margin: 80px 0px; }
+    body .All .ContentAll .Content {
+      margin: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      body .All .ContentAll .Content .leftPhoto {
+        display: none; }
+      body .All .ContentAll .Content .rightText {
+        width: 100%;
+        margin: auto; }
+        body .All .ContentAll .Content .rightText h1 {
+          text-align: center;
+          font-size: white;
+          display: block;
+          margin-bottom: 40px;
+          font-size: 26px;
+          max-width: 100%; }
+        body .All .ContentAll .Content .rightText h3 {
+          white-space: nowrap;
+          width: 100%;
+          line-height: 45px;
+          font-size: 22px; }
+          body .All .ContentAll .Content .rightText h3 span {
+            display: inline-block;
+            width: 120px; }
+  body .All .footer .contentFoter .text .content {
+    margin-left: -120px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: inline-block;
+    padding: 50px 120px;
+    background-color: rgba(239, 239, 239, 0); }
+    body .All .footer .contentFoter .text .content h3 {
+      text-align: center;
+      white-space: nowrap;
+      font-size: 24px;
+      margin-bottom: 15px; }
+    body .All .footer .contentFoter .text .content h4 {
+      white-space: nowrap;
+      text-align: center;
+      font-size: 18px; } }
+
+@media screen and (max-width: 640px) {
+  body .All .header .logo img {
+    width: 40px;
+    height: 30px; }
+  body .All .header h2 {
+    font-size: 20px; }
+  body .All .productsAll .buttonAll .button {
+    width: 20px;
+    height: 20px; }
+  body .All .ContentAll {
+    margin: 60px 0px; }
+    body .All .ContentAll .Content .rightText h1 {
+      white-space: nowrap;
+      text-align: center;
+      font-size: white;
+      display: block;
+      margin-bottom: 20px;
+      font-size: 22px; }
+    body .All .ContentAll .Content .rightText h3 {
+      margin-left: -30%;
+      white-space: nowrap;
+      line-height: 45px;
+      font-size: 18px; }
+      body .All .ContentAll .Content .rightText h3 span {
+        display: inline-block;
+        width: 100px; }
+  body .All .footer .contentFoter .textRight .content {
+    margin-left: -100px; } }
+
+@media screen and (max-width: 495px) {
+  body .All .header .logo {
+    margin-bottom: 15px; }
+  body .All .header h2 {
+    font-size: 18px;
+    margin: 10px 0px; }
+  body .All .productsAll .buttonAll .button {
+    width: 15px;
+    height: 15px; }
+  body .All .ContentAll {
+    margin: 60px 0px; }
+    body .All .ContentAll .Content .rightText h1 {
+      font-size: 18px; }
+    body .All .ContentAll .Content .rightText h3 {
+      margin-left: -30%;
+      white-space: nowrap;
+      line-height: 25px;
+      font-size: 12px; }
+      body .All .ContentAll .Content .rightText h3 span {
+        display: inline-block;
+        width: 80px; }
+  body .All .footer .contentFoter {
+    margin: 10% auto; }
+    body .All .footer .contentFoter .text .content {
+      padding: 20px 60px;
+      margin-left: -120px; }
+      body .All .footer .contentFoter .text .content h3 {
+        font-size: 18px; }
+      body .All .footer .contentFoter .text .content h4 {
+        font-size: 12px; }
+    body .All .footer .contentFoter .textRight .content {
+      margin-left: -80px; } }
+
+@media screen and (max-width: 375px) {
+  body .All .ContentAll {
+    margin: 40px 0px; }
+    body .All .ContentAll .Content .rightText h1 {
+      font-size: 16px; }
+    body .All .ContentAll .Content .rightText h3 {
+      margin-left: -40%;
+      white-space: nowrap;
+      line-height: 25px;
+      font-size: 12px;
+      line-height: 20px; }
+      body .All .ContentAll .Content .rightText h3 span {
+        display: inline-block;
+        width: 60px; }
+  body .All .footer .contentFoter {
+    margin: 10% auto; }
+    body .All .footer .contentFoter .text .content {
+      margin-left: -100px; }
+      body .All .footer .contentFoter .text .content h3 {
+        font-size: 18px; }
+      body .All .footer .contentFoter .text .content h4 {
+        font-size: 12px; }
+    body .All .footer .contentFoter .textRight .content {
+      margin-left: -80px; } }

@@ -1,0 +1,191 @@
+* {
+  position: relative; }
+
+body {
+  background-color: #eee !important;
+  background-position: top;
+  background-size: 100%; }
+
+body, html {
+  margin: 0px;
+  z-index: 0; }
+  body .Logo, html .Logo {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 120px;
+    height: 90px;
+    z-index: 20; }
+    body .Logo img, html .Logo img {
+      width: 100%; }
+  body .titleImgAll, html .titleImgAll {
+    width: 50%;
+    margin: auto; }
+    body .titleImgAll .carousel .carousel-inner .carousel-item img, html .titleImgAll .carousel .carousel-inner .carousel-item img {
+      margin: auto; }
+    body .titleImgAll .carousel .carousel-indicators li, html .titleImgAll .carousel .carousel-indicators li {
+      margin: 0px 5px;
+      height: 10px;
+      width: 10px;
+      border-radius: 100%; }
+  body .midText, html .midText {
+    display: inline-block;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+    body .midText h4, html .midText h4 {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 32px;
+      letter-spacing: 1px; }
+    body .midText h5, html .midText h5 {
+      font-size: 28px;
+      margin: 30px 0px;
+      text-align: center;
+      font-weight: 400; }
+    body .midText p, html .midText p {
+      font-size: 24px; }
+      body .midText p span, html .midText p span {
+        width: 180px;
+        display: inline-block; }
+  body .livePhoto, html .livePhoto {
+    margin: 40px 0px;
+    width: 80%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+    body .livePhoto .list, html .livePhoto .list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%; }
+      body .livePhoto .list .Cimg, html .livePhoto .list .Cimg {
+        opacity: 0.85;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        body .livePhoto .list .Cimg img, html .livePhoto .list .Cimg img {
+          border: solid 6px #eee;
+          width: 100%; }
+        body .livePhoto .list .Cimg:hover, html .livePhoto .list .Cimg:hover {
+          opacity: 1; }
+    body .livePhoto .listOne .Cimg, html .livePhoto .listOne .Cimg {
+      width: 33%; }
+    body .livePhoto .listTwo .left, html .livePhoto .listTwo .left {
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      width: 66%; }
+    body .livePhoto .listTwo .right, html .livePhoto .listTwo .right {
+      width: 33%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      body .livePhoto .listTwo .right img, html .livePhoto .listTwo .right img {
+        width: 100%; }
+    body .livePhoto .listTwo .twoPhone, html .livePhoto .listTwo .twoPhone {
+      display: none; }
+
+@media screen and (max-width: 1200px) {
+  body .titleImgAll, html .titleImgAll {
+    width: 60%; } }
+
+@media screen and (max-width: 1000px) {
+  body .Logo, html .Logo {
+    width: 70px;
+    bottom: 20px;
+    right: 10px;
+    height: auto; }
+  body .titleImgAll, html .titleImgAll {
+    width: 70%; } }
+
+@media screen and (max-width: 850px) {
+  body .Logo, html .Logo {
+    bottom: 10px; }
+  body .titleImgAll, html .titleImgAll {
+    width: 85%; }
+  body .midText h4, html .midText h4 {
+    font-size: 28px; }
+  body .midText h5, html .midText h5 {
+    font-size: 24px;
+    margin: 20px 0px; }
+  body .midText p, html .midText p {
+    font-size: 20px;
+    margin: 18px 0px; }
+    body .midText p span, html .midText p span {
+      width: 130px; }
+  body .livePhoto, html .livePhoto {
+    width: 95%; } }
+
+@media screen and (max-width: 600px) {
+  body .Logo, html .Logo {
+    width: 60px; }
+  body .titleImgAll, html .titleImgAll {
+    width: 95%; }
+  body .midText h4, html .midText h4 {
+    font-size: 26px; }
+  body .midText h5, html .midText h5 {
+    font-size: 20px;
+    margin: 20px 0px; }
+  body .midText p, html .midText p {
+    font-size: 16px;
+    margin: 10px 0px; }
+    body .midText p span, html .midText p span {
+      width: 100px; } }
+
+@media screen and (max-width: 450px) {
+  body .Logo, html .Logo {
+    width: 40px;
+    bottom: 8px; }
+  body .titleImgAll, html .titleImgAll {
+    width: 100%; }
+  body .midText h4, html .midText h4 {
+    margin-top: 20px;
+    font-size: 22px; }
+  body .midText h5, html .midText h5 {
+    font-size: 18px;
+    margin: 15px 0px; }
+  body .midText p, html .midText p {
+    font-size: 14px;
+    margin: 7px 0px; }
+    body .midText p span, html .midText p span {
+      width: 100px; }
+  body .livePhoto, html .livePhoto {
+    margin: 20px 0px;
+    width: 98%; }
+    body .livePhoto .list .Cimg img, html .livePhoto .list .Cimg img {
+      border: solid 2px #eee; }
+    body .livePhoto .listOne, html .livePhoto .listOne {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      body .livePhoto .listOne .Cimg, html .livePhoto .listOne .Cimg {
+        width: 50%; }
+      body .livePhoto .listOne .onePhone, html .livePhoto .listOne .onePhone {
+        display: none; }
+    body .livePhoto .listTwo .twoPhone, html .livePhoto .listTwo .twoPhone {
+      display: block; }
+    body .livePhoto .listLast, html .livePhoto .listLast {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse; } }
+
+@media screen and (max-width: 375px) {
+  body .titleImgAll .carousel .carousel-indicators li, html .titleImgAll .carousel .carousel-indicators li {
+    width: 5px;
+    height: 5px; }
+  body .midText h4, html .midText h4 {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 0px; }
+  body .midText h5, html .midText h5 {
+    font-size: 16px; }
+  body .midText p, html .midText p {
+    font-size: 12px;
+    margin: 7px 0px; }
+    body .midText p span, html .midText p span {
+      width: 80px; } }

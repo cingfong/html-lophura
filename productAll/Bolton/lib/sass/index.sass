@@ -1,0 +1,442 @@
+*
+    // border: solid 1px black
+    // color: #888
+body, html
+    margin: 0px auto
+    padding: 0px
+    background-color: #fff
+    position: relative
+body
+    padding-bottom: 180px
+    // background-color: #00ff00
+    // position: relative
+// ---導覽列---
+hr
+    width: 85%
+    background-color: #eee
+.navHeader
+    display: flex
+    flex-wrap: wrap
+    position: relative
+    button
+        border: 0px
+        margin: 30px
+    .navbar-brand
+        margin: 0px
+        padding: 0px
+        .titleImg
+            top: 20px
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            width: 90px
+            height: 60px
+            margin: 0px
+            padding: 0px
+    .navbar-collapse
+        justify-content: center
+        align-items: center
+        margin-top: 90px
+        .active
+            margin: 0px 10px
+            width: 120px
+            text-align: center
+            a
+                cursor: pointer
+                text-align: center
+                width: 100%
+                display: inline-block
+            .dropdownLayer
+                #pushAll
+                    margin-left: 0px
+                    list-style: none
+                    display: flex
+                    flex-wrap: nowrap
+                    // margin-left: -230px
+                    margin-left: -120px
+                    position: absolute
+                    z-index: 99
+                    // border: solid 0.8px rgba(0,0,0,0.15)
+                    padding-inline-start: 0px
+                    // display: none
+                    width: 360px
+                    li
+                        text-align: center
+                        width: 180px
+                        background-color: #fff
+                        color: rgba(0,0,0,0.9)
+                        .layerTitle
+                            font-size: 17px
+                        .layerContent
+                            // display: none
+                            a
+                                // font-weight: 100
+                                font-size: 16px
+                                margin-bottom: 8px
+                                text-decoration: none
+                                color: rgba(0,0,0,0.5)
+        .nav-link
+            &:hover
+                color: #aaa
+            &:focus
+                outline: none
+// ---商品介紹---
+.commdityTitle
+    font-size: 32px
+    padding-top: 30px
+    text-align: center
+    color: #444
+
+.commdityAll
+    padding-top: 10px
+    display: flex
+    position: relative
+    width: 100%
+    margin: 0px auto
+    justify-content: center
+    .sp-thumbs
+        a
+    .sp-large
+    .tab-pane
+        width: 40%
+        display: none
+        .sp-wrap
+            width: 100%
+            border: 0px
+            max-width: 100%
+            overflow: hidden
+            .sp-thumbs
+                transition: 1s
+                white-space: nowrap
+                overflow: hidden
+                display: flex
+                justify-content: center
+                a
+                    height: 60px
+                    width: 13%
+                    margin-left: 0px
+                    flex-shrink: 0
+                    flex-grow: 0
+            .photoControl
+                // left: -5px
+                margin: 0px auto
+                z-index: 99
+                position: absolute
+                bottom: 20px
+                width: 30px
+                height: 30px
+                display: flex
+                justify-content: space-between
+                display: none
+                &:hover
+                    opacity: 0.5
+            .controlLeft
+                left: -5px
+                opacity: 0.5
+            .controlRight
+                opacity: 0.5
+                right: -5px
+            .shopPhoto
+                left: 50px
+    .active
+        display: block
+        // 商品顯示
+    .format
+        padding: 10px
+        width: 25%
+        margin-top: 60px
+        .li
+            position: absolute
+            left: 6px
+            top: 50%
+            transform: translateY(-50%)
+            width: 5px
+            height: 5px
+            border-radius: 100%
+            background-color: #888
+        li
+            position: relative
+            font-size: 16px
+            margin: 15px
+            white-space: nowrap
+            list-style: none
+            padding-left: 15px
+            color: #888
+            span
+                display: inline-block
+                width: 100px
+        h4
+            text-align: center
+            margin-bottom: 30px
+            margin-left: -90px
+            color: #666
+        // .space
+        //     list-style: none
+        //     span
+        //         margin-left: 16px
+        //         display: inline-block
+        //         width: 106px
+        //         color: #fff
+        .rwdColor
+            display: none
+        .colorAll
+            // display: flex
+            // align-items: center
+            .list-group
+                display: inline-block
+                // margin-left: 60px
+                .produceColor
+                    vertical-align: middle
+                    display: inline-block
+                    border-radius: 100%
+                    // top: 50%
+                    width: 20px
+                    height: 20px
+                .one
+                    background-color: #C15738
+                .two
+                    background-color: #D86D1B
+                    margin-left: 20px
+.present
+    color: #777
+    margin: 0px auto
+    width: 80%
+    img
+        width: 100%
+        padding: 20px 40px
+    h5
+        text-align: center
+    p
+        text-align: center
+        padding: 20px 120px
+// ---聯絡資訊---
+.coda
+    left: 0px
+    bottom: 0px
+    // margin-top: 10px
+    width: 100%
+    height: 140px
+    background-color: #eee
+    padding: 15px 0PX
+    line-height: 0px
+    position: relative
+    display: flex
+    // align-items:center
+    flex-wrap: wrap
+    .text
+        float: left
+        display: inline-block
+        width: 100%
+        padding-left: 180px
+        h5
+            width: 100%
+            display: inline-block
+            margin-bottom: 0px
+            font-size: 16px
+            color: #444
+            line-height: 25px
+    img
+        margin: 0px 20px
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        height: 90px
+        width: 130px
+@media screen and (min-width: 992px)
+    .navHeader
+        .navbar-collapse
+            .active
+                .dropdown-menu
+                    border: 0px
+                .dropdownLayer
+                    #pushAll
+                        li
+                            .layerContent
+                                display: block
+@media screen and (max-width: 991px)
+    .navHeader
+        .navbar-collapse
+            margin-top: 0px
+        .navbar-brand
+            .titleImg
+        .navbar-collapse
+            .active
+                width: 50%
+                margin: 0px auto
+                text-align: center
+                a
+                .dropdown-menu
+                    min-width: 0rem
+                    border: solid 0px
+                .dropdownLayer
+                    #pushAll
+                        display: inline-block
+                        flex-wrap: wrap
+                        position: relative
+                        margin-left: 0px
+                        li
+                            width: 100%
+                            margin-top: 10px
+                            margin-bottom: 10px
+                            .layerContent
+                                display: none
+    .box
+        margin-top: 30px
+    .commdityAll
+        flex-wrap: wrap
+        .tab-pane
+            width: 70%
+            .sp-wrap
+                .sp-thumb
+                    a
+                        width: 13%
+        .format
+            // margin-left: 50%
+            // transform: translateX(-50%)
+            width: 70%
+            margin-top: 30px
+            h4
+                margin-left: 0px
+            li
+                color: #888
+                transform: translateX(-50%)
+                margin-left: 50%
+            .rwdColor
+                display: block
+            .pcColor
+                display: none
+    .coda
+        img
+            width: 100px
+            height: 70px
+        .text
+            padding-left: 140px
+@media screen and (max-width: 768px)
+    .navHeader
+        .navbar-collapse
+            .active
+                .dropdownLayer
+                    #pushAll
+                        width: auto
+                        .layerTitle
+                            font-size: 16px
+                            a
+                                font-size: 12px
+    .commdityTitle
+        padding-top: 10px
+    .navHeader
+        .navbar-brand
+            .titleImg
+                width: 45px
+                height: 30px
+        .navbar-toggler
+            margin: 7px
+    .commdityAll
+        .tab-pane
+            .sp-wrap
+                .sp-thumbs
+                    a
+                        height: 50px
+                        width: 15%
+        .format
+            li
+                margin-left: 0px
+                transform: translateX(0%)
+    .present
+        width: 100%
+        img
+            padding: 10px 20px
+    .coda
+        height: 140px
+        img
+        .text
+            h5
+                text-align: center
+                font-size: 14px
+                line-height: 18px
+@media screen and (max-width: 580px)
+    .commdityAll
+        .tab-pane
+            .sp-wrap
+                overflow: hidden
+                // .photoControl
+                //     display: block
+                .sp-thumbs
+                    transition: 1s
+                    white-space: nowrap
+                    // overflow: hidden
+                    display: flex
+                    justify-content: start
+                    overflow-x: auto
+                    // margin: 0px 20px
+                    // overflow-x: hidden
+                    a
+                        flex-shrink: 0
+                        flex-grow: 0
+                        width: 20%
+    .coda
+        height: 150px
+        img
+            width: 80px
+            height: 50px
+        .text
+            padding-left: 100px
+            h5
+                font-size: 12px
+                line-height: 18px
+
+    ::-webkit-scrollbar
+        display: none
+@media screen and (max-width: 540px)
+    .navHeader
+        .navbar-brand
+            .titleImg
+                top: 10px
+        .navbar-toggler
+            margin: 0px
+    .commdityAll
+        .tab-pane
+            .sp-wrap
+                .sp-thumbs
+                    a
+                        // width: 25%
+                        margin: 5px 4%
+        .format
+            width: 80%
+            .space
+                // span
+                //     margin-left: 11px
+            li
+                font-size: 13px
+
+@media screen and (max-width: 438px)
+    .commdityAll
+        .tab-pane
+            .sp-wrap
+                .sp-thumbs
+                    a
+                        // margin: 0px 5%
+                        // width: 30%
+    .coda
+        height: 190px
+        p
+            font-size: 12px
+            span
+                // margin-top: 10px
+                display: inline-block
+
+@media screen and (max-width: 412px)
+    .commdityAll
+        .tab-pane
+            .sp-wrap
+                .sp-thumbs
+                    a
+                        width: 30%
+                        margin: 0px 5%
+@media screen and (max-width: 340px)
+    .coda
+        height: 180px
+        .text
+            h5
+                font-size: 12px
+                line-height: 16px

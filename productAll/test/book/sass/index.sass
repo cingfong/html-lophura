@@ -1,0 +1,838 @@
+*
+	position: relative
+html
+	background-image: url("../image/S-37-BGC-3.png")
+	// background-color: green
+	&:after
+		content: ""
+		position: absolute
+		width: 100%
+		height: 100%
+		background-color: rgba(white,0.3)
+		display: block
+body,html
+	margin: 0px
+	min-height: 100vh
+	background-size: 100%
+	background-position: center
+	display: flex
+	justify-content: center
+	align-content: center
+	overflow: hidden
+	#magazine
+		width: 90% 
+		height: 970px
+		max-width: 1620px
+		min-height: 970px
+		margin: auto
+		div
+			width: 100%
+		.turn-page
+			background-color: rgba(#fff,1)
+			background-size: 100%
+		.cover
+			img
+				height: 100%
+				width: 100%
+		.logOne
+			border-radius: 5% 0% 0% 5%
+		.menucatalog
+			// background-image: url("../image/menuBGC.jpg")
+			background-position: center
+			background-size: 100%
+			background-color: black
+			.menuTitle
+				position: absolute
+				font-size: 60px
+				background-color: white
+				color: #333
+				font-weight: 900
+				top: 30px
+				width: 100%
+				left: 50%
+				transform: translateX(-50%)
+				h2
+					font-family: 'Bowlby One SC', cursive;
+					letter-spacing: 3px
+					text-align: right
+					margin: 0px
+					padding: 0px
+					line-height: 120px
+			.menuList
+				height: 100%
+				margin-top: 100px
+				.productList
+					margin: 0px auto
+					list-style: none
+					color: #333
+					h2
+						font-size: 30px
+						text-align: left
+						display: inline-block
+					ul
+						margin: 0px
+						padding: 0px
+						li
+							text-align: left
+							margin: 0px
+							padding: 0px
+							list-style: none
+							margin-top: 10px
+							line-height: 50px
+							font-size: 32px
+							a
+								cursor: pointer
+								display: inline-block
+						.menuIcon
+							position: absolute
+							left: 40%
+							width: 350px
+							top: 0px
+						.BG
+							width: 280px
+				.menu
+					margin-top: 80px
+					width: 100%
+					display: inline-block
+					margin-bottom: 25px
+					height: auto
+					color: #ddd
+					font-family: 'Public Sans', sans-serif
+					h2
+						border-top: solid 5px white
+						padding: 20px 40px 10px 40px
+						margin: 0px
+						font-size: 42px
+						overflow: hidden
+						color: #fff
+						font-weight: 600
+					ul
+						top: -6px
+						width: 100%
+						height: 50%
+						padding-left: 20px
+						font-weight: 400
+						li
+							&:first-child
+								margin-top: 0px
+								padding-top: 20px
+							&:last-child
+								padding-bottom: 10px
+				.menuOne
+					h2
+					ul
+				.menuTwo
+					margin-top: 40px
+					h2
+					ul
+				.menuThree
+					width: 80%
+					h2
+						word-wrap: nowrap
+					ul
+						height: auto
+
+
+				.menuLeft
+				.menuRight
+					margin-left: -5px
+		.logTwo
+			.menuTitle
+				h2
+					text-align: left
+					padding-left: 3px
+		.productLeft
+			padding: 5px
+			.liveImg
+				line-height: 0px
+				white-space: 0px
+				overflow: hidden
+				height: 100%
+				img
+					background-color: white
+					width: 100%
+					&:first-child
+						width: 110%
+						z-index: 1
+						left: -10%
+						margin-top: 0px
+						transform: rotate(-5deg)
+						padding: 5px 15px
+						box-shadow: 8px 8px 10px #333
+					&:nth-child(2)
+						top: -50px
+						left: -15%
+						transform: rotate(10deg)
+						width: 120%
+						box-shadow: 8px 8px 10px #333
+						z-index: 0
+			.contentImg
+				img
+					margin: 5px 0px
+					width: 100%
+					left: 50%
+					transform: translateX(-50%)
+			.haderText
+				position: absolute
+				top: 42%
+				margin-top: 10px
+				transform: rotate(10deg)
+				z-index: 2
+				width: 100%
+				h2
+					letter-spacing: 1px
+					z-index: 999
+					font-size: 40px
+					font-weight: 900
+					color: #333
+					font-weight: 900
+					text-align: right
+					padding-right: 20px
+					text-shadow: 0px -1px 0px white, -1px 0px 0px white, 1px 0px 0px white, 0px 1px 0px white
+		.pageFives
+			.contentImg
+				margin-top: 50px
+				display: flex
+				justify-content: space-around
+				flex-wrap: wrap
+				h5
+					font-size: 32px
+					text-align: center
+					margin: 20px 0px
+				div
+					width: 30%
+					img
+						border-radius: 10px
+						width: 100%
+						left: 0px
+						transform: translate(0%)
+		.pageSix
+			.product
+				.content
+					p
+						padding: 10px 10px 
+						margin: 0px
+		.productRight
+			background-image: url("../image/BGC-3.jpg")
+			// background-color: black
+			padding: 10px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			flex-shrink: 0
+			.product
+				height: 25%
+				display: flex
+				margin: 10px 0px
+				.text
+					.content
+						float: right
+						width: 100%
+						color: #fff
+						word-space: nowrap
+						h5
+							font-weight: 300
+							border-bottom: solid 1px rgba(#333,0.8)
+							line-height: 38px
+							font-size: 33px
+							margin: 0px
+							padding: 0px
+							margin: 30px 10px 0px 
+							span
+								vertical-align: center
+						p 
+							padding: 10px 10px 
+							margin: 0px
+							font-size: 18px
+							width: 120%
+							overflow: visible
+							span
+								font-size: 22px
+								width: 90px
+								display: inline-block
+						h4
+							text-align: center
+							margin: 10px 0px
+							margin-left: 30px
+							font-size: 22px
+						.ability
+							.abilityList
+								display: flex
+								margin: 10px 0px
+								justify-content: flex-start
+								p
+									width: 90px
+									padding: 0px
+									margin-left: 10px
+									display: block
+									flex-shrink: 0
+									text-align: left
+								.color
+									width: 50px
+									height: 7px
+									display: block
+									background-color: black
+									margin: auto 0px
+									margin-left: 8px 
+								.colorOne
+									background: linear-gradient(left,#999,#bbb)
+								.colorTwo
+									background: linear-gradient(left,#bbb,#ddd)
+								.colorThree
+									background: linear-gradient(left,#ddd,#fff)
+				.img
+					height: 130%
+					// &:after
+					// 	content: ""
+					// 	position: absolute
+					// 	right: 50%
+					// 	top: 50%
+					// 	height: 120%
+					// 	width: 120%
+					// 	display: block
+					// 	background-position: center
+					// 	background-size: 100%
+					// 	background-repeat: no-repeat
+					// 	transform: translate(50%,-50%)
+					img
+						z-index: 2
+						border-radius: 50%
+						height: 100%
+						position: relative
+						top: 50%
+						transform: translateY(-50%)
+						margin: 0px 40px
+			.productTwo
+				flex-direction: row-reverse
+				.text
+					.content
+						float: left
+				.img
+					// &:after
+					// 	left: 50%
+					// 	transform: translate(-50%,-50%)
+					// 	position: absolute
+					img
+						float: right
+			.productList
+				list-style: none
+				color: #333
+				h2
+					font-size: 48px
+				ul
+					li
+						list-style: none
+						line-height: 50px
+						font-size: 32px
+@media screen and (max-width: 1670px)
+	body
+		#magazine
+			width: 100%
+			height: 800px
+			min-height: 800px
+			overflow: auto
+			.cover
+			.menucatalog
+				display: flex
+				.menuList
+					margin-top: 30px
+					.productList
+						h2
+							margin: 25px 0px
+			.productLeft
+				.liveImg
+					img
+						&:first-child
+							top: -10%
+							width: 100%
+						&:nth-child(2)
+							// z-index: 2
+							transform: rotate(5deg)
+							width: 100%
+							left: 0%
+							top: -18%
+			.productRight
+				.product
+					height: 30%
+@media screen and (max-width: 1620px)
+	body,html
+		#magazine
+			width: 90%
+			height: 100px
+			min-height: 750px
+			.productLeft
+				.liveImg
+					img
+						width: 90%
+						&:first-child
+							top: -10%
+							width: 90%
+						&:nth-child(2)
+							// z-index: 2
+							transform: rotate(5deg)
+							width: 100%
+							left: 0%
+							top: -5%
+				.haderText
+					transform: rotate(5deg)
+					h2
+						right: 8px
+			.productRight
+				.product
+					height: 30%
+					.text
+						.content
+							width: 90%
+							h5
+								margin: 10px 0px 0px
+							p 
+								padding: 10px 10px
+								span
+							h4
+								margin-left: 10px
+							.ability
+								.abilityList
+									p
+										margin-left: 10px
+									.color
+					.img	
+						width: 50%
+						display: flex
+						align-content: center
+						justify-content: center
+						flex-shrink: 0
+						height: auto
+						img
+							height: 130%
+							// flex-shrink: 0
+							// flex-grow: 0
+							margin: 0px
+@media screen and (max-width: 1460px)
+	body,html
+		#magazine
+			width: 1350px
+			min-height: 700px
+			.productLeft
+				.liveImg
+					img
+						width: 90%
+						&:first-child
+							top: -10%
+							width: 100%
+						&:nth-child(2)
+							// z-index: 2
+							transform: rotate(5deg)
+							width: 100%
+							left: 0%
+							top: -14%
+				.haderText
+					transform: rotate(5deg)
+					top: 39%
+					h2
+						right: 8px
+			.productRight
+				.product
+					.text
+						.content
+							h5
+							p 
+								padding: 5px 10px
+								span
+				.img
+@media screen and (max-width: 1350px)
+	body,html
+		#magazine
+			width: 1250px
+			min-height: 650px
+			.productLeft
+				.liveImg
+					img
+				.contentImg
+					img
+				.haderText
+					h2
+			.productRight
+				.product
+					.text
+						.content
+							h5
+								font-size: 30px
+							p 
+								font-size: 14px
+								margin: 5px auto
+								span
+							h4
+								margin: 0px auto
+								margin-left: 10px
+								font-size: 16px
+							.ability
+								.abilityList
+									margin: 8px 0px
+									p
+										margin: 0px
+										width: 60px
+										margin-left: 10px
+									.color
+										width: 40px
+										height: 5px
+				.img
+@media screen and (max-width: 1250px)
+	body,html
+		#magazine
+			width: 1000px
+			min-height: 600px
+			.cover
+				.logo
+					img
+			.menucatalog
+				.menuList
+					.productList
+						h2
+							font-size: 32px
+						ul
+							li
+								font-size: 28px
+			.productLeft
+				.liveImg
+					img
+						width: 90%
+						&:first-child
+							top: -10%
+							width: 100%
+						&:nth-child(2)
+							// z-index: 2
+							transform: rotate(5deg)
+							width: 120%
+							left: 0%
+							top: -5%
+				.haderText
+					top: 40%
+					h2
+						font-size: 32px
+			.pageFives
+				.contentImg
+					h5
+						font-size: 28px
+
+			.productRight
+				.product
+					.text
+						width: 100%
+						.content
+							width: 100%
+							h5
+								font-size: 28px
+							p 
+								font-size: 14px
+								margin: 5px auto
+								span
+									font-size: 14px
+									width: 60px
+					.img
+						padding: 0px 10px
+						img
+@media screen and (max-width: 1000px)
+	body,html
+		#magazine
+			width: 900px
+			min-height: 600px
+			.productLeft
+				.liveImg
+					img
+						&:first-child
+							width: 110%
+						&:nth-child(2)
+							width: 120%
+				.haderText
+					top: 44%
+					h2
+						padding-right: 10px
+						font-size: 28px
+						margin: 0px
+			.productRight
+				.product
+					.text
+						width: 50%
+						flex-shrink: 0
+						.content
+							h5
+							p 
+								span
+					.img
+						width: 50%
+						padding: 0px
+						img
+							height: 110%
+@media screen and (max-width: 900px)
+	body,html
+		#magazine
+			width: 600px
+			min-height: 700px
+			.productLeft
+				.liveImg
+					img
+						&:first-child
+							width: 100%
+						&:nth-child(2)
+							top: -8%
+							width: 120%
+				.haderText
+					top: 44%
+					h2
+						padding-right: 10px
+						font-size: 32px
+						margin: 0px
+			.pageSeven
+				.contentImg
+					div
+						width: 40% 
+			.productRight
+				.product
+					.text
+						width: 55%
+						flex-shrink: 0
+						.content
+							h5
+								font-size: 40px
+								margin: 10px 0px
+								line-height: 55px
+							p 
+								font-size: 20px
+								padding: 5px
+								margin: 0px
+								margin-left: 5px
+								span
+									width: 90px
+									font-size: 20px
+							h4
+								font-size: 20px
+							.ability
+								.abilityList
+									margin: 5px 0px
+									p
+										padding: 0px
+										width: 90px
+									.color
+										width: 60px
+										height: 7px
+					.img
+						width: 40%
+						height: 100%
+						padding: 0px 10px
+						img
+							margin: 0px 10px
+@media screen and (max-width: 600px)
+	body,html
+		#magazine
+			width: 500px
+			min-height: 600px
+			.productLeft
+				.liveImg
+					img
+						&:first-child
+						&:nth-child(2)
+				.haderText
+					top: 41%
+					h2
+			.pageSeven
+				.contentImg
+					div
+						width: 45% 
+			.productRight
+				.product
+					.text
+						width: 50%
+						flex-shrink: 0
+						.content
+							h5
+								font-size: 32px
+								margin: 5px
+								line-height: 40px
+							p 
+								font-size: 14px
+								padding: 0px
+								span
+									width: 63px
+									font-size: 16px
+							h4
+								font-size: 18px
+								margin: 8px 0px
+							.ability
+								.abilityList
+									margin: 5px 0px
+									p
+										margin-left: 3px
+										font-size: 14px
+										width: 60px
+									.color
+										width: 40px
+										height: 5px
+					.img
+						width: 40%
+						img
+							width: 80%
+							height: auto
+@media screen and (max-width: 500px)
+	body,html
+		#magazine
+			width: 400px
+			min-height: 500px
+			.cover
+				.logo
+					img
+				.title
+					h1
+						font-size: 60px
+			.menucatalog
+				.menuList
+					padding: 0px
+					.productList
+						h2
+						ul
+							li
+			.productLeft
+				.liveImg
+					img
+				.haderText
+					top: 40%
+					h2
+						font-size: 26px
+			.pageFives
+				.contentImg
+					h5
+						font-size: 22px
+						margin: 10px 0px
+			.productRight
+				.product
+					margin-bottom: 0px
+					.text
+						width: 50%
+						flex-shrink: 0
+						.content
+							h5
+								font-size: 28px
+								margin: 5px
+								line-height: 30px
+							p 
+								font-size: 12px
+								span
+									font-size: 13px
+									width: 50px
+							h4
+								font-size: 14px
+							.ability
+								.abilityList
+									margin: 5px 0px
+									p
+										font-size: 12px
+										width: 50px
+									.color
+										width: 38px
+										height: 5px
+										margin-left: 5px
+					.img
+						width: 50%
+						img
+							width: 80%
+							height: auto
+@media screen and (max-width: 400px)
+	body,html
+		#magazine
+			width: 350px
+			min-height: 500px
+			.productLeft
+				.liveImg
+					img
+						&:first-child
+							width: 130%
+						&:nth-child(2)
+							width: 130%
+							left: -10%
+				.haderText
+					top: 47%
+					h2
+						font-size: 24px
+			.pageFives
+				.contentImg
+					width: 100%
+					h5
+						font-size: 24px
+						letter-spacing: 0px
+			.productRight
+				.product
+					margin: 0px
+					.text
+						width: 100%
+						flex-shrink: 0
+						.content
+							h5
+								font-size: 24px
+								margin: 0px
+							p 
+								font-size: 12px
+								span
+									width: 50px
+							h4
+								font-size: 16px
+								margin-left: 10px
+								text-align: left
+							.ability
+								.abilityList
+									margin: 5px 0px
+									p
+										font-size: 12px
+										width: 60px
+									.color
+										width: 30px
+										height: 5px
+										margin-left: 5px
+					.img
+						width: 100%
+						position: absolute
+						top: 0px
+						justify-content: flex-end
+						padding: 0px
+						img
+							float: right
+							height: 100%
+							width: auto
+							margin-left: 0px
+							left: -10px
+@media screen and (max-width: 350px)
+	body,html
+		height: auto
+		min-height: auto
+		#magazine
+			width: 320px
+			min-height: 500px
+			.productLeft
+				.liveImg
+					width: 100%
+					img
+						&:first-child
+							width: 140%
+							left: -30%
+						&:nth-child(2)
+							width: 140%
+							left: -15%
+				.contentImg
+					img
+				.haderText
+					h2
+			.productRight
+				.product
+					margin-bottom: 0px
+					.text
+						width: 100%
+						flex-shrink: 0
+						.content
+							h5
+								font-size: 24px
+								margin: 0px
+							p 
+								font-size: 12px
+								span
+					.img
+						position: absolute
+						img
+							height: 80%

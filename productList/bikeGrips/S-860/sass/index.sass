@@ -1,0 +1,88 @@
+*
+	position: relative
+body,html
+	margin: 0px
+	.logo
+		width: 100px	
+		height: 70px
+		right: 40px
+		bottom: 40px
+		position: fixed
+		z-index: 99
+		cursor: pointer
+		img
+			width: 100%
+
+	a
+		display: block
+		.start
+			height: 100vh
+			width: 50%
+			float: left
+			background-color: #282828
+			img
+				top: 50%
+				transform: translateY(-50%)
+				width: 100%
+	.white
+		// display: block
+		height: 100vh
+		width: 50vw
+		position: absolute
+		left: 0px
+		top: 0px
+		background-color: rgba(white,0.9)
+		z-index: 9
+		animation: arrowBlack 0.09s 
+		opacity: 0
+	.oneWhite
+		animation-delay: 1s
+	.twoWhite
+		animation-delay: 1.2s
+		left: 50%
+	.threeWhite
+		animation-delay: 1.5s
+	.fourWhite
+		animation-delay: 1.7s
+		left: 50%
+	.fiveWhite
+		animation: arrowBlack 0.1s 
+		animation-delay: 2.4s
+		width: 100%
+
+@keyframes arrowBlack
+	0%
+		opacity: 0
+	100%
+		opacity: 1
+@media screen and (max-width: 750px)
+	body
+		.logo
+			width: 80px
+			height: 60px
+		a
+			.start
+				position: relative
+				float: none
+				height: 50vh
+				width: 100%
+				img
+					max-height: 100%
+					width: 100%
+					top: 0px
+					transform: translateY(0%)
+@media screen and (max-width: 470px)
+	body
+		overflow: hidden
+		.logo
+			width: 60px
+			height: 40px
+			right: 30px
+			bottom: 30px
+@media screen and (max-width: 380px)
+	body
+		.logo
+			width: 50px
+			height: 30px
+			right: 20px
+			bottom: 20px

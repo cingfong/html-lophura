@@ -1,0 +1,253 @@
+* {
+  position: relative; }
+
+body, html {
+  margin: 0px;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: auto;
+  background-image: url("../image/aaa.jpg");
+  z-index: 0; }
+  body::after, html::after {
+    content: "";
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute; }
+  body #lightbox, body .lightbox, body #lightboxOverlay, html #lightbox, html .lightbox, html #lightboxOverlay {
+    position: fixed;
+    top: 0px; }
+  body .All a:hover, html .All a:hover {
+    text-decoration: none; }
+  body .All a:last-child, html .All a:last-child {
+    background-color: black; }
+  body .All .white, html .All .white {
+    left: 13%;
+    position: relative;
+    width: 1px;
+    height: 1px;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 100px 100px rgba(255, 250, 205, 0.7);
+    box-shadow: 0px 0px 100px 100px rgba(255, 250, 205, 0.7);
+    z-index: 10; }
+  body .All .whiteR, html .All .whiteR {
+    left: 90%; }
+  body .All h1, html .All h1 {
+    font-family: 'Bad Script', cursive;
+    margin-top: 50px;
+    font-family: 'Caveat', cursive;
+    font-size: 62px;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 3px 3px #555; }
+  body .All h3, html .All h3 {
+    text-align: center;
+    margin-top: 120px;
+    color: #333;
+    font-size: 40px;
+    display: block;
+    z-index: 20;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-family: 'DM Serif Text', serif; }
+  body .All .test, html .All .test {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin: 30px 0px;
+    width: 80%;
+    overflow: hidden; }
+    body .All .test::after, html .All .test::after {
+      content: "";
+      width: 3000px;
+      height: 500px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-image: url("../image/4-1.jpg");
+      background-size: 50%;
+      border-image-repeat: repeat;
+      z-index: 1;
+      -webkit-animation: moveLeft 100s infinite linear;
+      animation: moveLeft 100s infinite linear; }
+    body .All .test img, html .All .test img {
+      z-index: 3;
+      width: 100%; }
+  body .All .test1::after, html .All .test1::after {
+    background-position: 100%;
+    -webkit-animation: moveRight 100s infinite linear;
+    animation: moveRight 100s infinite linear;
+    background-image: url("../image/1-1.jpg"); }
+  body .All .test2::after, html .All .test2::after {
+    background-image: url("../image/2-1.jpg"); }
+  body .All .test3::after, html .All .test3::after {
+    background-position: 100%;
+    -webkit-animation: moveRight 100s infinite;
+    animation: moveRight 100s infinite;
+    background-image: url("../image/3-1.jpg"); }
+  body .All .test4::after, html .All .test4::after {
+    background-size: 40%;
+    background-position: 0%;
+    -webkit-animation: moveRight 100s infinite;
+    animation: moveRight 100s infinite;
+    background-image: url("../image/5-1.jpg"); }
+  body .All .size, html .All .size {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding: 25px 20px;
+    display: inline-block;
+    background-color: rgba(136, 136, 136, 0.8);
+    -webkit-box-shadow: 0px 10px 5px 5px rgba(119, 119, 119, 0.3);
+    box-shadow: 0px 10px 5px 5px rgba(119, 119, 119, 0.3); }
+    body .All .size h4, html .All .size h4 {
+      text-decoration: none;
+      font-size: 20px;
+      line-height: 30px;
+      color: #eee;
+      font-family: 'DM Serif Text', serif; }
+      body .All .size h4 span, html .All .size h4 span {
+        width: 120px;
+        display: inline-block; }
+  body .goHome, html .goHome {
+    display: inline-block;
+    margin: 80px 0px;
+    word-spacing: 20px;
+    font-size: 32px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-family: 'Caveat', cursive; }
+    body .goHome:hover, html .goHome:hover {
+      text-decoration: none; }
+    body .goHome h2, html .goHome h2 {
+      font-weight: 900;
+      color: #555; }
+      body .goHome h2:hover, html .goHome h2:hover {
+        text-decoration: none;
+        color: #000; }
+
+@-webkit-keyframes moveLeft {
+  0% {
+    background-position: 0%; }
+  100% {
+    background-position: 100%; } }
+
+@keyframes moveLeft {
+  0% {
+    background-position: 0%; }
+  100% {
+    background-position: 100%; } }
+
+@-webkit-keyframes moveRight {
+  0% {
+    background-position: 100%; }
+  100% {
+    background-position: 0%; } }
+
+@keyframes moveRight {
+  0% {
+    background-position: 100%; }
+  100% {
+    background-position: 0%; } }
+
+@media screen and (max-width: 1250px) {
+  body .All .white, html .All .white {
+    left: 8%; }
+  body .All .whiteR, html .All .whiteR {
+    left: 95%; }
+  body .All h1, html .All h1 {
+    margin-top: 30px; }
+  body .All h3, html .All h3 {
+    margin-top: 60px; }
+  body .All .test, html .All .test {
+    width: 90%;
+    height: 300px; }
+    body .All .test img, html .All .test img {
+      height: 100%; } }
+
+@media screen and (max-width: 900px) {
+  body .All .white, html .All .white {
+    left: 10%;
+    top: 50px;
+    -webkit-box-shadow: 0px 0px 70px 70px rgba(255, 250, 205, 0.7);
+    box-shadow: 0px 0px 70px 70px rgba(255, 250, 205, 0.7); }
+  body .All .whiteR, html .All .whiteR {
+    left: 90%; }
+  body .All h1, html .All h1 {
+    font-size: 55px; }
+  body .All h3, html .All h3 {
+    font-size: 33px; } }
+
+@media screen and (max-width: 700px) {
+  body .All .white, html .All .white {
+    -webkit-box-shadow: 0px 0px 50px 50px rgba(255, 250, 205, 0.7);
+    box-shadow: 0px 0px 50px 50px rgba(255, 250, 205, 0.7); }
+  body .All .whiteR, html .All .whiteR {
+    left: 90%; }
+  body .All h1, html .All h1 {
+    margin-top: 30px;
+    font-size: 50px; }
+  body .All h3, html .All h3 {
+    margin-top: 40px;
+    font-size: 28px; }
+  body .All .test, html .All .test {
+    height: 300px; } }
+
+@media screen and (max-width: 500px) {
+  body .All .whiteR, html .All .whiteR {
+    left: 90%; }
+  body .All h1, html .All h1 {
+    margin-top: 30px;
+    font-size: 50px; }
+  body .All h3, html .All h3 {
+    margin-top: 30px;
+    font-size: 24px; }
+  body .All .test, html .All .test {
+    margin: 0px;
+    height: 300px; }
+    body .All .test img, html .All .test img {
+      height: 100%; }
+  body .All .size, html .All .size {
+    margin: 20px 0px;
+    padding: 15px 10px; }
+    body .All .size h4, html .All .size h4 {
+      font-size: 16px;
+      line-height: 20px; }
+      body .All .size h4 span, html .All .size h4 span {
+        width: 80px; } }
+
+@media screen and (max-width: 402px) {
+  body .All .whiteR, html .All .whiteR {
+    left: 90%; }
+  body .All h1, html .All h1 {
+    margin-bottom: 0px;
+    font-size: 32px; }
+  body .All h3, html .All h3 {
+    margin-top: 15px;
+    font-size: 24px; }
+  body .All .test, html .All .test {
+    width: 95%;
+    height: 300px; }
+    body .All .test img, html .All .test img {
+      height: 100%; }
+  body .All .size, html .All .size {
+    margin: 20px 0px;
+    padding: 10px 10px; }
+    body .All .size h4, html .All .size h4 {
+      font-size: 12px;
+      line-height: 15px; }
+      body .All .size h4 span, html .All .size h4 span {
+        width: 50px; } }

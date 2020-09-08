@@ -1,0 +1,282 @@
+* {
+  position: relative; }
+
+body, html {
+  margin: 0px;
+  display: block;
+  background-image: url("../image/back.jpg");
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
+  z-index: 0; }
+  body .productsAll, html .productsAll {
+    margin: 0px; }
+    body .productsAll .test, html .productsAll .test {
+      z-index: -1;
+      top: 0px;
+      width: 100%;
+      position: absolute; }
+      body .productsAll .test img, html .productsAll .test img {
+        width: 100%; }
+    body .productsAll .title, html .productsAll .title {
+      z-index: 120;
+      margin: 40px;
+      display: inline-block;
+      position: fixed;
+      bottom: 0px;
+      right: 0px; }
+      body .productsAll .title img, html .productsAll .title img {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 90px;
+        height: 60px; }
+    body .productsAll .productsName, html .productsAll .productsName {
+      position: fixed;
+      left: 140px;
+      top: 100px; }
+    body .productsAll h3, html .productsAll h3 {
+      font-family: 'Anton', sans-serif;
+      text-shadow: 2px 2px 0 #000;
+      display: inline-block;
+      font-size: 65px;
+      color: #eee; }
+    body .productsAll .hoverLink, html .productsAll .hoverLink {
+      left: 0px;
+      top: 0px;
+      position: absolute;
+      z-index: 99; }
+      body .productsAll .hoverLink .switch, html .productsAll .hoverLink .switch {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        z-index: 99; }
+      body .productsAll .hoverLink .one, html .productsAll .hoverLink .one {
+        left: 17%;
+        top: 30%; }
+      body .productsAll .hoverLink .onePhoto, html .productsAll .hoverLink .onePhoto {
+        position: absolute;
+        width: 600px;
+        z-index: 97;
+        right: 0px;
+        top: 0px;
+        opacity: 0; }
+        body .productsAll .hoverLink .onePhoto img, html .productsAll .hoverLink .onePhoto img {
+          border: solid 20px white;
+          width: 100%; }
+      body .productsAll .hoverLink .two, html .productsAll .hoverLink .two {
+        left: 45%;
+        top: 40%; }
+      body .productsAll .hoverLink .twoPhoto, html .productsAll .hoverLink .twoPhoto {
+        position: absolute;
+        width: 600px;
+        z-index: 97;
+        right: 0px;
+        top: 0px;
+        opacity: 0; }
+        body .productsAll .hoverLink .twoPhoto img, html .productsAll .hoverLink .twoPhoto img {
+          border: solid 20px white;
+          width: 100%; }
+      body .productsAll .hoverLink .three, html .productsAll .hoverLink .three {
+        -webkit-transform: rotate(-8deg);
+        -ms-transform: rotate(-8deg);
+        transform: rotate(-8deg);
+        left: 45%;
+        top: 12%; }
+        body .productsAll .hoverLink .three h3, html .productsAll .hoverLink .three h3 {
+          margin: 0px;
+          display: inline-block;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          -webkit-transform: translateX(-50%) translateY(-50%);
+          -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+          text-shadow: 2px 2px 0 #000;
+          font-weight: 700;
+          font-family: 'Caveat', cursive;
+          color: rgba(248, 248, 255, 0.8);
+          font-size: 40px;
+          letter-spacing: 8px; }
+      body .productsAll .hoverLink .threePhoto, html .productsAll .hoverLink .threePhoto {
+        position: absolute;
+        width: 600px;
+        z-index: 97;
+        right: 0px;
+        top: 0px;
+        opacity: 0; }
+        body .productsAll .hoverLink .threePhoto img, html .productsAll .hoverLink .threePhoto img {
+          border: solid 20px white;
+          width: 100%; }
+      body .productsAll .hoverLink .four, html .productsAll .hoverLink .four {
+        -webkit-transform: rotate(-8deg);
+        -ms-transform: rotate(-8deg);
+        transform: rotate(-8deg);
+        left: 60%;
+        top: 45%; }
+        body .productsAll .hoverLink .four h3, html .productsAll .hoverLink .four h3 {
+          margin: 0px;
+          display: inline-block;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          -webkit-transform: translateX(-50%) translateY(-50%);
+          -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+          text-shadow: 2px 2px 0 #000;
+          font-weight: 700;
+          font-family: 'Caveat', cursive;
+          color: rgba(248, 248, 255, 0.8);
+          font-size: 40px;
+          letter-spacing: 8px; }
+      body .productsAll .hoverLink .fourPhoto, html .productsAll .hoverLink .fourPhoto {
+        position: absolute;
+        width: 600px;
+        z-index: 97;
+        right: 0px;
+        top: 0px;
+        opacity: 0; }
+        body .productsAll .hoverLink .fourPhoto img, html .productsAll .hoverLink .fourPhoto img {
+          border: solid 20px white;
+          width: 100%; }
+    body .productsAll .bodyTwo, html .productsAll .bodyTwo {
+      opacity: 0; }
+    body .productsAll .content, html .productsAll .content {
+      position: fixed;
+      z-index: -1;
+      bottom: 20px;
+      left: 40px;
+      color: white;
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 2px; }
+      body .productsAll .content h3, html .productsAll .content h3 {
+        color: white;
+        margin: 0px;
+        font-size: 32px;
+        line-height: 60px; }
+      body .productsAll .content ul, html .productsAll .content ul {
+        font-weight: 700;
+        font-family: 'Caveat', cursive;
+        margin-left: -60px;
+        list-style: none; }
+        body .productsAll .content ul li, html .productsAll .content ul li {
+          font-size: 20px;
+          text-shadow: 2px 2px 0 #000; }
+          body .productsAll .content ul li span, html .productsAll .content ul li span {
+            display: inline-block;
+            width: 100px; }
+
+@media screen and (max-width: 1400px) {
+  body .productsAll .productsName {
+    left: 60px;
+    top: 40px; }
+  body .productsAll .hoverLink .switch {
+    height: 180px;
+    width: 180px; }
+  body .productsAll .hoverLink .photo {
+    width: 550px; } }
+
+@media screen and (max-width: 1200px) {
+  body .productsAll .productsName {
+    font-size: 42px; }
+  body .productsAll .hoverLink .switch {
+    height: 130px;
+    width: 130px; }
+  body .productsAll .hoverLink .photo {
+    width: 450px; } }
+
+@media screen and (max-width: 980px) {
+  body .productsAll .title {
+    margin: 30px; }
+    body .productsAll .title img {
+      width: 70px;
+      height: 50px; }
+  body .productsAll .hoverLink .three {
+    left: 45%;
+    top: 10%; }
+  body .productsAll .hoverLink .four {
+    top: 43%; } }
+
+@media screen and (max-width: 870px) {
+  body .productsAll .hoverLink .switch {
+    width: 100px;
+    height: 100px; }
+    body .productsAll .hoverLink .switch h3 {
+      font-size: 32px; }
+  body .productsAll .hoverLink .photo img {
+    border: solid 10px white; } }
+
+@media screen and (max-width: 685px) {
+  body .productsAll .title {
+    margin: 25px; }
+    body .productsAll .title img {
+      width: 50px;
+      height: 30px; }
+  body .productsAll .productsName {
+    font-size: 32px; }
+  body .productsAll .hoverLink .switch {
+    width: 70px;
+    height: 70px; }
+    body .productsAll .hoverLink .switch h3 {
+      font-size: 28px; }
+  body .productsAll .hoverLink .photo {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+    body .productsAll .hoverLink .photo img {
+      border: solid 10px white; }
+  body .productsAll .content {
+    left: 30%; }
+    body .productsAll .content h3 {
+      font-size: 28px; }
+    body .productsAll .content ul li {
+      font-size: 18px; }
+      body .productsAll .content ul li span {
+        width: 80px; } }
+
+@media screen and (max-width: 520px) {
+  body .productsAll .productsName {
+    font-size: 24px;
+    left: 30px;
+    top: 30px; }
+  body .productsAll .hoverLink .switch {
+    width: 70px;
+    height: 70px; }
+    body .productsAll .hoverLink .switch h3 {
+      font-size: 20px; }
+  body .productsAll .hoverLink .photo {
+    width: 400px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+    body .productsAll .hoverLink .photo img {
+      border: solid 10px white; }
+  body .productsAll .content h3 {
+    font-size: 20px; }
+  body .productsAll .content ul li {
+    font-size: 16px; }
+    body .productsAll .content ul li span {
+      width: 70px; } }
+
+@media screen and (max-width: 420px) {
+  body .productsAll .title {
+    margin: 20px; }
+  body .productsAll .productsName {
+    left: 20px;
+    top: 20px; }
+  body .productsAll .hoverLink .switch {
+    width: 50px;
+    height: 50px; }
+    body .productsAll .hoverLink .switch h3 {
+      font-size: 16px; }
+  body .productsAll .hoverLink .photo {
+    width: 300px; }
+    body .productsAll .hoverLink .photo img {
+      border: solid 5px white; }
+  body .productsAll .content {
+    left: 10%; }
+    body .productsAll .content ul li {
+      font-size: 12px; } }

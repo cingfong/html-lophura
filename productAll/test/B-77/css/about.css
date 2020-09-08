@@ -1,0 +1,272 @@
+* {
+  position: relative;
+  font-family: 'Cabin', sans-serif;
+  color: #555; }
+
+body, html {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url("../image/89436.jpg");
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  body .about, html .about {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    body .about .aboutAll, html .about .aboutAll {
+      -webkit-box-shadow: 0px 30px 20px 0px rgba(182, 182, 182, 0.75);
+      box-shadow: 0px 30px 20px 0px rgba(182, 182, 182, 0.75);
+      top: 50%;
+      left: 50%;
+      bottom: 0px;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      width: 100%;
+      height: 70%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      body .about .aboutAll .livePhotoOne, html .about .aboutAll .livePhotoOne {
+        max-width: 30%;
+        width: 100%;
+        padding: 0px;
+        background-color: white; }
+        body .about .aboutAll .livePhotoOne .tab-pane, html .about .aboutAll .livePhotoOne .tab-pane {
+          border: 0px;
+          position: relative;
+          width: 100%;
+          display: none; }
+          body .about .aboutAll .livePhotoOne .tab-pane .sp-wrap, html .about .aboutAll .livePhotoOne .tab-pane .sp-wrap {
+            border: 0px;
+            background-color: rgba(0, 0, 0, 0);
+            position: relative;
+            top: 80px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            padding: 0px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            max-width: 100%; }
+            body .about .aboutAll .livePhotoOne .tab-pane .sp-wrap .sp-large, html .about .aboutAll .livePhotoOne .tab-pane .sp-wrap .sp-large {
+              padding: 0px;
+              margin: 0px;
+              position: relative;
+              top: 0px;
+              left: 0px;
+              width: 100%;
+              max-height: 50%; }
+              body .about .aboutAll .livePhotoOne .tab-pane .sp-wrap .sp-large .sp-current-big, html .about .aboutAll .livePhotoOne .tab-pane .sp-wrap .sp-large .sp-current-big {
+                position: relative;
+                top: 0px;
+                left: 0px; }
+            body .about .aboutAll .livePhotoOne .tab-pane .sp-wrap .sp-thumbs, html .about .aboutAll .livePhotoOne .tab-pane .sp-wrap .sp-thumbs {
+              height: 20%;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-line-pack: center;
+              align-content: center;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              position: relative; }
+              body .about .aboutAll .livePhotoOne .tab-pane .sp-wrap .sp-thumbs a, html .about .aboutAll .livePhotoOne .tab-pane .sp-wrap .sp-thumbs a {
+                position: relative;
+                width: 20%;
+                margin: 50px 30px;
+                left: 0px;
+                top: 0px;
+                display: block; }
+        body .about .aboutAll .livePhotoOne .active, html .about .aboutAll .livePhotoOne .active {
+          display: block; }
+        body .about .aboutAll .livePhotoOne .color, html .about .aboutAll .livePhotoOne .color {
+          top: 580px;
+          position: absolute;
+          width: 100%; }
+          body .about .aboutAll .livePhotoOne .color .colorAll, html .about .aboutAll .livePhotoOne .color .colorAll {
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+            body .about .aboutAll .livePhotoOne .color .colorAll span, html .about .aboutAll .livePhotoOne .color .colorAll span {
+              margin-left: 80px;
+              font-size: 32px; }
+            body .about .aboutAll .livePhotoOne .color .colorAll .list-group, html .about .aboutAll .livePhotoOne .color .colorAll .list-group {
+              margin-left: 30px;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              top: 0px;
+              display: inline-block; }
+              body .about .aboutAll .livePhotoOne .color .colorAll .list-group .produceColor, html .about .aboutAll .livePhotoOne .color .colorAll .list-group .produceColor {
+                vertical-align: middle;
+                display: inline-block;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                width: 80px;
+                height: 20px; }
+              body .about .aboutAll .livePhotoOne .color .colorAll .list-group .one, html .about .aboutAll .livePhotoOne .color .colorAll .list-group .one {
+                background-color: #eee6dd;
+                margin-left: 50px; }
+              body .about .aboutAll .livePhotoOne .color .colorAll .list-group .two, html .about .aboutAll .livePhotoOne .color .colorAll .list-group .two {
+                background-color: #4E5B81;
+                margin-left: 50px; }
+              body .about .aboutAll .livePhotoOne .color .colorAll .list-group .three, html .about .aboutAll .livePhotoOne .color .colorAll .list-group .three {
+                background-color: #433D45;
+                margin-left: 50px; }
+      body .about .aboutAll .productumPhone, html .about .aboutAll .productumPhone {
+        background-image: url("../image/B-77-4life.jpg");
+        background-position: bottom;
+        background-size: cover; }
+      body .about .aboutAll .productumContent, html .about .aboutAll .productumContent {
+        padding: 0px;
+        -webkit-box-shadow: 0 30px 20px rgba(182, 182, 182, 0.75);
+        box-shadow: 0 30px 20px rgba(182, 182, 182, 0.75);
+        background-image: url("../image/B-77-2life.jpg");
+        background-position: content;
+        background-size: cover; }
+        body .about .aboutAll .productumContent h2, html .about .aboutAll .productumContent h2 {
+          position: absolute;
+          top: 50px;
+          text-align: center;
+          width: 100%;
+          display: block;
+          font-size: 36px; }
+      body .about .aboutAll .livePhotoTwo, html .about .aboutAll .livePhotoTwo {
+        z-index: -1;
+        -webkit-box-shadow: 0 30px 20px rgba(182, 182, 182, 0.75);
+        box-shadow: 0 30px 20px rgba(182, 182, 182, 0.75);
+        padding: 0px;
+        height: 100%;
+        overflow: hidden; }
+        body .about .aboutAll .livePhotoTwo .topOne, html .about .aboutAll .livePhotoTwo .topOne {
+          padding: 0px;
+          height: 35%;
+          float: left; }
+        body .about .aboutAll .livePhotoTwo .topTwo, html .about .aboutAll .livePhotoTwo .topTwo {
+          height: 35%;
+          padding: 0px;
+          float: left; }
+        body .about .aboutAll .livePhotoTwo .bottonOne, html .about .aboutAll .livePhotoTwo .bottonOne {
+          height: 65%;
+          padding: 0px; }
+        body .about .aboutAll .livePhotoTwo div img, html .about .aboutAll .livePhotoTwo div img {
+          width: 100%;
+          height: 100%;
+          border: solid 0.5px rgba(33, 33, 33, 0.5); }
+      body .about .aboutAll .liveText, html .about .aboutAll .liveText {
+        background-color: white;
+        padding: 0px; }
+        body .about .aboutAll .liveText .content, html .about .aboutAll .liveText .content {
+          width: 100%;
+          position: absolute;
+          display: inline-block;
+          top: 45%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+          body .about .aboutAll .liveText .content h4, html .about .aboutAll .liveText .content h4 {
+            font-size: 36px;
+            font-weight: 300;
+            text-align: center;
+            line-height: 120px; }
+          body .about .aboutAll .liveText .content ul li, html .about .aboutAll .liveText .content ul li {
+            font-size: 24px; }
+            body .about .aboutAll .liveText .content ul li span, html .about .aboutAll .liveText .content ul li span {
+              line-height: 40px;
+              display: inline-block;
+              width: 120px; }
+          body .about .aboutAll .liveText .content ul .space, html .about .aboutAll .liveText .content ul .space {
+            list-style-type: none;
+            line-height: 50px; }
+      body .about .aboutAll .livePhotoThree, html .about .aboutAll .livePhotoThree {
+        z-index: -1;
+        -webkit-box-shadow: 0 30px 20px rgba(182, 182, 182, 0.75);
+        box-shadow: 0 30px 20px rgba(182, 182, 182, 0.75);
+        padding: 0px;
+        height: 100%;
+        overflow: hidden; }
+        body .about .aboutAll .livePhotoThree .col-4, html .about .aboutAll .livePhotoThree .col-4 {
+          border: solid 10px white;
+          border-left: solid 20px white;
+          border-right: solid 20px white; }
+        body .about .aboutAll .livePhotoThree .rightOne, html .about .aboutAll .livePhotoThree .rightOne {
+          padding: 0px;
+          height: 100%;
+          float: right; }
+        body .about .aboutAll .livePhotoThree .leftOne, html .about .aboutAll .livePhotoThree .leftOne {
+          height: 33.3%;
+          padding: 0px;
+          float: left; }
+        body .about .aboutAll .livePhotoThree .leftTwo, html .about .aboutAll .livePhotoThree .leftTwo {
+          height: 33.3%;
+          padding: 0px;
+          float: left; }
+        body .about .aboutAll .livePhotoThree .leftThree, html .about .aboutAll .livePhotoThree .leftThree {
+          height: 33.3%;
+          padding: 0px;
+          float: left; }
+        body .about .aboutAll .livePhotoThree div img, html .about .aboutAll .livePhotoThree div img {
+          width: 100%;
+          height: 100%;
+          border: solid 0.5px rgba(33, 33, 33, 0.5); }
+    body .about a, html .about a {
+      position: fixed;
+      bottom: 50px;
+      width: 100%;
+      text-align: center;
+      color: #888;
+      text-decoration: none; }
+      body .about a:hover, html .about a:hover {
+        color: #333; }
+
+@media screen and (max-width: 1600px) {
+  body .about .aboutAll .livePhotoOne .color .colorAll .list-group {
+    position: absolute;
+    margin-left: 20px;
+    top: 0px;
+    display: inline-block; }
+    body .about .aboutAll .livePhotoOne .color .colorAll .list-group .produceColor {
+      width: 70px;
+      height: 20px;
+      margin: 0px 15px; }
+  body .about .aboutAll .liveText .content ul li {
+    font-size: 20px; }
+    body .about .aboutAll .liveText .content ul li span {
+      width: 100px; } }
+
+@media screen and (max-width: 1200px) {
+  body .about .aboutAll .livePhotoOne .color .colorAll .list-group {
+    position: absolute;
+    margin-left: 15px;
+    top: 0px;
+    display: inline-block; }
+    body .about .aboutAll .livePhotoOne .color .colorAll .list-group .produceColor {
+      width: 50px;
+      height: 15px;
+      margin: 0px 15px; }
+  body .about .aboutAll .liveText .content h4 {
+    line-height: 40px;
+    font-size: 20px; }
+  body .about .aboutAll .liveText .content ul li {
+    font-size: 14px; }
+    body .about .aboutAll .liveText .content ul li span {
+      width: 80px; } }

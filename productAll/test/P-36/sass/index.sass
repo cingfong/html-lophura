@@ -1,0 +1,309 @@
+*
+	position: relative
+	// font-family: '微軟正黑體'
+body,html
+	margin: 0px
+	// overflow-y: hidden
+	display: block
+	background-image: url("../image/back.jpg")
+	background-size: auto 100vh
+	background-repeat: no-repeat
+	// background-color: #e3ccaa
+	z-index: 0
+	// height: 100%
+	.productsAll
+		margin: 0px
+		.test
+			z-index: -1
+			top: 0px
+			width: 100%
+			position: absolute
+			img
+				// left: 50%
+				// transform: translateX(-50%)
+				width: 100%
+		.title
+			z-index: 120
+			margin: 40px
+			display: inline-block
+			position: fixed
+			bottom: 0px
+			right: 0px
+			img
+				left: 50%
+				transform: translateX(-50%)
+				width: 90px
+				height: 60px
+		.productsName
+			position: fixed
+			left: 140px
+			top: 100px
+		h3
+			font-family: 'Anton', sans-serif
+			text-shadow: 2px 2px 0 #000
+			display: inline-block
+			// text-align: center
+			font-size: 65px
+			color: #eee
+		.hoverLink
+			left: 0px
+			top: 0px
+			position: absolute
+			z-index: 99
+			.switch
+				position: absolute
+				width: 	200px
+				height: 200px
+				display: inline-block
+				z-index: 99
+			.one
+				left: 17%
+				top: 30%
+			.onePhoto
+				position: absolute
+				width: 600px
+				z-index: 97
+				right: 0px
+				top: 0px
+				opacity: 0
+				img
+					border: solid 20px white
+					width: 100%
+			.two
+				left: 45%
+				top: 40%
+			.twoPhoto
+				position: absolute
+				width: 600px
+				z-index: 97
+				right: 0px
+				top: 0px
+				opacity: 0
+				img
+					border: solid 20px white
+					width: 100%
+			.three
+				// text-align: center
+				transform: rotate(-8deg)
+				left: 45%
+				top: 12%
+				h3
+					margin: 0px
+					display: inline-block
+					position: absolute
+					left: 50%
+					top: 50%
+					transform: translateX(-50%) translateY(-50%)
+					text-shadow: 2px 2px 0 #000
+					font-weight: 700
+					font-family: 'Caveat', cursive
+					color: rgba(#F8F8FF,0.8)
+					// -webkit-text-stroke: 1px black
+					font-size: 40px
+					letter-spacing: 8px
+			.threePhoto
+				position: absolute
+				width: 600px
+				z-index: 97
+				right: 0px
+				top: 0px
+				opacity: 0
+				img
+					border: solid 20px white
+					width: 100%
+			.four
+				transform: rotate(-8deg)
+				left: 60%
+				top: 45%
+				h3
+					margin: 0px
+					display: inline-block
+					position: absolute
+					left: 50%
+					top: 50%
+					transform: translateX(-50%) translateY(-50%)
+					text-shadow: 2px 2px 0 #000
+					font-weight: 700
+					font-family: 'Caveat', cursive
+					color: rgba(#F8F8FF,0.8)
+					// -webkit-text-stroke: 1px black
+					font-size: 40px
+					letter-spacing: 8px
+			.fourPhoto
+				position: absolute
+				width: 600px
+				z-index: 97
+				right: 0px
+				top: 0px
+				opacity: 0
+				img
+					border: solid 20px white
+					width: 100%
+		.bodyTwo  
+			opacity: 0
+			img
+		.content 
+			position: fixed
+			z-index: -1
+			bottom: 20px
+			left: 40px
+			color: rgba(white,1)
+			font-family: 'Anton', sans-serif
+			letter-spacing: 2px
+			h3
+				color: rgba(white,1)
+				margin: 0px
+				font-size: 32px
+				line-height: 60px
+			ul
+				font-weight: 700
+				font-family: 'Caveat', cursive
+				margin-left: -60px
+				list-style: none
+				li
+					font-size: 20px
+					text-shadow: 2px 2px 0 #000
+					span
+						display: inline-block
+						width: 100px
+@media screen and (max-width: 1400px)
+	body
+		.productsAll
+			.productsName
+				left: 60px
+				top: 40px
+			.hoverLink
+				.switch
+					height: 180px
+					width: 180px
+				.photo
+					width: 550px
+@media screen and (max-width: 1200px)
+	body
+		.productsAll
+			.productsName
+				font-size: 42px
+			.hoverLink
+				.switch
+					height: 130px
+					width: 130px
+				.photo
+					width: 450px
+@media screen and (max-width: 980px)
+	body
+		.productsAll
+			.title
+				margin: 30px
+				img
+					width: 70px
+					height: 50px
+			.productsName
+			.hoverLink
+				.switch
+				.three
+					left: 45%
+					top: 10%
+				.four
+					top: 43%
+				.photo
+@media screen and (max-width: 870px)
+	body
+		.productsAll
+			.test
+			.hoverLink
+				.switch
+					width: 100px
+					height: 100px
+					h3
+						font-size: 32px
+				.photo
+					img
+						border: solid 10px white
+			.content
+@media screen and (max-width: 685px)
+	body
+		.productsAll
+			.title
+				margin: 25px
+				img
+					width: 50px
+					height: 30px
+			.productsName
+				font-size: 32px
+			.test
+			.hoverLink
+				.switch
+					width: 70px
+					height: 70px
+					h3
+						font-size: 28px
+				.photo
+					left: 50%
+					transform: translateX(-50%)
+					img
+						border: solid 10px white
+			.content
+				// background-color: #ffff00
+				left: 30%
+				// transform: translateX(-50%)
+				h3
+					font-size: 28px
+				ul
+					li
+						font-size: 18px
+						span
+							width: 80px
+@media screen and (max-width: 520px)
+	body
+		.productsAll
+			.productsName
+				font-size: 24px
+				left: 30px
+				top: 30px
+			.test
+			.hoverLink
+				.switch
+					width: 70px
+					height: 70px
+					h3
+						font-size: 20px
+				.photo
+					width: 400px
+					left: 50%
+					transform: translateX(-50%)
+					img
+						border: solid 10px white
+			.content
+				h3
+					font-size: 20px
+				ul
+					li
+						font-size: 16px
+						span
+							width: 70px
+@media screen and (max-width: 420px)
+	body
+		.productsAll
+			.title
+				margin: 20px
+			.productsName
+				left: 20px
+				top: 20px
+			.test
+			.hoverLink
+				.switch
+					width: 50px
+					height: 50px
+					h3
+						font-size: 16px
+				.photo
+					width: 300px
+					img
+						border: solid 5px white
+			.content
+				left: 10%
+				h3
+				ul
+					li
+						font-size: 12px
+						span

@@ -1,0 +1,613 @@
+*
+	position: relative
+body,html
+	margin: 0px
+	z-index: 0
+	.headerImg
+		width: 100%
+		height: 880px
+		background-color: black
+		.logo
+			width: 30%
+			height: 20%
+			position: absolute
+			right: 0px
+			bottom: 0px
+			img
+				left: 50%
+				top: 50%
+				transform: translateX(-50%) translateY(-50%)
+				width: 150px
+				height: 120px
+		.text
+			position: absolute
+			bottom: 0px
+			left: 0px
+			height: 20%
+			width: 70%
+			h2
+				color: #eee
+				display: inline-block
+				left: 50%
+				top: 50%
+				transform: translateX(-50%) translateY(-50%)
+				font-size: 80px
+				letter-spacing: 3px
+		.Img
+			overflow: hidden
+			display: flex
+			flex-wrap: nowrap
+			img
+				flex-shrink: 0
+		.leftOne
+			float: left
+			width: 68%
+			height: 80%
+			overflow: hidden
+			img
+				width: 100%
+		.rightTop
+			flex-wrap: wrap
+			float: right
+			width: 32%
+			height: 40%
+			img
+				height: 100%
+		.rightBottom
+			float: right
+			width: 32%
+			height: 40%
+			img
+				height: auto
+				width: 100%
+	.content
+		top: 0px
+		width: 100%
+		height: 880px
+		display: flex
+		flex-wrap: nowrap
+		.leftText
+			width: 65%
+			height: 100%
+			&::after
+				content: "B"
+				width: 100%
+				height: 100%
+				display: block
+				font-size: 800px
+				font-weight: 500
+				font-family: 'EB Garamond', serif
+				top: 0px
+				left: 50px
+				line-height: 600px
+				position: absolute
+				color: rgba(#777,0.2)
+			.format
+				display: inline-block
+				left: 60%
+				top: 50%
+				transform: translateX(-50%) translateY(-50%)
+				h4
+					font-size: 50px
+					text-align: center
+					margin-bottom: 80px
+				li
+					word-wrap: nowrap
+					list-style: none
+					font-size: 30px
+					line-height: 60px
+					font-weight: 400
+				span
+					height: 1px
+					float: left
+					width: 200px
+					display: inline-block
+		.rightImg
+			width: 35%
+			height: 100%
+			img
+				width: 100%
+				height: 100%
+@media screen and (max-width: 1550px)		
+	body,html
+		.headerImg
+			height: 750px
+			.logo
+				img
+			.text
+				h2
+			.Img
+				img
+			.leftOne
+				img
+			.rightTop
+				width: 30%
+				height: 40%
+				img
+					height: 100%
+			.rightBottom
+				width: 30%
+				height: 40%
+				img
+					height: 100%
+		.content
+			.leftText
+				&::after
+				.format
+					h4
+					li
+					span
+			.rightImg
+				img
+@media screen and (max-width: 1420px)		
+	body,html
+		.headerImg
+			height: 710px
+			.logo
+				img
+			.text
+				h2
+			.Img
+				img
+			.leftOne
+				img
+			.rightTop
+				img
+			.rightBottom
+				img
+		.content
+			.leftText
+				width: 55%
+				&::after
+					font-size: 600px
+					left: -10px
+					top: -100px
+				.format
+					left: 50%
+					h4
+					li
+					span
+			.rightImg
+				width: 45%
+				img
+@media screen and (max-width: 1350px)		
+	body,html
+		.headerImg
+			height: 650px
+			.logo
+				img
+					width: 120px
+					height: 90px
+			.text
+				h2
+					font-size: 60px
+			.Img
+				img
+			.leftOne
+				img
+			.rightTop
+				img
+			.rightBottom
+				img
+		.content
+			.leftText
+				&::after
+				.format
+					h4
+					li
+					span
+			.rightImg
+				img
+@media screen and (max-width: 1170px)		
+	body,html
+		.headerImg
+			height: 580px
+			.logo
+				img
+			.text
+				h2
+			.Img
+				img
+			.leftOne
+				img
+			.rightTop
+				img
+			.rightBottom
+				img
+		.content
+			.leftText
+				width: 50%
+				&::after
+					font-size: 400px
+					left: 0px
+					top: -150px
+				.format
+					left: 50%
+					h4
+						font-size: 45px
+					li
+						font-size: 28px
+					span
+						width: 150px
+			.rightImg
+				width: 50%
+				img
+@media screen and (max-width: 1100px)		
+	body,html
+		.headerImg
+			height: 530px
+			.logo
+				img
+					width: 100px
+					height: 70px
+			.text
+				h2
+					font-size: 50px
+			.Img
+				img
+			.leftOne
+				img
+			.rightTop
+				img
+			.rightBottom
+				img
+		.content
+			.leftText
+				&::after
+				.format
+					h4
+					li
+					span
+			.rightImg
+				img
+@media screen and (max-width: 990px)		
+	body,html
+		.headerImg
+			height: 510px
+			.logo
+				img
+			.text
+				h2
+			.Img
+				img
+			.leftOne
+				img
+			.rightTop
+				img
+			.rightBottom
+				img
+		.content
+			display: inline-block
+			height: 440px
+			.leftText
+				margin: 20px 0px
+				width: 100%
+				height: 100%
+				&::after
+				.format
+					h4
+					li
+					span
+			.rightImg
+				display: none
+				img
+					display: none
+@media screen and (max-width: 950px)		
+	body,html
+		.headerImg
+			height: 100%
+			width: 100vw
+			display: inline-block
+			.logo
+				position: absolute
+				right: 0px
+				bottom: 10px
+				height: 10%
+				z-index: 999
+				img
+					right: 20px
+					transform: translateX(0%)
+					top: 0px
+			.text
+				text-align: left
+				position: absolute
+				top: 0px
+				left: 0px
+				height: 10%
+				z-index: 999
+				h2
+					left: 20px
+					transform: translateX(0%)
+					top: 0px
+			.Img
+				img
+			.leftOne
+				height: 65%
+				width: 80%
+				left: 50%
+				transform: translateX(-50%)
+				img
+			.rightTop
+				height: 260px
+				width: 40%
+				float: right
+				right: 10%
+				img
+					width: 100%
+			.rightBottom
+				float: left
+				height: 260px
+				width: 40%
+				left: 10%
+				img
+					width: 100%
+		.content
+			.leftText
+				&::after
+				.format
+					h4
+					li
+					span
+			.rightImg
+				img
+@media screen and (max-width: 780px)		
+	body,html
+		.headerImg
+			.logo
+				img
+			.text
+				h2
+			.Img
+				img
+			.leftOne
+				img
+			.rightTop
+				img
+			.rightBottom
+				img
+		.content
+			.leftText
+				&::after
+				.format
+					h4
+					li
+					span
+			.rightImg
+				img
+@media screen and (max-width: 780px)		
+	body,html
+		.headerImg
+			.logo
+				img
+					width: 80px
+					height: 60px
+			.text
+				h2
+					font-size: 40px
+					margin-top: 10px
+			.Img
+				img
+			.leftOne
+				width: 90%
+				img
+			.rightTop
+				height: 230px
+				width: 45%
+				float: right
+				right: 5%
+				img
+			.rightBottom
+				height: 230px
+				float: left
+				width: 45%
+				left: 5%
+				img
+		.content
+			.leftText
+				&::after
+					font-size: 300px
+					top: -200px
+				.format
+					h4
+						font-size: 36px
+						margin-bottom: 40px
+					li
+						font-size: 30px
+					span
+						width: 140px
+@media screen and (max-width: 645px)		
+	body,html
+		.headerImg
+			.logo
+				display: inline-block
+				width: auto
+				img
+					left: -10px
+					width: 70px
+					height: 50px
+					// right: 10px
+			.text
+				h2
+					font-size: 34px
+					letter-spacing: 1px
+			.Img
+				img
+			.leftOne
+				width: 100%
+				img
+			.rightTop
+				width: 50%
+				right: 0%
+				img
+			.rightBottom
+				width: 50%
+				left: 0%
+				img
+		.content
+			.leftText
+				&::after
+				.format
+					h4
+					li
+					span
+			.rightImg
+				img
+@media screen and (max-width: 580px)		
+	body,html
+		.headerImg
+			.logo
+				img
+			.text
+				h2
+			.Img
+				img
+			.leftOne
+				// height: 
+				img
+			.rightTop
+				height: 200px
+				img
+			.rightBottom
+				height: 200px
+				img
+		.content
+			.leftText
+				&::after
+					display: inline-block
+					top: -200px
+					color: rgba(#eee,0.3)
+				.format
+					z-index: 99
+					h4
+						font-size: 30px
+						margin-bottom: 20px
+					li
+						font-size: 24px
+						line-height: 50px
+					span
+			.rightImg
+				img
+@media screen and (max-width: 465px)		
+	body,html
+		.headerImg
+			.logo
+				bottom: 0px
+				img
+					width: 60px
+					height: 40px
+			.text
+				h2
+					font-size: 30px
+			.Img
+				img
+			.leftOne
+				height: 320px 
+				img
+			.rightTop
+				height: 160px
+				img
+			.rightBottom
+				height: 160px
+				img
+		.content
+			.leftText
+				&::after
+				.format
+					h4
+					li
+					span
+			.rightImg
+				img
+@media screen and (max-width: 430px)		
+	body,html
+		.headerImg
+			.logo
+				img
+			.text
+				h2
+			.Img
+				img
+			.leftOne
+				height: 270px 
+				img
+			.rightTop
+				height: 160px
+				img
+			.rightBottom
+				height: 160px
+				img
+		.content
+			height: 320px
+			.leftText
+				&::after
+				.format
+					z-index: 99
+					h4
+						font-size: 28px
+					li
+						font-size: 18px
+						line-height: 40px
+					span
+						width: 100px
+			.rightImg
+				img
+@media screen and (max-width: 400px)		
+	body,html
+		.headerImg
+			.logo
+				bottom: 10px
+				img
+					width: 50px
+					height: 35px
+			.text
+				h2
+					left: 10px
+					font-size: 28px
+					letter-spacing: 0px
+			.Img
+				img
+			.leftOne
+				height: 250px 
+				img
+			.rightTop
+				height: 140px
+				img
+			.rightBottom
+				height: 140px
+				img
+		.content
+			.leftText
+				&::after
+				.format
+					h4
+					li
+					span
+			.rightImg
+				img
+@media screen and (max-width: 330px)		
+	body,html
+		.headerImg
+			.logo
+				img
+			.text
+				h2
+			.Img
+				img
+			.leftOne
+				height: 200px 
+				img
+			.rightTop
+				height: 120px
+				img
+			.rightBottom
+				height: 120px
+				img
+		.content
+			.leftText
+				&::after
+				.format
+					h4
+					li
+					span
+			.rightImg
+				img

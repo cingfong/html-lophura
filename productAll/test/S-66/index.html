@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,  initial-scale=1, user-scalable=no" >
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/base/base.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<title>S-66</title>
+</head>
+<body>
+<!-- <p>S</p> -->
+<div class="item_box box10 s66All">
+  <div class="item_box_wp">
+    <div class="voice_2">
+      <ul>
+        <li class="li1 imgList" id="li1">
+        	<h5>Front</h5>
+          <div class="fold" style="display:none;">
+            <span class="img"></span>
+          </div>
+          <div class="unfold" style="display:block">
+            <dl>
+              <dt><img src="image/S-66-1.png" /></dt>
+            </dl>
+          </div>
+        </li>
+        <li class="li2 imgList" id="li2">
+        	<h5>Side</h5>
+          <div class="fold">
+            <span class="img"></span>
+          </div>
+          <div class="unfold">
+            <dl>
+              <dt><img src="image/S-66-2.png" /></dt>
+            </dl>
+          </div>
+        </li>
+        <li class="li3 imgList" id="li3">
+        	<h5>Back</h5>
+          <div class="fold">
+            <span class="img"></span>
+          </div>
+          <div class="unfold">
+            <dl>
+              <dt><img src="image/S-66-3.png" /></dt>
+             <!--  <dd>
+                <b>语音外呼<a href="#">查看接口文档>></a></b>
+              </dd>
+              <dd>......</dd> -->
+            </dl>
+          </div>
+        </li>
+        <li class="li4 imgList" id="li4">
+        	<h5>Life1</h5>
+          <div class="fold">
+            <span class="img"></span>
+          </div>
+          <div class="unfold">
+            <dl>
+              <dt><img src="image/S-66-4.png" /></dt>
+              <!-- <dd>
+                <b>语音外呼<a href="#">查看接口文档>></a></b>
+              </dd>
+              <dd>......</dd> -->
+            </dl>
+          </div>
+        </li>
+        <li class="li5 imgList" id="li5">
+        	<h5>Life2</h5>
+          <div class="fold">
+            <span class="img"></span>
+          </div>
+          <div class="unfold">
+            <dl>
+              <dt><img src="image/S-66-5.png" /></dt>
+              <!-- <dd>
+                <b>语音外呼<a href="#">查看接口文档>></a></b>
+              </dd>
+              <dd>......</dd> -->
+            </dl>
+          </div>
+        </li>
+      </ul>         
+    </div>
+  </div>
+</div>
+<div class="content">
+  <h2>Santorini S-66</h2>
+  <p><span>Material</span>Canvas、</p>
+  <p><span></span>Genuine Leather</p>
+  <p><span>Spec</span>13 "L X 11<sup>3</sup>/<sub>4 </sub>"W X 1 "H</p>
+  <p><span> </span>33 X 30 X 2.5 cm</p>
+  <p><span>MSRP</span>USD$ 68</p>
+</div>
+<script src="lib/jquery/jquery.js"></script>
+<script>
+$(function(){
+  // var ImgWidthO = 880;
+  // var ImgWidthC = 120;
+  var ImgWidthO,ImgWidthC;
+  var windowW = $(window).width();
+  if(windowW >= 1370){
+    ImgWidthO = 880;
+    ImgWidthC = 120;
+  }else if (windowW >= 980){
+    ImgWidthO = 650;
+    ImgWidthC = 80;
+  }else if(windowW >=835){
+    ImgWidthO = 550;
+    ImgWidthC = 70;
+  }else if(windowW >=700){
+    ImgWidthO = 450;
+    ImgWidthC = 60;
+  }else if(windowW >=500){
+    ImgWidthO = 300;
+    ImgWidthC = 50;
+  }else if(windowW >=400){
+    ImgWidthO = 260;
+    ImgWidthC = 35;
+  }else if(windowW >=320){
+    ImgWidthO = 200;
+    ImgWidthC = 30;
+  };
+  window.onload = function(){$(".voice_2 ul li").each(function(){
+    var fold = $(this).find(".fold");
+    var unfold = $(this).find(".unfold");
+    if(fold.is(":hidden")){
+      $(this).width(ImgWidthO);
+    }else{
+      $(this).width(ImgWidthC);
+    }
+  });
+    $(".voice_2 ul li").click(function(){
+      var li_index = $(this).index();
+      $(this).animate({width:ImgWidthO},200);
+      $(this).find(".unfold").show();
+      $(this).find(".fold").hide();
+      $(this).siblings().animate({width:ImgWidthC},200);
+      $(this).siblings().find(".unfold").hide();
+      $(this).siblings().find(".fold").show();
+    });
+  };
+})
+</script>
+<script src="lib/index.js"></script>
+</body>
+</html>
+
+
+

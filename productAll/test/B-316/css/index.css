@@ -1,0 +1,271 @@
+* {
+  position: relative; }
+
+body, html {
+  margin: 0px; }
+  body .productsAll, html .productsAll {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    body .productsAll .leftText, html .productsAll .leftText {
+      position: fixed;
+      padding: 10px 15px;
+      padding-left: 45px; }
+      body .productsAll .leftText .textIcon, html .productsAll .leftText .textIcon {
+        display: none; }
+      body .productsAll .leftText img, html .productsAll .leftText img {
+        width: 120px;
+        height: 90px; }
+      body .productsAll .leftText .aList h5, html .productsAll .leftText .aList h5 {
+        font-size: 32px; }
+      body .productsAll .leftText .aList ul, html .productsAll .leftText .aList ul {
+        padding: 0px;
+        margin: 40px 0px; }
+        body .productsAll .leftText .aList ul li, html .productsAll .leftText .aList ul li {
+          list-style: none;
+          font-size: 24px;
+          margin: 30px 0px;
+          text-align: left;
+          color: #333;
+          font-weight: 400;
+          font-family: 'Montserrat', sans-serif;
+          cursor: pointer; }
+          body .productsAll .leftText .aList ul li:hover span, html .productsAll .leftText .aList ul li:hover span {
+            display: inline-block; }
+          body .productsAll .leftText .aList ul li span, html .productsAll .leftText .aList ul li span {
+            display: none;
+            position: absolute;
+            height: 100%;
+            width: 20px;
+            left: -25px;
+            border: solid 0.5px #333; }
+          body .productsAll .leftText .aList ul li .block, html .productsAll .leftText .aList ul li .block {
+            display: inline-block; }
+    body .productsAll .centerPhoto, html .productsAll .centerPhoto {
+      margin: 0px auto;
+      left: -30px;
+      width: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      body .productsAll .centerPhoto img, html .productsAll .centerPhoto img {
+        border: solid 1px #777;
+        margin: 5px 0px;
+        width: 100%;
+        -ms-flex-negative: 0;
+        flex-shrink: 0; }
+      body .productsAll .centerPhoto .small, html .productsAll .centerPhoto .small {
+        position: fixed;
+        width: 80px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-transform: translateX(-120%);
+        -ms-transform: translateX(-120%);
+        transform: translateX(-120%); }
+        body .productsAll .centerPhoto .small img, html .productsAll .centerPhoto .small img {
+          margin: 10px 0px;
+          width: 80px; }
+      body .productsAll .centerPhoto .btnIcon, html .productsAll .centerPhoto .btnIcon {
+        display: inline-block;
+        position: absolute;
+        z-index: 99;
+        width: 100px;
+        height: 100%;
+        cursor: pointer; }
+      body .productsAll .centerPhoto .leftIcon .icon, html .productsAll .centerPhoto .leftIcon .icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+        width: 30px;
+        height: 30px;
+        left: 10px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+      body .productsAll .centerPhoto .rightIcon, html .productsAll .centerPhoto .rightIcon {
+        right: 0px; }
+        body .productsAll .centerPhoto .rightIcon .icon, html .productsAll .centerPhoto .rightIcon .icon {
+          position: absolute;
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+          right: 10px;
+          width: 30px;
+          height: 30px;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+    body .productsAll .rightText, html .productsAll .rightText {
+      width: 25%;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      padding: 50px 15px;
+      padding-right: 45px; }
+      body .productsAll .rightText h5, html .productsAll .rightText h5 {
+        font-size: 32px;
+        text-align: left;
+        line-height: 50px;
+        font-family: 'Montserrat', sans-serif; }
+      body .productsAll .rightText p, html .productsAll .rightText p {
+        display: inline-block;
+        font-size: 20px;
+        line-height: 40px;
+        font-family: 'Montserrat', sans-serif; }
+        body .productsAll .rightText p span, html .productsAll .rightText p span {
+          width: 20px;
+          display: inline-block; }
+      body .productsAll .rightText .titleLink div, html .productsAll .rightText .titleLink div {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row; }
+        body .productsAll .rightText .titleLink div a, html .productsAll .rightText .titleLink div a {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 18px;
+          font-weight: 600;
+          color: #666;
+          text-decoration: none;
+          border: 0px;
+          background-color: white;
+          display: inline-block;
+          width: auto;
+          padding: 0px 8px;
+          line-height: 30px;
+          margin-top: 20px; }
+        body .productsAll .rightText .titleLink div .active, html .productsAll .rightText .titleLink div .active {
+          border-radius: 0px;
+          color: #333;
+          border-bottom: solid 1px black; }
+      body .productsAll .rightText .textLink p, html .productsAll .rightText .textLink p {
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 20px; }
+        body .productsAll .rightText .textLink p span, html .productsAll .rightText .textLink p span {
+          display: inline-block;
+          width: 100px; }
+      body .productsAll .rightText .textLink .spec, html .productsAll .rightText .textLink .spec {
+        margin-top: 20px; }
+        body .productsAll .rightText .textLink .spec p, html .productsAll .rightText .textLink .spec p {
+          margin: 8px 0px; }
+
+@media screen and (max-width: 1420px) {
+  body .productsAll .leftText img, html .productsAll .leftText img {
+    width: 90px;
+    height: 65px; }
+  body .productsAll .leftText .aList ul, html .productsAll .leftText .aList ul {
+    margin: 20px 0px; }
+    body .productsAll .leftText .aList ul li, html .productsAll .leftText .aList ul li {
+      margin: 20px 0px; }
+  body .productsAll .centerPhoto, html .productsAll .centerPhoto {
+    width: 40%; }
+    body .productsAll .centerPhoto .small, html .productsAll .centerPhoto .small {
+      width: 65px; }
+      body .productsAll .centerPhoto .small img, html .productsAll .centerPhoto .small img {
+        width: 100%; }
+  body .productsAll .rightText, html .productsAll .rightText {
+    width: 33%;
+    padding-right: 20px; }
+    body .productsAll .rightText .textLink p span, html .productsAll .rightText .textLink p span {
+      width: 80px; } }
+
+@media screen and (max-width: 1000px) {
+  body .productsAll .leftText, html .productsAll .leftText {
+    width: 100%;
+    position: relative;
+    border-bottom: solid 0.5px black; }
+    body .productsAll .leftText .textIcon, html .productsAll .leftText .textIcon {
+      display: block;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(30,30,30, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      left: 35px;
+      top: 35px; }
+    body .productsAll .leftText img, html .productsAll .leftText img {
+      display: block;
+      margin: 15px auto; }
+    body .productsAll .leftText .aList ul, html .productsAll .leftText .aList ul {
+      display: none; }
+  body .productsAll .centerPhoto, html .productsAll .centerPhoto {
+    overflow-x: hidden;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    left: 0px; }
+    body .productsAll .centerPhoto img, html .productsAll .centerPhoto img {
+      width: 45%;
+      border-top: 0px;
+      margin: 0px; }
+    body .productsAll .centerPhoto .small, html .productsAll .centerPhoto .small {
+      display: none; }
+  body .productsAll .rightText, html .productsAll .rightText {
+    width: 60%;
+    margin: 0px auto;
+    position: relative; }
+    body .productsAll .rightText h5, html .productsAll .rightText h5 {
+      text-align: center; }
+    body .productsAll .rightText p, html .productsAll .rightText p {
+      margin: 20px auto;
+      display: block;
+      text-align: center; }
+    body .productsAll .rightText .textLink p, html .productsAll .rightText .textLink p {
+      width: 100%; }
+      body .productsAll .rightText .textLink p span, html .productsAll .rightText .textLink p span {
+        width: 120px; } }
+
+@media screen and (max-width: 850px) {
+  body .productsAll .leftText .textIcon, html .productsAll .leftText .textIcon {
+    width: 30px;
+    height: 30px;
+    left: 30px;
+    top: 30px; }
+  body .productsAll .leftText img, html .productsAll .leftText img {
+    width: 60px;
+    height: 45px; }
+  body .productsAll .centerPhoto .bigImg, html .productsAll .centerPhoto .bigImg {
+    width: 85%; }
+  body .productsAll .rightText, html .productsAll .rightText {
+    width: 80%; } }
+
+@media screen and (max-width: 500px) {
+  body .productsAll .leftText, html .productsAll .leftText {
+    padding: 0px; }
+    body .productsAll .leftText .textIcon, html .productsAll .leftText .textIcon {
+      left: 20px;
+      top: 10px; }
+  body .productsAll .rightText, html .productsAll .rightText {
+    padding: 20px 10px; }
+    body .productsAll .rightText .textLink p, html .productsAll .rightText .textLink p {
+      font-size: 16px; }
+      body .productsAll .rightText .textLink p span, html .productsAll .rightText .textLink p span {
+        width: 100px; } }
+
+@media screen and (max-width: 370px) {
+  body .productsAll .leftText .textIcon, html .productsAll .leftText .textIcon {
+    left: 10px;
+    top: 0px; }
+  body .productsAll .leftText img, html .productsAll .leftText img {
+    width: 40px;
+    height: 30px; }
+  body .productsAll .centerPhoto .bigImg, html .productsAll .centerPhoto .bigImg {
+    width: 100%; }
+  body .productsAll .rightText, html .productsAll .rightText {
+    width: 100%;
+    padding: 20px 10px; }
+    body .productsAll .rightText p, html .productsAll .rightText p {
+      margin: 0px; }
+    body .productsAll .rightText .textLink p, html .productsAll .rightText .textLink p {
+      font-size: 16px; } }

@@ -1,0 +1,317 @@
+* {
+  position: relative; }
+
+body, html {
+  padding: 0px;
+  margin: 0px;
+  background-color: #fefefe;
+  width: 100%; }
+  body .logo, html .logo {
+    position: fixed;
+    width: 100px;
+    left: 20px;
+    top: 20px; }
+    body .logo img, html .logo img {
+      width: 100%; }
+  body .title, html .title {
+    width: 40%;
+    margin: 30px auto;
+    display: block; }
+    body .title .titleBorder, html .title .titleBorder {
+      height: 8px;
+      display: block;
+      width: 100%;
+      border-top: solid 1px #555;
+      border-bottom: solid 1px #555; }
+      body .title .titleBorder span, html .title .titleBorder span {
+        width: 1px;
+        height: 8px;
+        top: -1px;
+        position: absolute;
+        background-color: #555; }
+    body .title h2, html .title h2 {
+      font-size: 48px;
+      color: #333;
+      line-height: 80px;
+      text-align: center; }
+    body .title p, html .title p {
+      top: 0px;
+      font-size: 32px;
+      text-align: center;
+      font-weight: 500; }
+    body .title .topBorder span, html .title .topBorder span {
+      left: 20px; }
+      body .title .topBorder span:nth-child(1), html .title .topBorder span:nth-child(1) {
+        left: 25px; }
+      body .title .topBorder span:nth-child(2), html .title .topBorder span:nth-child(2) {
+        left: 30px; }
+    body .title .bottomBorder span, html .title .bottomBorder span {
+      right: 20px; }
+      body .title .bottomBorder span:nth-child(1), html .title .bottomBorder span:nth-child(1) {
+        right: 25px; }
+      body .title .bottomBorder span:nth-child(2), html .title .bottomBorder span:nth-child(2) {
+        right: 30px; }
+    body .title h4, html .title h4 {
+      font-size: 36px;
+      margin: 20px 0px;
+      text-align: center; }
+  body .productImg, html .productImg {
+    width: 40%;
+    margin: 40px auto;
+    overflow-y: visible; }
+    body .productImg .fade, html .productImg .fade {
+      display: none; }
+    body .productImg .show, html .productImg .show {
+      display: block; }
+    body .productImg .bigPhoto, html .productImg .bigPhoto {
+      padding: 10px 0px;
+      border: solid 0.8px #777;
+      overflow-y: visible; }
+      body .productImg .bigPhoto img, html .productImg .bigPhoto img {
+        width: 100%; }
+    body .productImg .slide, html .productImg .slide {
+      overflow-y: visible;
+      padding: 10px 0px;
+      border: solid 0.8px #777; }
+      body .productImg .slide .carousel-indicators, html .productImg .slide .carousel-indicators {
+        top: 110%; }
+        body .productImg .slide .carousel-indicators .btnLi, html .productImg .slide .carousel-indicators .btnLi {
+          border: solid 1px #555;
+          width: 15px;
+          height: 15px;
+          display: inline-block;
+          margin: 30px 20px;
+          background-color: white;
+          -webkit-box-flex: 0;
+          -ms-flex-positive: 0;
+          flex-grow: 0;
+          -ms-flex-negative: 0;
+          flex-shrink: 0; }
+          body .productImg .slide .carousel-indicators .btnLi:after, html .productImg .slide .carousel-indicators .btnLi:after {
+            position: absolute;
+            left: 0px;
+            content: '';
+            display: block;
+            width: 1px;
+            height: 100%;
+            left: 50%;
+            background-color: #555;
+            -webkit-transform: rotate(-45deg) scaleY(1.5);
+            -ms-transform: rotate(-45deg) scaleY(1.5);
+            transform: rotate(-45deg) scaleY(1.5); }
+        body .productImg .slide .carousel-indicators .active, html .productImg .slide .carousel-indicators .active {
+          background-color: #555; }
+  body h5, html h5 {
+    font-family: 'Lato', sans-serif;
+    color: #222;
+    margin-top: 180px;
+    line-height: 60px;
+    font-size: 32px;
+    text-align: center; }
+  body .format, html .format {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #222; }
+    body .format .leftBorder, html .format .leftBorder {
+      margin: 0px auto;
+      display: block;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 50%;
+      height: 100%; }
+      body .format .leftBorder:after, html .format .leftBorder:after {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 40px;
+        border: solid 1px #555;
+        display: block; }
+    body .format .Narrate, html .format .Narrate {
+      margin: 0px auto;
+      width: 50%;
+      font-size: 24px;
+      border: solid 1px #555;
+      border-bottom: 0px;
+      font-weight: 400;
+      line-height: 60px;
+      text-align: center; }
+      body .format .Narrate:after, html .format .Narrate:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 0.5px;
+        height: 100%;
+        top: 0px;
+        left: 20px;
+        -webkit-transform: rotate(-33deg) scaleY(1.2);
+        -ms-transform: rotate(-33deg) scaleY(1.2);
+        transform: rotate(-33deg) scaleY(1.2);
+        background-color: #555; }
+    body .format .liText, html .format .liText {
+      margin: 0px auto;
+      width: 50%;
+      border: solid 1px #555;
+      padding: 10px 60px; }
+      body .format .liText .li, html .format .liText .li {
+        font-size: 20px;
+        margin: 20px 0px;
+        list-style: none; }
+        body .format .liText .li span, html .format .liText .li span {
+          width: 140PX;
+          display: inline-block; }
+      body .format .liText .colorAll, html .format .liText .colorAll {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        body .format .liText .colorAll .list-group, html .format .liText .colorAll .list-group {
+          display: inline-block;
+          width: 100%; }
+          body .format .liText .colorAll .list-group a, html .format .liText .colorAll .list-group a {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            margin: 0px 20px;
+            padding: 0px;
+            border-radius: 0px; }
+          body .format .liText .colorAll .list-group .active, html .format .liText .colorAll .list-group .active {
+            border: 0px; }
+          body .format .liText .colorAll .list-group .cOne, html .format .liText .colorAll .list-group .cOne {
+            background-color: #556b2f; }
+          body .format .liText .colorAll .list-group .cTwo, html .format .liText .colorAll .list-group .cTwo {
+            background-color: #87cefa; }
+          body .format .liText .colorAll .list-group .cThree, html .format .liText .colorAll .list-group .cThree {
+            background-color: #696969; }
+
+@media screen and (max-width: 1200px) {
+  body .title, html .title {
+    width: 60%; }
+  body .productImg, html .productImg {
+    width: 60%; }
+  body .format .leftBorder, html .format .leftBorder {
+    width: 70%; }
+  body .format .Narrate, html .format .Narrate {
+    width: 70%; }
+  body .format .liText, html .format .liText {
+    width: 70%; } }
+
+@media screen and (max-width: 900px) {
+  body .logo, html .logo {
+    width: 70px; }
+  body .title, html .title {
+    width: 70%; }
+  body .productImg, html .productImg {
+    width: 70%; }
+  body .format .leftBorder, html .format .leftBorder {
+    width: 80%; }
+  body .format .Narrate, html .format .Narrate {
+    width: 80%; }
+  body .format .liText, html .format .liText {
+    width: 80%; } }
+
+@media screen and (max-width: 700px) {
+  body .logo, html .logo {
+    width: 70px; }
+  body .title, html .title {
+    width: 60%; }
+    body .title h2, html .title h2 {
+      font-size: 36px;
+      line-height: 50px; }
+    body .title p, html .title p {
+      font-size: 26px; }
+    body .title h4, html .title h4 {
+      font-size: 30px;
+      margin-bottom: 0px; }
+  body .productImg, html .productImg {
+    width: 60%; }
+  body h5, html h5 {
+    margin-top: 100px;
+    font-size: 26px; }
+  body .format .liText, html .format .liText {
+    padding-right: 0px; }
+    body .format .liText .li, html .format .liText .li {
+      font-size: 18px;
+      margin: 10px 0px; }
+      body .format .liText .li span, html .format .liText .li span {
+        width: 100px; }
+    body .format .liText .colorAll .list-group a, html .format .liText .colorAll .list-group a {
+      width: 15px;
+      height: 15px;
+      margin: 0px 10px; } }
+
+@media screen and (max-width: 600px) {
+  body .logo, html .logo {
+    position: absolute;
+    width: 50px;
+    top: 50px; }
+  body .title, html .title {
+    width: 100%; }
+    body .title h2, html .title h2 {
+      font-size: 36px;
+      line-height: 50px; }
+    body .title p, html .title p {
+      font-size: 26px; }
+  body .productImg, html .productImg {
+    width: 80%; }
+  body .format, html .format {
+    font-size: 18px; }
+    body .format .liText .li span, html .format .liText .li span {
+      width: 80px; } }
+
+@media screen and (max-width: 500px) {
+  body .logo, html .logo {
+    top: 30px; }
+  body .title h2, html .title h2 {
+    font-size: 32px;
+    line-height: 40px; }
+  body .title p, html .title p {
+    font-size: 26px; }
+  body .title h4, html .title h4 {
+    font-size: 24px; }
+  body .productImg, html .productImg {
+    width: 80%; }
+    body .productImg .slide .carousel-indicators, html .productImg .slide .carousel-indicators {
+      top: 100%; }
+  body h5, html h5 {
+    margin-top: 60px; }
+  body .format, html .format {
+    font-size: 18px; }
+    body .format .leftBorder, html .format .leftBorder {
+      width: 95%; }
+      body .format .leftBorder:after, html .format .leftBorder:after {
+        width: 20px; }
+    body .format .Narrate, html .format .Narrate {
+      width: 95%; }
+      body .format .Narrate:after, html .format .Narrate:after {
+        left: 10px;
+        -webkit-transform: rotate(-18deg) scaleY(1.1);
+        -ms-transform: rotate(-18deg) scaleY(1.1);
+        transform: rotate(-18deg) scaleY(1.1); }
+    body .format .liText, html .format .liText {
+      width: 95%;
+      padding-left: 25px; }
+      body .format .liText .li, html .format .liText .li {
+        font-size: 18px; }
+        body .format .liText .li span, html .format .liText .li span {
+          width: 80px; } }
+
+@media screen and (max-width: 400px) {
+  body .logo, html .logo {
+    width: 45px; }
+  body .title h2, html .title h2 {
+    font-size: 26px;
+    line-height: 35px; }
+  body .title p, html .title p {
+    font-size: 20px; }
+  body .title h4, html .title h4 {
+    font-size: 22px; }
+  body .format .liText .li, html .format .liText .li {
+    font-size: 15px; }
+    body .format .liText .li span, html .format .liText .li span {
+      width: 65px; } }

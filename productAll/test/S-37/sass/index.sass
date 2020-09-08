@@ -1,0 +1,325 @@
+*
+	position: relative
+body
+	background-color: #eee !important
+	// background-image: url("../image/S-37-BGC-3.png")
+	background-position: top
+	background-size: 100%
+	// background-repeat: no-repeat
+body,html
+	margin: 0px
+	z-index: 0
+	.Logo
+		position: fixed
+		right: 30px
+		bottom: 30px
+		width: 120px
+		height: 90px
+		z-index: 20
+		img
+			width: 100%
+	.titleImgAll
+		width: 50%
+		margin: auto
+		.carousel
+			.carousel-inner
+				.carousel-item
+					img
+						margin: auto
+						// width: 60%!important
+			.carousel-control-prev
+			.carousel-indicators
+				li
+					margin: 0px 5px
+					height: 10px 
+					width: 10px
+					border-radius: 100%
+	.midText
+		display: inline-block
+		left: 50%
+		transform: translateX(-50%)
+		// background-color: #fff
+		// color: white
+		h4
+			text-align: center
+			margin-top: 30px
+			// line-height: 80px
+			font-size: 32px
+			letter-spacing: 1px
+		h5
+			font-size: 28px
+			margin: 30px 0px
+			text-align: center
+			font-weight: 400
+		p
+			font-size: 24px
+			span
+				width: 180px
+				display: inline-block
+	.livePhoto
+		margin: 40px 0px
+		width: 80%
+		left: 50%
+		transform: translateX(-50%)
+		.list
+			display: flex
+			width: 100%
+			.Cimg
+				opacity: 0.85
+				transition: 0.3s
+				img
+					border: solid 6px #eee
+					width: 100%
+				&:hover
+					opacity: 1
+		.listOne
+			.Cimg
+				width: 33%
+		.listTwo
+			.left
+				flex-shrink: 0
+				width: 66%
+			.right
+				width: 33%
+				display: flex
+				flex-wrap: wrap
+				img
+					width: 100%
+			.twoPhone
+				display: none
+@media screen and(max-width: 1200px)
+	body,html
+		.Logo
+			img
+		.titleImgAll
+			width: 60%
+
+@media screen and(max-width: 1200px)
+	body,html
+		.Logo
+			img
+		.titleImgAll
+			.carousel
+				.carousel-inner
+					.carousel-item
+						img
+				.carousel-control-prev
+				.carousel-indicators
+					li
+		.midText
+			h4
+			h5
+			p
+				span
+		.livePhoto
+			.list
+				.Cimg
+					img
+					&:hover
+			.listOne
+				.Cimg
+			.listTwo
+				.left
+				.right
+					img
+
+@media screen and(max-width: 1000px)
+	body,html
+		.Logo
+			width: 70px
+			bottom: 20px
+			right: 10px
+			height: auto
+			img
+		.titleImgAll
+			width: 70%
+
+@media screen and(max-width: 850px)
+	body,html
+		.Logo
+			bottom: 10px
+			img
+		.titleImgAll
+			width: 85%
+			.carousel
+				.carousel-inner
+					.carousel-item
+						img
+				.carousel-control-prev
+				.carousel-indicators
+					li
+		.midText
+			h4
+				font-size: 28px
+			h5
+				font-size: 24px
+				margin: 20px 0px
+			p
+				font-size: 20px
+				margin: 18px 0px
+				span
+					width: 130px
+		.livePhoto
+			width: 95%
+			.list
+				.Cimg
+					img
+					&:hover
+			.listOne
+				.Cimg
+			.listTwo
+				.left
+				.right
+					img
+
+@media screen and(max-width: 600px)
+	body,html
+		.Logo
+			width: 60px
+			img
+		.titleImgAll
+			width: 95%
+			.carousel
+				.carousel-inner
+					.carousel-item
+						img
+				.carousel-control-prev
+				.carousel-indicators
+					li
+		.midText
+			h4
+				font-size: 26px
+			h5
+				font-size: 20px
+				margin: 20px 0px
+			p
+				font-size: 16px
+				margin: 10px 0px
+				span
+					width: 100px
+		.livePhoto
+			.list
+				.Cimg
+					img
+					&:hover
+			.listOne
+				.Cimg
+			.listTwo
+				.left
+				.right
+					img
+
+@media screen and(max-width: 450px)
+	body,html
+		.Logo
+			width: 40px
+			bottom: 8px
+			img
+		.titleImgAll
+			width: 100%
+			.carousel
+				.carousel-inner
+					.carousel-item
+						img
+				.carousel-control-prev
+				.carousel-indicators
+					li
+		.midText
+			h4
+				margin-top: 20px
+				font-size: 22px
+			h5
+				font-size: 18px
+				margin: 15px 0px
+			p
+				font-size: 14px
+				margin: 7px 0px
+				span
+					width: 100px
+		.livePhoto
+			margin: 20px 0px
+			width: 98%
+			.list
+				.Cimg
+					img
+						border: solid 2px #eee
+					&:hover
+			.listOne
+				display: flex
+				.Cimg
+					width: 50%
+				.onePhone
+					display: none
+			.listTwo
+				.left
+				.right
+					img
+				.twoPhone
+					display: block
+			.listLast
+				flex-direction: row-reverse
+@media screen and(max-width: 375px)
+	body,html
+		.Logo
+			img
+		.titleImgAll
+			.carousel
+				.carousel-inner
+					.carousel-item
+						img
+				.carousel-control-prev
+				.carousel-indicators
+					li
+						width: 5px
+						height: 5px
+		.midText
+			h4
+				margin-top: 20px
+				font-size: 20px
+				margin-bottom: 0px
+			h5
+				font-size: 16px
+			p
+				font-size: 12px
+				margin: 7px 0px
+				span
+					width: 80px
+		.livePhoto
+			.list
+				.Cimg
+					img
+					&:hover
+			.listOne
+				.Cimg
+			.listTwo
+				.left
+				.right
+					img
+@media screen and(max-width: 850px)
+	body,html
+		.Logo
+			img
+		.titleImgAll
+			.carousel
+				.carousel-inner
+					.carousel-item
+						img
+				.carousel-control-prev
+				.carousel-indicators
+					li
+		.midText
+			h4
+			h5
+			p
+				span
+		.livePhoto
+			.list
+				.Cimg
+					img
+					&:hover
+			.listOne
+				.Cimg
+			.listTwo
+				.left
+				.right
+					img

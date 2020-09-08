@@ -1,0 +1,333 @@
+*
+    // border: solid 1px black
+    // color: blue  
+body, html
+    margin: 0px auto
+    padding: 0px
+    // margin: 0px
+    background-color: #fff
+    position: relative
+// ---導覽列---
+.navHeader
+    display: flex
+    flex-wrap: wrap
+    position: relative
+    button
+        border: 0px
+        margin: 30px
+    .navbar-brand
+        margin: 0px
+        padding: 0px
+        .titleImg
+            top: 20px
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            width: 90px
+            height: 60px
+            margin: 0px
+            padding: 0px
+    .navbar-collapse
+        justify-content: center
+        align-items: center
+        margin-top: 90px
+        .active
+            margin: 0px 10px
+            text-align: center
+            width: 120px
+            a
+                cursor: pointer
+                text-align: center
+                width: 100%
+                display: inline-block
+            .dropdownLayer
+                #pushAll
+                    margin-left: 0px
+                    list-style: none
+                    display: flex
+                    flex-wrap: nowrap
+                    // margin-left: -230px
+                    margin-left: -120px
+                    position: absolute
+                    z-index: 99
+                    // border: solid 0.8px rgba(0,0,0,0.15)
+                    padding-inline-start: 0px
+                    // display: none
+                    width: 360px
+                    li
+                        position: relative
+                        text-align: center
+                        width: 180px
+                        background-color: #fff
+                        color: rgba(0,0,0,0.9)
+                        .layerTitle
+                            font-size: 17px
+                        .layerContent
+                            // display: none
+                            a
+                                // font-weight: 100
+                                font-size: 16px
+                                margin-bottom: 8px
+                                text-decoration: none
+                                color: rgba(0,0,0,0.5)
+        .nav-link
+            &:hover
+                color: #aaa
+
+
+// ----最新消息-----
+.news
+    padding: 70px 0px 70px 0px
+    .row
+        justify-content: space-around
+        margin: 0px
+        .newsContent
+            .box
+                .box-content
+                    top: 50%
+                    transform: translateY(-50%)
+                    span
+                        font-size: 20px
+                        font-weight: 400
+                        width: 100%
+                        letter-spacing: 2px
+
+
+// ---商品列----
+.products
+    width: 90%
+    margin: 50px auto
+    position: relative
+    .productsButton
+        width: 100%
+        .left
+            position: absolute
+            width: 30px
+            height: 30px
+            left: -30px
+            top: 50%
+            transform: translateY(-50%)
+            opacity: 0.3
+            cursor: pointer
+            // border: solid 1px black
+            img
+                position: absolute
+                width: 30px
+                height: 30px
+                // left: 0px
+        .right
+            cursor: pointer
+            position: absolute
+            width: 30px
+            height: 30px
+            right: -30px
+            top: 50%
+            transform: translateY(-50%)
+            opacity: 0.3
+            // border: solid 1px black
+            img
+                position: absolute
+                width: 30px
+                height: 30px
+                right: 0px
+    .productsAll
+        flex-wrap: nowrap
+        overflow: hidden
+        .productsContent
+            flex-grow: 0
+            flex-shrink: 0
+            position: relative
+            display: flex
+            left: 0px
+            transition: 1s
+            overflow-y: scroll
+            -ms-overflow-style: none
+            &::-webkit-scrollbar
+                display: none
+            a
+                text-decoration: none
+                // out-line: none
+                color: #666
+            .commodity
+                width: 100%
+                display: block
+                // background-image: url("../img/Fahrrad.jpg")
+                background-size: cover
+                background-repeat: no-repeat
+                background-position: center
+            p
+                display: block
+                bottom: 0px
+                text-align: center
+                font-size: 18px
+
+
+
+// ----聯絡資訊----
+.coda
+    position: absolute
+    left: 0px
+    margin-top: 10px
+    width: 100%
+    height: 180px
+    background-color: #eee
+    padding: 15px
+    line-height: 0px
+    position: relative
+    display: flex
+    align-items:center
+    flex-wrap: wrap
+    h5
+        width: 100%
+        display: inline-block
+        text-align: center
+        margin-bottom: 10px
+        font-size: 16px
+        color: #444
+    p
+        line-height: 5px
+        width: 100%
+        text-align: center
+        display: block
+        font-size: 13px
+        height: auto
+    .img
+        width: 100%
+        margin-bottom: 10px
+        position: relative
+        img
+            display: block
+            position: relative
+            left: 50%
+            transform: translateX(-50%)
+            width: 40px
+            height: 30px
+@media screen and (min-width: 992px)
+    .navHeader
+        .navbar-collapse
+            .active
+                .dropdown-menu
+                    border: 0px
+                .dropdownLayer
+                    #pushAll
+                        li
+                            .layerContent
+                                display: block
+@media screen and (max-width: 991px)
+    .navHeader
+        .navbar-collapse
+            margin-top: 0px
+        .navbar-brand
+            .titleImg
+        .navbar-collapse
+            .active
+                width: 50%
+                margin: 0px auto
+                text-align: center
+                a
+                    padding-left: 0px
+                    padding-right: 0px
+                .dropdown-menu
+                    min-width: 0rem
+                    border: solid 0px
+                .dropdownLayer
+                    #pushAll
+                        display: inline-block
+                        flex-wrap: wrap
+                        position: relative
+                        margin-left: 0px
+                        li
+                            width: 100%
+                            margin-top: 10px
+                            margin-bottom: 10px
+                            .layerContent
+                                display: none
+    .news
+        .row
+            .newsContent
+                .box
+                    margin-top: 30px
+                    .box-content
+                        span
+                            font-size: 28px
+    .products
+        margin-top: 0px
+@media screen and (max-width: 768px)
+    .navHeader
+        .navbar-collapse
+            .active
+                .dropdownLayer
+                    #pushAll
+                        width: auto
+                        .layerTitle
+                            font-size: 16px
+                            a
+                                font-size: 12px
+    .navHeader
+        .navbar-brand
+            .titleImg
+                width: 45px
+                height: 30px
+        .navbar-toggler
+            margin: 7px
+    .news
+        padding: 35px 0px
+        .box
+            margin-bottom: 0px
+            margin-top: 15px
+    .products
+        margin-top: 30px
+@media screen and (max-width: 580px)
+    .products
+        .productsButton
+            .right
+                right: -20px
+            .left
+                left: -25px
+    .news
+        .row
+            .newsContent
+                .box
+                    .box-content
+                        span
+                            font-size: 18px
+@media (min-width: 576px)
+    .container
+        max-width: 100%
+@media screen and (max-width: 540px)
+    .navHeader
+        .navbar-brand
+            .titleImg
+                top: 10px
+        .navbar-toggler
+            margin: 0px
+    .news
+        .row
+            .newsContent
+                .box
+                    .box-content
+                        span
+                            line-height: 20px
+                            font-size: 14px
+@media screen and (max-width: 438px)
+    .coda
+        height: 190px
+        p
+            font-size: 12px
+            span
+                // margin-top: 10px
+                display: inline-block
+@media screen and (max-width: 412px)
+    // .navHeader
+    //     .navbar-collapse
+    //         .active
+    //             .dropdownLayer
+    //                 #pushAll
+    //                     width: 120px
+    .coda
+        p
+            span
+                margin-top: 10px
+
+
+

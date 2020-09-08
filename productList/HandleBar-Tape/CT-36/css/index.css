@@ -1,0 +1,10 @@
+.commdityAll .format .colorAll .list-group .one {
+  width: 25px;
+  height: 25px;
+  background-image: url("../CT-36Photo/jpg/CT-36color.png");
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  border-radius: 0%;
+  background-position: center;
+  background-repeat: no-repeat; }

@@ -1,0 +1,377 @@
+*
+	position: relative
+body,html
+	margin: 0px
+	.productsAll
+		width: 100%
+		height: 100%
+		position: relative
+		.leftText
+			position: fixed
+			padding: 10px 15px
+			padding-left: 45px
+			.textIcon
+				display: none
+			img
+				width: 120px
+				height: 90px
+			.aList
+				h5
+					font-size: 32px
+				ul
+					padding: 0px
+					margin: 40px 0px
+					li
+						list-style: none
+						font-size: 24px
+						margin: 30px 0px
+						text-align: left
+						color: #333
+						font-weight: 400
+						font-family: 'Montserrat', sans-serif
+						cursor: pointer
+						&:hover
+							span
+								display: inline-block
+						span
+							display: none
+							position: absolute
+							height: 100%
+							width: 20px
+							left: -25px
+							border: solid 0.5px #333
+
+						.block
+							display: inline-block
+		.centerPhoto
+			margin: 0px auto
+			// display: block 
+			left: -30px
+			width: 50% 
+			display: flex
+			flex-wrap: wrap
+			img
+				border: solid 1px #777
+				margin: 5px 0px
+				width: 100%
+				flex-shrink: 0
+			.small
+				position: fixed
+				width: 80px
+				display: flex
+				flex-wrap: wrap
+				transform: translateX(-120%)
+				img
+					margin: 10px 0px
+					width: 80px
+			.btnIcon
+				display: inline-block
+				position: absolute
+				z-index: 99
+				width: 100px
+				height: 100%
+				cursor: pointer
+			.leftIcon
+				.icon
+					background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e")
+					width: 30px
+					height: 30px
+					left: 10px
+					top: 50%
+					transform: translateY(-50%)
+			.rightIcon
+				right: 0px
+				.icon
+					position: absolute
+					background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e")
+					right: 10px
+					width: 30px
+					height: 30px
+					top: 50%
+					transform: translateY(-50%)
+		.rightText
+			width: 25%
+			position: fixed
+			top: 0px
+			right: 0px
+			padding: 50px 15px
+			padding-right: 45px
+			h5
+				font-size: 32px
+				text-align: left
+				line-height: 50px
+				// font-weight: 300
+				font-family: 'Montserrat', sans-serif
+			p
+				display: inline-block
+				// top: -20px
+				font-size: 20px
+				line-height: 40px
+				font-family: 'Montserrat', sans-serif
+				span
+					width: 20px
+					display: inline-block
+			.titleLink
+				// top: -20px
+				div
+					flex-direction: row
+					a
+						font-family: 'Montserrat', sans-serif
+						font-size: 18px
+						font-weight: 600
+						color: #666
+						text-decoration: none
+						border: 0px
+						background-color: white
+						display: inline-block
+						width: auto
+						padding: 0px 8px
+						// margin: 0px 8px
+						line-height: 30px
+						margin-top: 20px
+					.active
+						border-radius: 0px
+						color: #333
+						border-bottom: solid 1px black
+			.textLink
+				p
+					font-family: 'Noto Sans TC', sans-serif
+					font-size: 18px
+					font-weight: 300
+					margin-top: 20px
+					span
+						display: inline-block
+						width: 100px
+				.spec
+					margin-top: 20px
+					p
+						margin: 8px 0px
+@media screen and (max-width: 1420px)
+	body,html
+		.productsAll
+			.leftText
+				img
+					width: 90px
+					height: 65px
+				.aList
+					h5
+					ul
+						margin: 20px 0px
+						li
+							margin: 20px 0px
+							&:hover
+								span
+							span
+
+							.block
+			.centerPhoto
+				width: 40%
+				img
+				.small
+					width: 65px
+					img
+						width: 100%
+			.rightText
+				width: 33%
+				padding-right: 20px
+				h5
+				p
+					span
+				.titleLink
+					div
+						a
+						.active
+				.textLink
+					p
+						span
+							width: 80px
+					.spec
+						p
+@media screen and (max-width: 1000px)
+	body,html
+		.productsAll
+			.leftText
+				width: 100%
+				position: relative
+				border-bottom: solid 0.5px black 
+				.textIcon
+					display: block
+					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(30,30,30, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+					width: 40px
+					height: 40px
+					position: absolute
+					left: 35px
+					top: 35px
+				img
+					display: block
+					margin: 15px auto
+				.aList
+					h5
+					ul
+						display: none
+						li
+							&:hover
+								span
+							span
+
+							.block
+			.centerPhoto
+				overflow-x: hidden
+				width: 100%
+				display: flex
+				flex-wrap: nowrap
+				align-content: flex-start
+				justify-content: flex-start
+				left: 0px
+				img
+					width: 45%
+					border-top: 0px
+					margin: 0px
+				.small
+					display: none
+					img
+			.rightText
+				width: 60%
+				margin: 0px auto
+				// display: none
+				position: relative
+				h5
+					text-align: center
+				p
+					margin: 20px auto
+					display: block
+					text-align: center
+					span
+				.titleLink
+					div
+						a
+						.active
+				.textLink
+					p
+						width: 100%
+						span
+							width: 120px
+					.spec
+						p
+
+@media screen and (max-width: 850px)
+	body,html
+		.productsAll
+			.leftText
+				.textIcon
+					width: 30px
+					height: 30px
+					left: 30px
+					top: 30px
+				img
+					width: 60px
+					height: 45px
+				.aList
+					h5
+					ul
+						li
+							&:hover
+								span
+							span
+
+							.block
+			.centerPhoto
+				.bigImg
+					width: 85%
+				.small
+					img
+			.rightText
+				width: 80%
+				h5
+				p
+					span
+				.titleLink
+					div
+						a
+						.active
+				.textLink
+					p
+						span
+					.spec
+						p
+
+@media screen and (max-width: 500px)
+	body,html
+		.productsAll
+			.leftText
+				padding: 0px 
+				.textIcon
+					left: 20px
+					top: 10px
+				img
+				.aList
+					h5
+					ul
+						li
+							&:hover
+								span
+							span
+
+							.block
+			.centerPhoto
+				.bigImg
+				.small
+					img
+			.rightText
+				padding: 20px 10px
+				h5
+				p
+					span
+				.titleLink
+					div
+						a
+						.active
+				.textLink
+					p
+						font-size: 16px
+						span
+							width: 100px
+					.spec
+						p
+
+@media screen and (max-width: 370px)
+	body,html
+		.productsAll
+			.leftText
+				.textIcon
+					left: 10px
+					top: 0px
+				img
+					width: 40px
+					height: 30px
+				.aList
+					h5
+					ul
+						li
+							&:hover
+								span
+							span
+
+							.block
+			.centerPhoto
+				.bigImg
+					width: 100%
+				.small
+					img
+			.rightText
+				width: 100%
+				padding: 20px 10px
+				h5
+				p
+					margin: 0px
+					span
+				.titleLink
+					div
+						a
+						.active
+				.textLink
+					p
+						font-size: 16px
+						span
+					.spec
+						p

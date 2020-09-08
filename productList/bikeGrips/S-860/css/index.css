@@ -1,0 +1,104 @@
+* {
+  position: relative; }
+
+body, html {
+  margin: 0px; }
+  body .logo, html .logo {
+    width: 100px;
+    height: 70px;
+    right: 40px;
+    bottom: 40px;
+    position: fixed;
+    z-index: 99;
+    cursor: pointer; }
+    body .logo img, html .logo img {
+      width: 100%; }
+  body a, html a {
+    display: block; }
+    body a .start, html a .start {
+      height: 100vh;
+      width: 50%;
+      float: left;
+      background-color: #282828; }
+      body a .start img, html a .start img {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 100%; }
+  body .white, html .white {
+    height: 100vh;
+    width: 50vw;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 9;
+    -webkit-animation: arrowBlack 0.09s;
+    animation: arrowBlack 0.09s;
+    opacity: 0; }
+  body .oneWhite, html .oneWhite {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s; }
+  body .twoWhite, html .twoWhite {
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+    left: 50%; }
+  body .threeWhite, html .threeWhite {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s; }
+  body .fourWhite, html .fourWhite {
+    -webkit-animation-delay: 1.7s;
+    animation-delay: 1.7s;
+    left: 50%; }
+  body .fiveWhite, html .fiveWhite {
+    -webkit-animation: arrowBlack 0.1s;
+    animation: arrowBlack 0.1s;
+    -webkit-animation-delay: 2.4s;
+    animation-delay: 2.4s;
+    width: 100%; }
+
+@-webkit-keyframes arrowBlack {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes arrowBlack {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@media screen and (max-width: 750px) {
+  body .logo {
+    width: 80px;
+    height: 60px; }
+  body a .start {
+    position: relative;
+    float: none;
+    height: 50vh;
+    width: 100%; }
+    body a .start img {
+      max-height: 100%;
+      width: 100%;
+      top: 0px;
+      -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      transform: translateY(0%); } }
+
+@media screen and (max-width: 470px) {
+  body {
+    overflow: hidden; }
+    body .logo {
+      width: 60px;
+      height: 40px;
+      right: 30px;
+      bottom: 30px; } }
+
+@media screen and (max-width: 380px) {
+  body .logo {
+    width: 50px;
+    height: 30px;
+    right: 20px;
+    bottom: 20px; } }

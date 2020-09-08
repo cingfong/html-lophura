@@ -1,0 +1,318 @@
+body, html {
+  margin: 0px auto;
+  padding: 0px;
+  background-color: #fff;
+  position: relative; }
+
+.navHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative; }
+  .navHeader button {
+    border: 0px;
+    margin: 30px; }
+  .navHeader .navbar-brand {
+    margin: 0px;
+    padding: 0px; }
+    .navHeader .navbar-brand .titleImg {
+      top: 20px;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 90px;
+      height: 60px;
+      margin: 0px;
+      padding: 0px; }
+  .navHeader .navbar-collapse {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 90px; }
+    .navHeader .navbar-collapse .active {
+      margin: 0px 10px;
+      text-align: center;
+      width: 120px; }
+      .navHeader .navbar-collapse .active a {
+        cursor: pointer;
+        text-align: center;
+        width: 100%;
+        display: inline-block; }
+      .navHeader .navbar-collapse .active .dropdownLayer #pushAll {
+        margin-left: 0px;
+        list-style: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        margin-left: -120px;
+        position: absolute;
+        z-index: 99;
+        -webkit-padding-start: 0px;
+        padding-inline-start: 0px;
+        width: 360px; }
+        .navHeader .navbar-collapse .active .dropdownLayer #pushAll li {
+          position: relative;
+          text-align: center;
+          width: 180px;
+          background-color: #fff;
+          color: rgba(0, 0, 0, 0.9); }
+          .navHeader .navbar-collapse .active .dropdownLayer #pushAll li .layerTitle {
+            font-size: 17px; }
+          .navHeader .navbar-collapse .active .dropdownLayer #pushAll li .layerContent a {
+            font-size: 16px;
+            margin-bottom: 8px;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.5); }
+    .navHeader .navbar-collapse .nav-link:hover {
+      color: #aaa; }
+
+.news {
+  padding: 70px 0px 70px 0px; }
+  .news .row {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0px; }
+    .news .row .newsContent .box .box-content {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      .news .row .newsContent .box .box-content span {
+        font-size: 20px;
+        font-weight: 400;
+        width: 100%;
+        letter-spacing: 2px; }
+
+.products {
+  width: 90%;
+  margin: 50px auto;
+  position: relative; }
+  .products .productsButton {
+    width: 100%; }
+    .products .productsButton .left {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: -30px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      opacity: 0.3;
+      cursor: pointer; }
+      .products .productsButton .left img {
+        position: absolute;
+        width: 30px;
+        height: 30px; }
+    .products .productsButton .right {
+      cursor: pointer;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      right: -30px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      opacity: 0.3; }
+      .products .productsButton .right img {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 0px; }
+  .products .productsAll {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    overflow: hidden; }
+    .products .productsAll .productsContent {
+      -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      left: 0px;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s;
+      overflow-y: scroll;
+      -ms-overflow-style: none; }
+      .products .productsAll .productsContent::-webkit-scrollbar {
+        display: none; }
+      .products .productsAll .productsContent a {
+        text-decoration: none;
+        color: #666; }
+      .products .productsAll .productsContent .commodity {
+        width: 100%;
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; }
+      .products .productsAll .productsContent p {
+        display: block;
+        bottom: 0px;
+        text-align: center;
+        font-size: 18px; }
+
+.coda {
+  position: absolute;
+  left: 0px;
+  margin-top: 10px;
+  width: 100%;
+  height: 140px;
+  background-color: #eee;
+  padding: 15px 0PX;
+  line-height: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .coda .text {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    padding-left: 180px; }
+    .coda .text h5 {
+      width: 100%;
+      display: inline-block;
+      margin-bottom: 0px;
+      font-size: 16px;
+      color: #444;
+      line-height: 25px; }
+  .coda img {
+    margin: 0px 20px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 90px;
+    width: 130px; }
+
+@media screen and (min-width: 992px) {
+  .navHeader .navbar-collapse .active .dropdown-menu {
+    border: 0px; }
+  .navHeader .navbar-collapse .active .dropdownLayer #pushAll li .layerContent {
+    display: block; } }
+
+@media screen and (max-width: 991px) {
+  .navHeader .navbar-collapse {
+    margin-top: 0px; }
+  .navHeader .navbar-collapse .active {
+    width: 50%;
+    margin: 0px auto;
+    text-align: center; }
+    .navHeader .navbar-collapse .active a {
+      padding-left: 0px;
+      padding-right: 0px; }
+    .navHeader .navbar-collapse .active .dropdown-menu {
+      min-width: 0rem;
+      border: solid 0px; }
+    .navHeader .navbar-collapse .active .dropdownLayer #pushAll {
+      display: inline-block;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      position: relative;
+      margin-left: 0px; }
+      .navHeader .navbar-collapse .active .dropdownLayer #pushAll li {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+        .navHeader .navbar-collapse .active .dropdownLayer #pushAll li .layerContent {
+          display: none; }
+  .news .row .newsContent .box {
+    margin-top: 30px; }
+    .news .row .newsContent .box .box-content span {
+      font-size: 28px; }
+  .products {
+    margin-top: 0px; }
+  .coda img {
+    width: 100px;
+    height: 70px; }
+  .coda .text {
+    padding-left: 140px; } }
+
+@media screen and (max-width: 768px) {
+  .navHeader .navbar-collapse .active .dropdownLayer #pushAll {
+    width: auto; }
+    .navHeader .navbar-collapse .active .dropdownLayer #pushAll .layerTitle {
+      font-size: 16px; }
+      .navHeader .navbar-collapse .active .dropdownLayer #pushAll .layerTitle a {
+        font-size: 12px; }
+  .navHeader .navbar-brand .titleImg {
+    width: 45px;
+    height: 30px; }
+  .navHeader .navbar-toggler {
+    margin: 7px; }
+  .news {
+    padding: 35px 0px; }
+    .news .box {
+      margin-bottom: 0px;
+      margin-top: 15px; }
+  .products {
+    margin-top: 30px; }
+  .coda {
+    height: 140px; }
+    .coda .text h5 {
+      text-align: center;
+      font-size: 14px;
+      line-height: 18px; } }
+
+@media screen and (max-width: 580px) {
+  .products .productsButton .right {
+    right: -20px; }
+  .products .productsButton .left {
+    left: -25px; }
+  .news .row .newsContent .box .box-content span {
+    font-size: 18px; }
+  .coda {
+    height: 150px; }
+    .coda img {
+      width: 80px;
+      height: 50px; }
+    .coda .text {
+      padding-left: 100px; }
+      .coda .text h5 {
+        font-size: 12px;
+        line-height: 18px; } }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 100%; } }
+
+@media screen and (max-width: 540px) {
+  .navHeader .navbar-brand .titleImg {
+    top: 10px; }
+  .navHeader .navbar-toggler {
+    margin: 0px; }
+  .news .row .newsContent .box .box-content span {
+    line-height: 20px;
+    font-size: 14px; } }
+
+@media screen and (max-width: 438px) {
+  .coda {
+    height: 190px; }
+    .coda p {
+      font-size: 12px; }
+      .coda p span {
+        display: inline-block; } }
+
+@media screen and (max-width: 340px) {
+  .coda {
+    height: 180px; }
+    .coda .text h5 {
+      font-size: 12px;
+      line-height: 16px; } }

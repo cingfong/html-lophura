@@ -1,0 +1,479 @@
+* {
+  position: relative; }
+
+body {
+  padding: 40px; }
+
+body, html {
+  margin: 0px;
+  width: 100%;
+  background-image: url("../image/aaa1.jpg");
+  display: block; }
+  body .productsAll, html .productsAll {
+    z-index: 2;
+    border: solid 2px black;
+    margin: 0px; }
+    body .productsAll .header, html .productsAll .header {
+      border-bottom: solid 2px black;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      body .productsAll .header .logo, html .productsAll .header .logo {
+        border-right: solid 2px black;
+        padding: 30px;
+        width: 200px; }
+        body .productsAll .header .logo img, html .productsAll .header .logo img {
+          width: 100%; }
+      body .productsAll .header .title, html .productsAll .header .title {
+        width: 100%; }
+        body .productsAll .header .title h1, html .productsAll .header .title h1 {
+          font-family: 'Bowlby One SC', cursive;
+          line-height: 150px;
+          text-align: center;
+          font-size: 60px;
+          letter-spacing: 2px; }
+      body .productsAll .header .titleRight, html .productsAll .header .titleRight {
+        padding: 20px;
+        width: 200px;
+        border-left: solid 2px black; }
+        body .productsAll .header .titleRight h2, html .productsAll .header .titleRight h2 {
+          line-height: 50px;
+          font-size: 22px;
+          text-align: center;
+          font-weight: 900; }
+    body .productsAll .content .leftContent, html .productsAll .content .leftContent {
+      width: 75%;
+      border-right: solid 2px black;
+      overflow: hidden; }
+      body .productsAll .content .leftContent h2, html .productsAll .content .leftContent h2 {
+        margin: 40px;
+        font-family: 'Bree Serif', serif;
+        font-size: 70px;
+        font-weight: 600; }
+      body .productsAll .content .leftContent img, html .productsAll .content .leftContent img {
+        z-index: 999;
+        width: 100%;
+        -webkit-filter: grayscale(1);
+        transition: -webkit-filter 0.5s; }
+      body .productsAll .content .leftContent .scrollPhoto, html .productsAll .content .leftContent .scrollPhoto {
+        -webkit-filter: grayscale(0); }
+      body .productsAll .content .leftContent h3, html .productsAll .content .leftContent h3 {
+        margin: 40px;
+        letter-spacing: 3px;
+        font-size: 50px;
+        font-weight: 600; }
+      body .productsAll .content .leftContent h4, html .productsAll .content .leftContent h4 {
+        margin: 40px;
+        font-size: 26px;
+        line-height: 40px; }
+      body .productsAll .content .leftContent .leftContentPhoto, html .productsAll .content .leftContent .leftContentPhoto {
+        margin-top: 50px;
+        border-top: solid 2px black;
+        border-bottom: solid 2px black;
+        width: 100%; }
+        body .productsAll .content .leftContent .leftContentPhoto .photo, html .productsAll .content .leftContent .leftContentPhoto .photo {
+          display: inline-block;
+          width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+          body .productsAll .content .leftContent .leftContentPhoto .photo .Rwd, html .productsAll .content .leftContent .leftContentPhoto .photo .Rwd {
+            display: none; }
+          body .productsAll .content .leftContent .leftContentPhoto .photo img, html .productsAll .content .leftContent .leftContentPhoto .photo img {
+            -webkit-filter: grayscale(1);
+            float: left;
+            width: 33%;
+            height: 50%;
+            transition: -webkit-filter 1s; }
+          body .productsAll .content .leftContent .leftContentPhoto .photo .scrollPhoto, html .productsAll .content .leftContent .leftContentPhoto .photo .scrollPhoto {
+            -webkit-filter: grayscale(0); }
+    body .productsAll .content .productContent, html .productsAll .content .productContent {
+      width: 75%;
+      border-right: solid 2px black;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      body .productsAll .content .productContent .contentText, html .productsAll .content .productContent .contentText {
+        width: 50%;
+        padding: 20px;
+        left: 45%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%); }
+        body .productsAll .content .productContent .contentText h3, html .productsAll .content .productContent .contentText h3 {
+          width: 100%;
+          display: inline-block;
+          letter-spacing: 3px;
+          font-size: 50px;
+          font-weight: 600;
+          margin-left: 20px; }
+        body .productsAll .content .productContent .contentText h5, html .productsAll .content .productContent .contentText h5 {
+          padding-left: 20px;
+          font-size: 26px;
+          margin: 20px 0px 20px; }
+        body .productsAll .content .productContent .contentText ul, html .productsAll .content .productContent .contentText ul {
+          left: -10%;
+          width: 100%;
+          list-style-type: none;
+          padding: 0px;
+          padding-left: 20px;
+          margin: 0px; }
+          body .productsAll .content .productContent .contentText ul li, html .productsAll .content .productContent .contentText ul li {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 40px; }
+            body .productsAll .content .productContent .contentText ul li span, html .productsAll .content .productContent .contentText ul li span {
+              width: 100px;
+              display: inline-block; }
+      body .productsAll .content .productContent .contentPhoto, html .productsAll .content .productContent .contentPhoto {
+        width: 50%; }
+        body .productsAll .content .productContent .contentPhoto img, html .productsAll .content .productContent .contentPhoto img {
+          width: 100%; }
+    body .productsAll .content .rightcontact, html .productsAll .content .rightcontact {
+      width: 25%;
+      float: right; }
+      body .productsAll .content .rightcontact .contact, html .productsAll .content .rightcontact .contact {
+        padding: 40px;
+        margin: 40px 0px;
+        border-bottom: solid 1px black; }
+        body .productsAll .content .rightcontact .contact img, html .productsAll .content .rightcontact .contact img {
+          opacity: 0.8;
+          padding: 30px 10px;
+          width: 100%;
+          -webkit-filter: grayscale(1);
+          transition: -webkit-filter 1s; }
+          body .productsAll .content .rightcontact .contact img:hover, html .productsAll .content .rightcontact .contact img:hover {
+            opacity: 1; }
+        body .productsAll .content .rightcontact .contact h3, html .productsAll .content .rightcontact .contact h3 {
+          word-wrap: wrap;
+          margin-left: -40px;
+          margin-right: -40px;
+          font-size: 30px;
+          text-align: center;
+          font-family: 'Anton', sans-serif; }
+          body .productsAll .content .rightcontact .contact h3 span, html .productsAll .content .rightcontact .contact h3 span {
+            display: block; }
+        body .productsAll .content .rightcontact .contact h2, html .productsAll .content .rightcontact .contact h2 {
+          font-family: 'Anton', sans-serif;
+          text-align: center;
+          font-size: 60px;
+          letter-spacing: 3px;
+          line-height: 90px;
+          font-weight: 900; }
+
+canvas {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: 3; }
+
+@media screen and (max-width: 1410px) {
+  body .productsAll .content .rightcontact .contact, html .productsAll .content .rightcontact .contact {
+    padding: 0px;
+    margin: 0px; }
+    body .productsAll .content .rightcontact .contact h2, html .productsAll .content .rightcontact .contact h2 {
+      font-size: 40px;
+      letter-spacing: 1px; }
+    body .productsAll .content .rightcontact .contact h3, html .productsAll .content .rightcontact .contact h3 {
+      font-size: 26px; }
+  body .productsAll .content .productContent .contentText, html .productsAll .content .productContent .contentText {
+    left: 40%; }
+    body .productsAll .content .productContent .contentText h3, html .productsAll .content .productContent .contentText h3 {
+      font-size: 40px; }
+    body .productsAll .content .productContent .contentText h5, html .productsAll .content .productContent .contentText h5 {
+      font-size: 26px;
+      margin: 0px;
+      margin-bottom: 15px; }
+    body .productsAll .content .productContent .contentText ul, html .productsAll .content .productContent .contentText ul {
+      width: 100%;
+      list-style-type: none;
+      padding: 0px;
+      padding-left: 20px;
+      margin: 0px; }
+      body .productsAll .content .productContent .contentText ul br, html .productsAll .content .productContent .contentText ul br {
+        display: none; }
+      body .productsAll .content .productContent .contentText ul li, html .productsAll .content .productContent .contentText ul li {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 40px; }
+        body .productsAll .content .productContent .contentText ul li span, html .productsAll .content .productContent .contentText ul li span {
+          width: 100px;
+          display: inline-block; } }
+
+@media screen and (max-width: 1150px) {
+  body .productsAll .header .logo, html .productsAll .header .logo {
+    padding: 15px; }
+  body .productsAll .header .title, html .productsAll .header .title {
+    width: 100%; }
+    body .productsAll .header .title h1, html .productsAll .header .title h1 {
+      margin: 0px;
+      line-height: 120px;
+      font-size: 50px; }
+  body .productsAll .header .titleRight h2, html .productsAll .header .titleRight h2 {
+    line-height: 35px; }
+  body .productsAll .content .rightcontact .contact img, html .productsAll .content .rightcontact .contact img {
+    padding: 0px; }
+  body .productsAll .content .rightcontact .contact h2, html .productsAll .content .rightcontact .contact h2 {
+    line-height: 40px;
+    font-size: 30px;
+    letter-spacing: 1px; }
+  body .productsAll .content .rightcontact .contact h3, html .productsAll .content .rightcontact .contact h3 {
+    font-size: 20px; }
+  body .productsAll .content .leftContent h2, html .productsAll .content .leftContent h2 {
+    font-size: 55px; }
+  body .productsAll .content .leftContent h3, html .productsAll .content .leftContent h3 {
+    font-size: 38px; }
+  body .productsAll .content .leftContent h4, html .productsAll .content .leftContent h4 {
+    font-size: 20px; }
+  body .productsAll .content .productContent, html .productsAll .content .productContent {
+    position: relative; }
+    body .productsAll .content .productContent .contentText ul li, html .productsAll .content .productContent .contentText ul li {
+      line-height: 32px;
+      font-size: 18px; }
+    body .productsAll .content .productContent .contentPhoto, html .productsAll .content .productContent .contentPhoto {
+      position: relative; }
+      body .productsAll .content .productContent .contentPhoto img, html .productsAll .content .productContent .contentPhoto img {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); } }
+
+@media screen and (max-width: 960px) {
+  body .productsAll .header .logo, html .productsAll .header .logo {
+    width: 150px; }
+  body .productsAll .header .title h1, html .productsAll .header .title h1 {
+    line-height: 100px; }
+  body .productsAll .header .titleRight, html .productsAll .header .titleRight {
+    padding: 10px; }
+    body .productsAll .header .titleRight h2, html .productsAll .header .titleRight h2 {
+      margin: 0px; }
+  body .productsAll .content .rightcontact, html .productsAll .content .rightcontact {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    body .productsAll .content .rightcontact .phone, html .productsAll .content .rightcontact .phone {
+      border-right: solid 2px black; }
+    body .productsAll .content .rightcontact .contact img, html .productsAll .content .rightcontact .contact img {
+      width: 30%; }
+    body .productsAll .content .rightcontact .contact h2, html .productsAll .content .rightcontact .contact h2 {
+      text-align: left;
+      top: 0px;
+      left: 35%;
+      line-height: 70px;
+      position: absolute;
+      margin: 0px;
+      width: 100%; }
+    body .productsAll .content .rightcontact .contact h3, html .productsAll .content .rightcontact .contact h3 {
+      font-size: 18px;
+      text-align: left;
+      left: 35%;
+      top: 70px;
+      position: absolute;
+      width: 100%;
+      margin: 0px; }
+      body .productsAll .content .rightcontact .contact h3 span, html .productsAll .content .rightcontact .contact h3 span {
+        margin-right: 10px;
+        display: inline-block; }
+  body .productsAll .content .leftContent, html .productsAll .content .leftContent {
+    width: 100%;
+    border-right: 0px; }
+    body .productsAll .content .leftContent h2, html .productsAll .content .leftContent h2 {
+      margin: 20px 30px;
+      font-size: 42px; }
+    body .productsAll .content .leftContent h3, html .productsAll .content .leftContent h3 {
+      font-size: 32px;
+      margin: 20px 30px; }
+    body .productsAll .content .leftContent h4, html .productsAll .content .leftContent h4 {
+      margin: 20px 30px; }
+  body .productsAll .content .productContent, html .productsAll .content .productContent {
+    width: 100%;
+    border-right: 0px; } }
+
+@media screen and (max-width: 800px) {
+  body .productsAll .header .logo, html .productsAll .header .logo {
+    width: 150px; }
+  body .productsAll .header .title h1, html .productsAll .header .title h1 {
+    line-height: 90px;
+    font-size: 38px; }
+  body .productsAll .header .titleRight h2, html .productsAll .header .titleRight h2 {
+    font-size: 20px; }
+  body .productsAll .content .rightcontact .contact, html .productsAll .content .rightcontact .contact {
+    width: 100%; }
+    body .productsAll .content .rightcontact .contact img, html .productsAll .content .rightcontact .contact img {
+      display: none; }
+    body .productsAll .content .rightcontact .contact h2, html .productsAll .content .rightcontact .contact h2 {
+      text-align: center;
+      left: 0px;
+      line-height: 40px;
+      position: relative; }
+    body .productsAll .content .rightcontact .contact h3, html .productsAll .content .rightcontact .contact h3 {
+      text-align: center;
+      top: 0px;
+      left: 0px;
+      position: relative; } }
+
+@media screen and (max-width: 740px) {
+  body .productsAll .header .logo, html .productsAll .header .logo {
+    width: 150px; }
+  body .productsAll .header .title h1, html .productsAll .header .title h1 {
+    font-size: 32px; }
+  body .productsAll .content .productContent .contentText, html .productsAll .content .productContent .contentText {
+    width: 70%;
+    left: 5%;
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%); } }
+
+@media screen and (max-width: 665px) {
+  body .productsAll .header .logo, html .productsAll .header .logo {
+    width: 100px; }
+  body .productsAll .header .title h1, html .productsAll .header .title h1 {
+    line-height: 60px; }
+  body .productsAll .header .titleRight h2, html .productsAll .header .titleRight h2 {
+    font-size: 16px;
+    line-height: 24px; }
+  body .productsAll .content .leftContent h2, html .productsAll .content .leftContent h2 {
+    font-size: 32px;
+    margin: 10px 20px; }
+  body .productsAll .content .leftContent h3, html .productsAll .content .leftContent h3 {
+    font-size: 24px;
+    margin: 10px 20px; }
+  body .productsAll .content .leftContent h4, html .productsAll .content .leftContent h4 {
+    font-size: 16px;
+    margin: 10px 20px; }
+  body .productsAll .content .leftContent .leftContentPhoto .photo, html .productsAll .content .leftContent .leftContentPhoto .photo {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    body .productsAll .content .leftContent .leftContentPhoto .photo .Rwd, html .productsAll .content .leftContent .leftContentPhoto .photo .Rwd {
+      display: block; }
+    body .productsAll .content .leftContent .leftContentPhoto .photo img, html .productsAll .content .leftContent .leftContentPhoto .photo img {
+      width: 50%; }
+  body .productsAll .content .productContent .contentText, html .productsAll .content .productContent .contentText {
+    display: inline-block;
+    width: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+    body .productsAll .content .productContent .contentText h3, html .productsAll .content .productContent .contentText h3 {
+      font-size: 30px;
+      margin: 0px;
+      text-align: center; }
+    body .productsAll .content .productContent .contentText h5, html .productsAll .content .productContent .contentText h5 {
+      font-size: 20px;
+      padding: 0px;
+      text-align: center;
+      margin-bottom: 10px; }
+    body .productsAll .content .productContent .contentText ul, html .productsAll .content .productContent .contentText ul {
+      padding: 0px;
+      font-size: 16px;
+      left: 0px; }
+  body .productsAll .content .productContent .contentPhoto, html .productsAll .content .productContent .contentPhoto {
+    display: none; } }
+
+@media screen and (max-width: 575px) {
+  body .productsAll .header .logo, html .productsAll .header .logo {
+    padding: 8px;
+    width: 90px; }
+  body .productsAll .header .title h1, html .productsAll .header .title h1 {
+    font-size: 26px;
+    line-height: 50px; }
+  body .productsAll .header .titleRight, html .productsAll .header .titleRight {
+    padding: 0px; }
+  body .productsAll .content .rightcontact .contact h2, html .productsAll .content .rightcontact .contact h2 {
+    line-height: 30px;
+    font-size: 25px; }
+  body .productsAll .content .rightcontact .contact h3, html .productsAll .content .rightcontact .contact h3 {
+    font-size: 16px; }
+    body .productsAll .content .rightcontact .contact h3 span, html .productsAll .content .rightcontact .contact h3 span {
+      display: block; }
+  body .productsAll .content .leftContent h2, html .productsAll .content .leftContent h2 {
+    font-size: 28px; }
+  body .productsAll .content .leftContent h3, html .productsAll .content .leftContent h3 {
+    font-size: 20px; }
+  body .productsAll .content .leftContent h4, html .productsAll .content .leftContent h4 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 28px; }
+  body .productsAll .content .productContent .contentText h3, html .productsAll .content .productContent .contentText h3 {
+    font-size: 26px;
+    margin: 0px;
+    text-align: center; }
+  body .productsAll .content .productContent .contentText h5, html .productsAll .content .productContent .contentText h5 {
+    font-size: 18px;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 10px; }
+  body .productsAll .content .productContent .contentText ul, html .productsAll .content .productContent .contentText ul {
+    padding: 0px;
+    left: 0px; }
+    body .productsAll .content .productContent .contentText ul li, html .productsAll .content .productContent .contentText ul li {
+      font-size: 14px; } }
+
+@media screen and (max-width: 503px) {
+  body {
+    padding: 20px; }
+  body .productsAll .header .logo, html .productsAll .header .logo {
+    padding: 3px 5px;
+    width: 60px; }
+    body .productsAll .header .logo img, html .productsAll .header .logo img {
+      width: 50px; }
+  body .productsAll .header .title h1, html .productsAll .header .title h1 {
+    font-size: 24px;
+    line-height: 43px; }
+  body .productsAll .header .titleRight h2, html .productsAll .header .titleRight h2 {
+    font-size: 12px;
+    line-height: 21.5px; }
+  body .productsAll .content .rightcontact .contact h2, html .productsAll .content .rightcontact .contact h2 {
+    font-size: 18px;
+    line-height: 25px; }
+  body .productsAll .content .rightcontact .contact h3, html .productsAll .content .rightcontact .contact h3 {
+    font-size: 12px; } }
+
+@media screen and (max-width: 446px) {
+  body {
+    padding: 10px; }
+  body .productsAll .header .logo, html .productsAll .header .logo {
+    padding: 3px 5px;
+    width: 50px; }
+    body .productsAll .header .logo img, html .productsAll .header .logo img {
+      width: 40px; }
+  body .productsAll .header .title h1, html .productsAll .header .title h1 {
+    font-size: 20px;
+    line-height: 40px; }
+  body .productsAll .header .titleRight h2, html .productsAll .header .titleRight h2 {
+    font-size: 12px;
+    line-height: 20px; }
+  body .productsAll .content .rightcontact .contact h2, html .productsAll .content .rightcontact .contact h2 {
+    font-size: 18px;
+    line-height: 25px; }
+  body .productsAll .content .rightcontact .contact h3, html .productsAll .content .rightcontact .contact h3 {
+    font-size: 12px; } }
+
+@media screen and (max-width: 380px) {
+  body {
+    padding: 10px; }
+  body .productsAll .header .logo, html .productsAll .header .logo {
+    width: 160px; }
+    body .productsAll .header .logo img, html .productsAll .header .logo img {
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
+  body .productsAll .header .title h1, html .productsAll .header .title h1 {
+    line-height: 20px; }
+    body .productsAll .header .title h1 span, html .productsAll .header .title h1 span {
+      display: block; }
+  body .productsAll .header .titleRight h2, html .productsAll .header .titleRight h2 {
+    font-size: 12px;
+    line-height: 20px; }
+  body .productsAll .content .rightcontact .contact h2, html .productsAll .content .rightcontact .contact h2 {
+    font-size: 18px;
+    line-height: 25px; }
+  body .productsAll .content .rightcontact .contact h3, html .productsAll .content .rightcontact .contact h3 {
+    font-size: 12px; }
+  body .productsAll .content .productContent .contentText h5, html .productsAll .content .productContent .contentText h5 {
+    margin: 0px; } }

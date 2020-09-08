@@ -1,0 +1,155 @@
+.news {
+  padding: 0px; }
+
+.newsbody .newstitle {
+  padding: 20px 0px;
+  text-align: center;
+  color: #444; }
+  .newsbody .newstitle strong {
+    font-weight: 500;
+    padding: 20px 0px;
+    font-size: 32px; }
+
+.newsbody .newsAll .news {
+  position: relative; }
+  .newsbody .newsAll .news .newstext {
+    width: 100%;
+    position: absolute;
+    padding: 20px;
+    bottom: 20px;
+    z-index: 99;
+    color: #333; }
+    .newsbody .newsAll .news .newstext .logo {
+      width: 200px; }
+    .newsbody .newsAll .news .newstext h5 {
+      display: inline-block;
+      font-size: 50px; }
+    .newsbody .newsAll .news .newstext p {
+      display: block;
+      margin-top: 20px;
+      font-size: 30px; }
+    .newsbody .newsAll .news .newstext .more {
+      padding: 8px 13px;
+      display: inline-block;
+      background-color: rgba(128, 128, 128, 0.8);
+      color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      margin-bottom: 10px;
+      font-size: 28px; }
+      .newsbody .newsAll .news .newstext .more:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white; }
+  .newsbody .newsAll .news .img {
+    padding: 0px 50px; }
+    .newsbody .newsAll .news .img img {
+      width: 100%; }
+    .newsbody .newsAll .news .img .cover {
+      top: 0px;
+      left: 0px;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.3); }
+  .newsbody .newsAll .news .hide {
+    display: none; }
+
+.newsbody .newsAll .newsRight .newstext {
+  text-align: right;
+  right: 50px; }
+
+.newsbody .newsAll .newsLeft .newstext {
+  padding-left: 70px; }
+
+@media screen and (max-width: 1200px) {
+  .newsbody .newsAll .news .newstext .logo {
+    width: 150px; }
+  .newsbody .newsAll .news .newstext .more {
+    font-size: 24px;
+    padding: 5px 10px; } }
+
+@media screen and (max-width: 991px) {
+  .newsbody .newsAll .news .newstext h5 {
+    font-size: 25px; }
+  .newsbody .newsAll .news .newstext p {
+    font-size: 18px; }
+  .newsbody .newsAll .news .newstext .logo {
+    width: 130px; }
+  .newsbody .newsAll .news .newstext .more {
+    margin-bottom: 0px;
+    font-size: 20px; }
+  .newsbody .newsAll .news .img {
+    padding: 0px 30px; }
+  .newsbody .newsAll .newsRight .newstext {
+    right: 50px; }
+  .newsbody .newsAll .newsLeft .newstext {
+    padding-left: 50px; } }
+
+@media screen and (max-width: 768px) {
+  .newsbody .newstitle {
+    padding: 0px;
+    padding-bottom: 10px; }
+    .newsbody .newstitle strong {
+      font-size: 28px; }
+  .newsbody .newsAll .news .newstext {
+    bottom: 0px; }
+    .newsbody .newsAll .news .newstext h5 {
+      font-size: 20px; }
+    .newsbody .newsAll .news .newstext p {
+      margin-top: 10px;
+      font-size: 16px; }
+    .newsbody .newsAll .news .newstext a {
+      font-size: 12px; }
+    .newsbody .newsAll .news .newstext .logo {
+      width: 100px; }
+  .newsbody .newsAll .news .img {
+    padding: 0px 0px; }
+  .newsbody .newsAll .newsRight .newstext {
+    right: 0px; }
+  .newsbody .newsAll .newsLeft .newstext {
+    padding-left: 20px; } }
+
+@media screen and (max-width: 540px) {
+  .newsbody .newstitle strong {
+    font-size: 24px; }
+  .newsbody .newsAll .news .newstext {
+    bottom: 0px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding: 5px 10px; }
+    .newsbody .newsAll .news .newstext .logo {
+      width: 100px; }
+    .newsbody .newsAll .news .newstext h5 {
+      font-size: 16px; }
+    .newsbody .newsAll .news .newstext p {
+      margin-top: 0px;
+      font-size: 12px; }
+    .newsbody .newsAll .news .newstext a {
+      font-size: 12px; }
+    .newsbody .newsAll .news .newstext .more {
+      padding: 8px 10px;
+      margin-bottom: 0px; } }
+
+@media screen and (max-width: 438px) {
+  .newsbody .newstitle strong {
+    font-size: 20px; }
+  .newsbody .newsAll .news .newstext {
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 0px; }
+    .newsbody .newsAll .news .newstext h5 {
+      font-size: 14px;
+      font-weight: 700; }
+    .newsbody .newsAll .news .newstext .logo {
+      width: 80px; }
+    .newsbody .newsAll .news .newstext .more {
+      padding: 5px 8px; } }
+
+@media screen and (max-width: 412px) {
+  .newsbody .newsAll .news .newstext .logo {
+    width: 80px; } }

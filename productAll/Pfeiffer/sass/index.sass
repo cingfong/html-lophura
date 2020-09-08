@@ -1,0 +1,229 @@
+*
+    // border: solid 1px black
+body, html
+    margin: 0px auto
+    // margin: 0px 30px
+    // height: 3000px
+    // width: 95%
+    padding: 0px
+    // margin: 0px
+    background-color: #fff
+    // border: solid 1px
+    position: relative
+body
+    // margin: 0px 30px
+// ---導覽列---
+hr
+    width: 85%
+    background-color: #eee
+.navHeader
+    display: flex
+    flex-wrap: wrap
+    position: relative
+    button
+        border: 0px
+        margin: 30px
+    .navbar-brand
+        margin: 0px
+        padding: 0px
+        .titleImg
+            top: 20px
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            width: 90px
+            height: 60px
+            margin: 0px
+            padding: 0px
+    .navbar-collapse
+        justify-content: center
+        align-items: center
+        margin-top: 90px
+        .active
+            margin: 0px 10px
+            width: 120px
+            text-align: center
+            a
+                text-align: center
+                width: 100%
+                display: inline-block
+            .dropdownLayer
+                #pushAll
+                    margin-left: 0px
+                    list-style: none
+                    display: flex
+                    flex-wrap: nowrap
+                    margin-left: -230px
+                    position: absolute
+                    z-index: 99
+                    // border: solid 0.8px rgba(0,0,0,0.15)
+                    padding-inline-start: 0px
+                    // display: none
+                    li
+                        text-align: center
+                        width: 180px
+                        background-color: #fff
+                        color: rgba(0,0,0,0.9)
+                        .layerTitle
+                            font-size: 17px
+                        .layerContent
+                            // display: none
+                            a
+                                // font-weight: 100
+                                font-size: 16px
+                                margin-bottom: 8px
+                                text-decoration: none
+                                color: rgba(0,0,0,0.5)
+        .nav-link
+            &:hover
+                color: #aaa
+
+// ---系列總覽---
+.catenaAll
+    h2
+        font-weight: 300
+        text-align: center
+        line-height: 60px
+        letter-spacing: 2px
+        color: rgba(0,0,0,0.8)
+    .previewAll
+        padding: 120px 30px
+        display: flex
+        text-align: center
+        flex-wrap: wrap
+        .card
+            border: 0px
+            &:hover
+                animation: hand 0.7s both
+            a
+                text-decoration: none
+                color:#333
+            .card-text
+                font-weight: 400
+                font-size: 24px
+@keyframes hand
+    0%
+        opacity: 1
+    100%
+        opacity: 0.7
+
+
+// ---結尾---
+.coda
+    position: absolute
+    left: 0px
+    margin-top: 10px
+    width: 100%
+    height: 180px
+    background-color: #eee
+    padding: 15px
+    line-height: 0px
+    position: relative
+    display: flex
+    align-items:center
+    flex-wrap: wrap
+    h5
+        width: 100%
+        display: inline-block
+        text-align: center
+        margin-bottom: 10px
+        font-size: 16px
+
+        color: #444
+    p
+        line-height: 5px
+        width: 100%
+        text-align: center
+        display: block
+        font-size: 13px
+        height: auto
+    .img
+        width: 100%
+        margin-bottom: 10px
+        img
+            position: relative
+            left: 50%
+            transform: translateX(-50%)
+            width: 40px
+            height: 30px
+@media screen and (min-width: 992px)
+    .navHeader
+        .navbar-collapse
+            .active
+                .dropdown-menu
+                    border: 0px
+                .dropdownLayer
+                    #pushAll
+                        li
+                            .layerContent
+                                display: block
+@media screen and (max-width: 991px)
+    .navHeader
+        .navbar-collapse
+            margin-top: 0px
+        .navbar-brand
+            .titleImg
+        .navbar-collapse
+            .active
+                a
+                .dropdown-menu
+                    border: solid 0px
+                .dropdownLayer
+                    #pushAll
+                        display: inline-block
+                        flex-wrap: wrap
+                        position: relative
+                        margin-left: 0px
+                        li
+                            margin-top: 10px
+                            margin-bottom: 10px
+                            .layerContent
+                                display: none
+    .box
+        margin-top: 30px
+    .catenaAll
+        .previewAll
+            padding: 30px 30px
+@media screen and (max-width: 768px)
+    .navHeader
+        .navbar-brand
+            .titleImg
+                width: 45px
+                height: 30px
+        .navbar-toggler
+            margin: 7px
+@media screen and (max-width: 580px)
+    // .shop
+    //     .photo_button
+    //         .right
+    //             right: -20px
+    //         .left
+    //             left: -25px
+.catenaAll
+    h2
+        font-size: 26px
+    .previewAll
+        padding-top: 30px
+        .card
+            .card-text
+                font-weight: 200
+                font-size: 18px
+@media screen and (max-width: 540px)
+    .navHeader
+        .navbar-brand
+            .titleImg
+                top: 10px
+        .navbar-toggler
+            margin: 0px
+@media screen and (max-width: 438px)
+    .coda
+        height: 190px
+        p
+            font-size: 12px
+            span
+                display: inline-block
+@media screen and (max-width: 412px)
+    .coda
+        p
+            span
+                margin-top: 10px

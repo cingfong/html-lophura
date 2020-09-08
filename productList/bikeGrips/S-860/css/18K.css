@@ -1,0 +1,245 @@
+#section0 {
+  background-image: url("../image/G-2.jpg"); }
+
+#section1 {
+  background-image: url("../image/G-3.jpg"); }
+
+#section2 {
+  background-image: url("../image/G-4.jpg"); }
+
+#section3 {
+  background-image: url("../image/G-5.jpg"); }
+
+body .logo {
+  width: 100px;
+  height: 70px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 999;
+  cursor: pointer; }
+  body .logo img {
+    width: 100%; }
+
+body .about {
+  position: fixed;
+  bottom: 40px;
+  left: 40px; }
+  body .about h3 {
+    font-size: 26px;
+    color: #aaa;
+    letter-spacing: 3px; }
+
+body .aboutContent {
+  width: 60vw;
+  height: 70vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 99999;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); }
+  body .aboutContent .text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%); }
+    body .aboutContent .text h3 {
+      width: 100%;
+      line-height: 80px;
+      font-size: 48px;
+      color: white; }
+    body .aboutContent .text hr {
+      position: relative;
+      width: 150%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      margin: 20px 0px; }
+    body .aboutContent .text .productsTitle {
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 20px; }
+    body .aboutContent .text h5 {
+      text-align: left;
+      line-height: 50px;
+      font-size: 20px;
+      color: white;
+      font-weight: 600; }
+      body .aboutContent .text h5 span {
+        display: inline-block;
+        width: 120px; }
+
+body .section {
+  padding: 20px; }
+
+body .close {
+  width: 80px;
+  height: 120px;
+  position: fixed;
+  left: 40px;
+  bottom: 120px;
+  opacity: 0; }
+  body .close .closeLeft {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #ddd;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  body .close .closeRight {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #ddd;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  body .close .closeLeftEnd {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+  body .close .closeRightEnd {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+
+@media screen and (max-width: 1240px) {
+  body .section {
+    background-size: 100%;
+    background-repeat: no-repeat; }
+  body .aboutContent {
+    height: 60%;
+    width: 60%; } }
+
+@media screen and (max-width: 1000px) {
+  body .aboutContent {
+    height: 60%;
+    width: 60%; }
+    body .aboutContent .text {
+      width: 60%; }
+      body .aboutContent .text hr {
+        width: 70%; }
+      body .aboutContent .text .productsTitle {
+        font-size: 26px;
+        font-weight: 700; }
+      body .aboutContent .text h3 {
+        font-size: 36px; } }
+
+@media screen and (max-width: 840px) {
+  body .aboutContent {
+    height: 50%; }
+    body .aboutContent .text {
+      width: 70%; }
+      body .aboutContent .text h3 {
+        line-height: 45px; }
+      body .aboutContent .text h5 {
+        line-height: 40px; } }
+
+@media screen and (max-width: 720px) {
+  body .aboutContent .text {
+    width: 80%; } }
+
+@media screen and (min-width: 630px) {
+  .aboutContent {
+    display: none;
+    opacity: 0; }
+  .about {
+    display: block; }
+  .close {
+    display: block; } }
+
+@media screen and (max-width: 630px) {
+  body .section {
+    padding-top: 120px; }
+  body .aboutContent {
+    display: block;
+    opacity: 1;
+    top: 0px;
+    -webkit-transform: translateY(0%) translateX(-50%);
+    -ms-transform: translateY(0%) translateX(-50%);
+    transform: translateY(0%) translateX(-50%);
+    width: 80%;
+    height: 40%;
+    background-color: rgba(255, 255, 255, 0); }
+    body .aboutContent .text {
+      top: 0px;
+      -webkit-transform: translateY(0%) translateX(-50%);
+      -ms-transform: translateY(0%) translateX(-50%);
+      transform: translateY(0%) translateX(-50%);
+      padding: 10px;
+      width: 70%; }
+      body .aboutContent .text h3 {
+        text-align: center;
+        line-height: 40px; }
+      body .aboutContent .text h5 {
+        text-align: left;
+        line-height: 32px; }
+      body .aboutContent .text .productsTitle {
+        margin: 8px; }
+      body .aboutContent .text hr {
+        width: 100%;
+        margin: 15px 0px; }
+  body .about {
+    display: none; }
+  body .close {
+    display: none; } }
+
+@media screen and (max-width: 540px) {
+  body .aboutContent .text {
+    width: 80%; } }
+
+@media screen and (max-width: 480px) {
+  body .logo {
+    width: 80px;
+    height: 60px; }
+  body .aboutContent .text {
+    width: 100%; }
+    body .aboutContent .text h3 {
+      font-size: 26px; }
+    body .aboutContent .text h5 {
+      font-size: 16px; }
+    body .aboutContent .text .productsTitle {
+      font-size: 20px; }
+    body .aboutContent .text hr {
+      margin: 8px 0px; } }
+
+@media screen and (max-width: 380px) {
+  body .aboutContent .text {
+    width: 80%; }
+    body .aboutContent .text h3 {
+      font-size: 24px; }
+    body .aboutContent .text h5 {
+      line-height: 20px;
+      font-size: 12px; }
+      body .aboutContent .text h5 span {
+        width: 85px; }
+    body .aboutContent .text .productsTitle {
+      font-size: 18px; } }
+
+@media screen and (max-width: 330px) {
+  body .aboutContent .text h5 {
+    line-height: 18px; } }
